@@ -9,14 +9,14 @@ Farthest Point Sampling  is a important operation using in PointCloud Sampling. 
 
 FPS is a normal operation for PointCloud. In recent study, we find this operation has long running  time. 
 
-e.g.(modelnet40, Nvidia 1080Ti)
+e.g.
 
-| num_point | num_sample | runtime(ms)|
-| :-: | :-: |:-:|
-|1024 | 32 | 11.3|
-| 1024 | 64 | 17.5|
-| 1024 | 128|32.4|
-| 1024 | 256 | 64.1| 
+| num_point | num_sample |NVIDIA 1080Ti runtime(ms)| NVIDIA V100 runtime(ms)|
+| :-: | :-: |:-:| :-:|
+|1024 | 32 | 11.3|30.5|
+| 1024 | 64 | 17.5|48.6|
+| 1024 | 128|32.4|75.9|
+| 1024 | 256 | 64.1|138| 
 
 # How to accelerate
 
