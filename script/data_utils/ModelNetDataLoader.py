@@ -37,10 +37,11 @@ def farthest_point_sample(point, npoint):
     return point
 
 class ModelNetDataLoader(Dataset):
-    def __init__(self, root,  npoint=1024, split='train', uniform=False, normal_channel=True, cache_size=15000):
+    def __init__(self, root,  npoint=1024, split='train', uniform=False, normal_channel=True, cache_size=15000, item_size = -1):
         self.root = root
         self.npoints = npoint
         self.uniform = uniform
+        self.item_size = item_size
         self.catfile = os.path.join(self.root, 'modelnet40_shape_names.txt')
 
         self.cat = [line.rstrip() for line in open(self.catfile)]
@@ -62,7 +63,10 @@ class ModelNetDataLoader(Dataset):
         self.cache = {}  # from index to (point_set, cls) tuple
 
     def __len__(self):
-        return len(self.datapath)
+        if self.item_size == -1:
+            return len(self.datapath)
+        else:
+            return min(self.item_size, len(self.datapath))
 
     def _get_item(self, index):
         if index in self.cache:

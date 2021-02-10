@@ -6,8 +6,9 @@ warnings.filterwarnings('ignore')
 
 
 class KITTIDataLoader(Dataset):
-    def __init__(self, root,  split='testing',  cache_size=150):
+    def __init__(self, root,  split='testing',  cache_size=150, item_size = -1):
         self.root = root + '/' + split + '/velodyne/'
+        self.item_size = item_size
 
         # list of (shape_name, shape_txt_file_path) tuple
         self.datapath = len([lists for lists in os.listdir(self.root) if os.path.isfile(os.path.join(self.root, lists))])
@@ -19,7 +20,10 @@ class KITTIDataLoader(Dataset):
         self.cache = {}  # from index to (point_set, cls) tuple
 
     def __len__(self):
-        return self.datapath
+        if self.item_size == -1:
+            return self.datapath
+        else:
+            return min(self.item_size,self.datapath)
 
     def _get_item(self, index):
         if index in self.cache:

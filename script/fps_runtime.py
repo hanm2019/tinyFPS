@@ -18,6 +18,7 @@ def parse_args():
     parser = argparse.ArgumentParser('Farthest point sampling ')
     parser.add_argument('--num_point', type=int, default=1024, help='Point Number [default: 1024]')
     parser.add_argument('--num_sampling', type=int, default=256, help='sample Number [default: 256]')
+    parser.add_argument('--num_testcase', type=int, default=-1, help='testcase Number [default: -1(All dataset)]')
     parser.add_argument('--normal', action='store_true', default=True,
                         help='Whether to use normal information [default: False]')
     parser.add_argument('--gpu', type=int, default=1, help='enable gpu [default: 1]')
@@ -49,11 +50,11 @@ def main(args):
     if args.dataset == 'modelnet40':
         DATA_PATH = DASE_DIR +'/..' + '/data/modelnet40/modelnet40_normal_resampled/'
         TEST_DATASET = ModelNetDataLoader(root=DATA_PATH, npoint=args.num_point, split='test',
-                                          normal_channel=args.normal)
+                                          normal_channel=args.normal,item_size = args.num_testcase)
         SAMPLE_LIST = [32,64,128,256,512]
     elif args.dataset == 'KITTI':
         DATA_PATH = BASE_DIR + '/..' +  '/data/kitti/'
-        TEST_DATASET = KITTIDataLoader(root=DATA_PATH,  split='testing')
+        TEST_DATASET = KITTIDataLoader(root=DATA_PATH,  split='testing',item_size = args.num_testcase)
         SAMPLE_LIST = [128,256,512,1024,2048]
     testaccDataLoader = torch.utils.data.DataLoader(TEST_DATASET, batch_size=1, shuffle=False,
                                                     num_workers=4)
