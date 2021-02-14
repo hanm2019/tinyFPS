@@ -44,8 +44,8 @@ if __name__ == '__main__':
     device = torch.device("cuda")
     for num_sampling in SAMPLE_LIST:
         with torch.no_grad():
-            metric1_array = np.zeros((len(testaccDataLoader), 10), dtype=np.float32)
-            metric2_array = np.zeros((len(testaccDataLoader), 10), dtype=np.float32)
+            metric1_array = np.zeros((len(testaccDataLoader), 10), dtype=np.float64)
+            metric2_array = np.zeros((len(testaccDataLoader), 10), dtype=np.float64)
             log_string(("start...dataset:%s,sampling:%d" % (dataset, num_sampling)))
             for j, data in tqdm(enumerate(testaccDataLoader), total=len(testaccDataLoader)):
                 points_, _ = data

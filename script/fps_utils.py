@@ -1,5 +1,6 @@
 import random
 import torch
+import numpy as np
 
 def dist_sq(a, b, dim):
     return sum((a[i] - b[i]) ** 2 for i in range(dim))
@@ -24,7 +25,7 @@ def sum_function(point, dest_points):
 
 
 def gpu_fps_metric(points, sample_points, distance_func=torch.sum):
-    sample_result = 0
+    sample_result = np.float64(0)
     tensor_dest_points = torch.Tensor(points).to("cuda")
     for sample_point in sample_points:
         tensor_point = torch.Tensor(sample_point).to("cuda")
@@ -38,11 +39,5 @@ def fps_metric(points, sample_points, distance_func=sum_function):
         sample_result = sample_result + distance_func(sample_point, points)
     return sample_result
 
-
-def point_metric(points, distance_func=sum_function):
-    total_result = 0
-    for point in points:
-        total_result = total_result + distance_func(point, points)
-    return total_result
 
 
