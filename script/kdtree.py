@@ -12,17 +12,11 @@ points are be a array of points: [[0, 1, 2], [12.3, 4.5, 2.3], ...]
 
 """
 import numpy as np
+from fps_utils import dist_sq
+from fps_utils import rand_point
 
 dim = 3
 debug = False
-
-
-def rand_point(dim):
-    return [random.uniform(-1, 1) for d in range(dim)]
-
-
-def dist_sq(a, b, dim):
-    return sum((a[i] - b[i]) ** 2 for i in range(dim))
 
 
 def dist_sq_dim(a, b):
@@ -45,10 +39,14 @@ def sub_make_kd_tree(points, dim, i=0):
 
 # Makes the KD-Tree for fast lookup
 
-def make_kd_tree(points, dim, i=0):
+def numpy_make_kd_tree(points, dim, i=0):
     # change np.array to list
     points_array = points.tolist()
     return sub_make_kd_tree(points_array, dim, i)
+
+
+def make_kd_tree(points, dim, i=0):
+    return sub_make_kd_tree(points, dim, i)
 
 
 # Adds a point to the kd-tree
@@ -189,7 +187,7 @@ if __name__ == '__main__':
 
     test = [rand_point(dim) for x in range(10)]
 
-    kd_tree = make_kd_tree(points, dim)
+    kd_tree = numpy_make_kd_tree(points, dim)
 
     print(get_nearest(kd_tree, test[0], dim, dist_sq_dim))
     print(get_ball_query(kd_tree, test[0], dim, 0.1, 5, dist_sq_dim))  # limit of 5

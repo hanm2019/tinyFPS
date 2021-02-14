@@ -7,7 +7,6 @@ import torch
 import logging
 from tqdm import tqdm
 import sys
-import importlib
 import time
 from pointnet_util import farthest_point_sample
 
@@ -31,7 +30,6 @@ def main(args):
         logger.info(str)
         print(str)
 
-
     '''CREATE DIR'''
     experiment_dir = 'log/gpu_runtime'
 
@@ -48,7 +46,7 @@ def main(args):
     log_string(args)
     log_string('Load dataset ...')
     if args.dataset == 'modelnet40':
-        DATA_PATH = DASE_DIR +'/..' + '/data/modelnet40/modelnet40_normal_resampled/'
+        DATA_PATH = BASE_DIR +'/..' + '/data/modelnet40/modelnet40_normal_resampled/'
         TEST_DATASET = ModelNetDataLoader(root=DATA_PATH, npoint=args.num_point, split='test',
                                           normal_channel=args.normal,item_size = args.num_testcase)
         SAMPLE_LIST = [32,64,128,256,512]
@@ -68,8 +66,6 @@ def main(args):
                 points, _ = data
                 points = points.transpose(2, 1)
                 points = points.to(device)
-                points = points[:, :3, :]
-                points = points.permute(0, 2, 1)
                 start_time = time.time()
                 farthest_point_sample(points, num_sampling)
                 if args.gpu:
