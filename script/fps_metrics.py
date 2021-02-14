@@ -65,7 +65,7 @@ if __name__ == '__main__':
                     metric2_array[j][i] = fps_utils.fps_metric(dis_point, sample_points, fps_utils.max_function) * 100.0/ points_max_matric
             log_string(("finish...dataset:%s,sampling:%d" % (dataset, num_sampling)))
             np.savetxt((experiment_dir + "/%s_%d_sum.txt" % (dataset, num_sampling)), metric1_array, encoding='utf-8')
-            np.savetxt((experiment_dir + "/%s_%d_x.txt" % (dataset, num_sampling)), metric2_array, encoding='utf-8')
+            np.savetxt((experiment_dir + "/%s_%d_max.txt" % (dataset, num_sampling)), metric2_array, encoding='utf-8')
             log_string(("save to file:%s_%d.txt" % (dataset, num_sampling)))
 
     # KITTI, same sample_number,sum_function,for each frame, sample 10 times
