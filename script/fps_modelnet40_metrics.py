@@ -7,7 +7,7 @@ import fps_utils
 from data_utils.ModelNetDataLoader import ModelNetDataLoader
 import torch
 from tqdm import tqdm
-from pointnet_util import farthest_point_sample
+from fps_utils import farthest_point_sample
 import matplotlib.pyplot as plt
 import os
 import numpy as np

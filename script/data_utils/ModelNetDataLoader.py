@@ -2,9 +2,11 @@ import numpy as np
 import warnings
 import os
 from torch.utils.data import Dataset
+import random
+
 warnings.filterwarnings('ignore')
 
-
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 def pc_normalize(pc):
     centroid = np.mean(pc, axis=0)
@@ -50,7 +52,7 @@ class ModelNetDataLoader(Dataset):
 
         shape_ids = {}
         shape_ids['train'] = [line.rstrip() for line in open(os.path.join(self.root, 'modelnet40_train.txt'))]
-        shape_ids['test'] = [line.rstrip() for line in open(os.path.join(self.root, 'modelnet40_test.txt'))]
+        shape_ids['test'] = [line.rstrip() for line in open(os.path.join(BASE_DIR, 'modelnet40_sample_256.txt'))]
 
         assert (split == 'train' or split == 'test')
         shape_names = ['_'.join(x.split('_')[0:-1]) for x in shape_ids[split]]
