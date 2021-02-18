@@ -1,6 +1,5 @@
 import random
 import torch
-import numpy as np
 from time import time
 
 
@@ -15,36 +14,6 @@ def dist_sq(a, b, dim):
 
 def rand_point(dim):
     return [random.uniform(-1, 1) for d in range(dim)]
-
-
-def rand_sample(size, npoint):
-    B, N, _ = size
-    arr = np.array(range(N))
-    np.random.shuffle(arr)
-    arr = torch.from_numpy(arr[:npoint]).to("cuda").repeat([B, 1])
-    return arr
-
-
-def max_function(point, dest_points):
-    max_result = 0
-    for dest_point in dest_points:
-        max_result = max(max_result, dist_sq(point, dest_point, 3))
-    return max_result
-
-
-def sum_function(point, dest_points):
-    result = 0
-    for dest_point in dest_points:
-        result = result + dist_sq(point, dest_point, 3)
-    return result
-
-
-def point_distance_metric(xyz, index):
-    sample_points = index_points(xyz, index)
-    return torch.true_divide(
-        torch.sum(torch.sum(square_distance(sample_points, sample_points), dim=1), dim=1),
-        torch.sum(torch.sum(square_distance(sample_points, xyz), dim=1), dim=1))
-
 
 
 def index_points(points, idx):
@@ -88,6 +57,29 @@ def square_distance(src, dst):
     return dist
 
 
+def farthest_square_distance_index(src, dst):
+    """
+    Calculate Euclid distance between each two points.
+    src^T * dst = xn * xm + yn * ym + zn * zm；
+    sum(src^2, dim=-1) = xn*xn + yn*yn + zn*zn;
+    sum(dst^2, dim=-1) = xm*xm + ym*ym + zm*zm;
+    dist = (xn - xm)^2 + (yn - ym)^2 + (zn - zm)^2
+         = sum(src**2,dim=-1)+sum(dst**2,dim=-1)-2*src^T*dst
+    Input:
+        src: source points, [N, C]
+        dst: target points, [M, C]
+    Output:
+        dist: sum square distance, [1]
+    """
+    N, _ = src.shape
+    M, _ = dst.shape
+    dist = -2 * torch.matmul(src, dst.permute(1, 0))
+    dist += torch.sum(src ** 2, -1).view(N, 1)
+    dist += torch.sum(dst ** 2, -1).view(1, M)
+    s = torch.max(torch.min(dist, -1)[0], -1)[1]
+    return s
+
+
 def point_cover(radius, xyz, new_xyz):
     """
     Input:
@@ -124,58 +116,15 @@ def point_cover_sum(radius, xyz, new_xyz):
     return torch.sum(torch.sum(group_idx, dim=1), dim=1)
 
 
-def farthest_point_sample(xyz: torch.Tensor, npoint: int):
-    """
-    Input:
-        xyz: pointcloud data, [B, N, 3]
-        npoint: number of samples
-    Return:
-        centroids: sampled pointcloud index, [B, npoint]
-    """
-    device = xyz.device
-    B, N, C = xyz.shape
-    centroids = torch.zeros(B, npoint, dtype=torch.long).to(device)
-    distance = torch.ones(B, N).to(device) * 1e10
-    farthest = torch.randint(0, N, (B,), dtype=torch.long).to(device)
-    batch_indices = torch.arange(B, dtype=torch.long).to(device)
-    for i in range(npoint):
-        centroids[:, i] = farthest
-        centroid = xyz[batch_indices, farthest, :].view(B, 1, 3)
-        dist = torch.sum((xyz - centroid) ** 2, -1)
-        mask = dist < distance
-        distance[mask] = dist[mask]
-        farthest = torch.max(distance, -1)[1]
-    return centroids
-
-
-def cpu_farthest_point_sample(xyz: np.array, npoint: int):
-    """
-    Input:
-        xyz: pointcloud data, [B, N, 3]
-        npoint: number of samples
-    Return:
-        centroids: sampled pointcloud index, [B, npoint]
-    """
-    batchsize, npts, dim = xyz.shape
-    centroids = np.zeros((batchsize, npoint), dtype=np.long)
-    distance = np.ones((batchsize, npts))*1e10
-    farthest_id = np.random.randint(0, npts, (batchsize,), dtype=np.long)
-    batch_index = np.arange(batchsize)
-    for i in range(npoint):
-        centroids[:, i] = farthest_id
-        centro_pt = xyz[batch_index, farthest_id, :].reshape(batchsize, 1, 3)
-        dist = np.sum((xyz - centro_pt) ** 2, -1)
-        mask = dist < distance
-        distance[mask] = dist[mask]
-        farthest_id = np.argmax(distance[batch_index])
-    return centroids
-
-
-def point_cover_metrics(xyz: torch.Tensor, index: torch.Tensor, radiu: float):
+def point_cover_metrics(xyz: torch.Tensor, sample_points: torch.Tensor, radiu: float):
     _, N, _ = xyz.shape
-    sample_points = index_points(xyz, index)
     cover_num = point_cover(radiu, xyz, sample_points)
     cover_num_sum = point_cover_sum(radiu, xyz, sample_points)
     return torch.true_divide(cover_num, N), torch.true_divide(cover_num_sum, N)
 
+
+def point_distance_metric(xyz, sample_points):
+    return torch.true_divide(
+        torch.sum(torch.sum(square_distance(sample_points, sample_points), dim=1), dim=1),
+        torch.sum(torch.sum(square_distance(sample_points, xyz), dim=1), dim=1))
 

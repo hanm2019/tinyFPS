@@ -1,28 +1,29 @@
 from data_utils.ModelNetDataLoader import ModelNetDataLoader
 from data_utils.KITTIDataLoader import KITTIDataLoader
 import argparse
-import numpy as np
 import os
 import torch
 import logging
 from tqdm import tqdm
-import sys
-import time
 import fps_utils
-
+import sampling
+import visualize
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 
 def parse_args():
     '''PARAMETERS'''
     parser = argparse.ArgumentParser('Farthest point sampling metrics')
     parser.add_argument('--num_sampling', type=str, default='256', help='sample Number [default: 256]')
     parser.add_argument('--num_testcase', type=int, default=-1, help='testcase Number [default: -1(All dataset)]')
-    parser.add_argument('--solution', type=int, default=1, help='solution [1:fps,default,2:random]')
-    parser.add_argument('--radiu', type=float, default=0.01, help='point cover radiu [default: 0.01')
-    parser.add_argument('--batch_size', type=int, default=1, help='batch_size [default: 1')
-    parser.add_argument('--dataset', type=str, default='modelnet40', help='point cloud dataset [default: modelnet40],[option:modelnet40,KITTI]')
-    parser.add_argument('--metrics', type=str, default='cover', help='metrics list [default: cover], [option: cover,distance]')
+    parser.add_argument('--solution', type=int, default=1, help='solution [1:fps,default,2:random,3:mult, 4:mult_batch]')
+    parser.add_argument('--radiu', type=float, default=0.05, help='point cover radiu [default: 0.05')
+    parser.add_argument('--batch_size', type=int, default=2, help='batch_size [default: 2')
+    parser.add_argument('--dataset', type=str, default='modelnet40',
+                        help='point cloud dataset [default: modelnet40],[option:modelnet40,KITTI]')
+    parser.add_argument('--metrics', type=str, default='cover',
+                        help='metrics list [default: cover], [option: cover,distance]')
     return parser.parse_args()
 
 
@@ -41,13 +42,12 @@ def main(args):
     logger = logging.getLogger("Model")
     logger.setLevel(logging.INFO)
     formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-    file_handler = logging.FileHandler('%s/%s_eval.txt' % (experiment_dir,args.dataset))
+    file_handler = logging.FileHandler('%s/%s_eval.txt' % (experiment_dir, args.dataset))
     file_handler.setLevel(logging.INFO)
     file_handler.setFormatter(formatter)
     logger.addHandler(file_handler)
     log_string('PARAMETER ...')
     log_string(args)
-    log_string('Load dataset ...')
     sampling_str_list = args.num_sampling.split(',')
     sample_list = []
     for sampling_str in sampling_str_list:
@@ -67,10 +67,10 @@ def main(args):
         # sample_list = [32,64,128,256]
     elif args.dataset == 'KITTI':
         data_path = BASE_DIR + '/..' + '/data/kitti/'
-        test_dataset = KITTIDataLoader(root=data_path,  split='testing', item_size=min(args.num_testcase, 256))
+        test_dataset = KITTIDataLoader(root=data_path, split='testing', item_size=min(args.num_testcase, 256))
         # sample_list = [2048, 4096, 8192, 16384]
     test_data_loader = torch.utils.data.DataLoader(test_dataset, batch_size=args.batch_size, shuffle=False,
-                                                    num_workers=4)
+                                                   num_workers=4)
     device = torch.device("cuda")
 
     for num_sampling in sample_list:
@@ -85,21 +85,30 @@ def main(args):
                 points = points.to(device)
                 points = points[:, :3, :]
                 points = points.permute(0, 2, 1).contiguous()
-                if args.solution == 1: #fps
-                    idx = fps_utils.farthest_point_sample(points, num_sampling)
-                elif args.solution == 2: #random
-                    idx = fps_utils.rand_sample(points.shape, num_sampling)
-
+                if args.solution == 1:  # fps
+                    idx = sampling.farthest_point_sample(points, num_sampling)
+                    sample_points = fps_utils.index_points(points, idx)
+                elif args.solution == 2:  # random
+                    idx = sampling.rand_sample(points.shape, num_sampling)
+                    sample_points = fps_utils.index_points(points, idx)
+                elif args.solution == 3:  # mult-kdtree random
+                    sample_points = sampling.mult_farthest_point_sample(points, num_sampling)
+                elif args.solution == 4:  # mult-kdtree batch
+                    sample_points = sampling.mult_batch_farthest_point_sample(points, num_sampling, 2)
                 if 'cover' in metric_list:
-                    cover_rate, cover_sum_rate = fps_utils.point_cover_metrics(points, idx, args.radiu)
+                    cover_rate, cover_sum_rate = fps_utils.point_cover_metrics(points, sample_points, args.radiu)
                     cover_total_rate = cover_total_rate + cover_rate
                     cover_total_sum_rate = cover_total_sum_rate + cover_sum_rate
                 if 'distance' in metric_list:
-                    distance_rate = fps_utils.point_distance_metric(points, idx)
+                    distance_rate = fps_utils.point_distance_metric(points, sample_points)
                     distance_total_rate = distance_total_rate + distance_rate
 
-        rate, sum_rate, distance_rate = torch.mean(cover_total_rate), torch.mean(cover_total_sum_rate), torch.mean(distance_total_rate)
-        print(rate / len(test_data_loader), sum_rate / len(test_data_loader), distance_rate / len(test_data_loader))
+        rate, sum_rate, distance_rate = torch.mean(cover_total_rate), torch.mean(cover_total_sum_rate), torch.mean(
+            distance_total_rate)
+        log_string("cover:%f, sum_cover:%f,distance:%f" % ((rate / len(test_data_loader)).item(),
+                                                      (sum_rate / len(test_data_loader)).item(),
+                                                      (distance_rate / len(test_data_loader)).item()))
+        log_string("finish")
 
 
 if __name__ == '__main__':
