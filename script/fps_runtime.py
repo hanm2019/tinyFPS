@@ -16,7 +16,6 @@ def parse_args():
     '''PARAMETERS'''
     parser = argparse.ArgumentParser('Farthest point sampling ')
     parser.add_argument('--num_point', type=int, default=1024, help='ModelNet40 Point Number [default: 1024]')
-    parser.add_argument('--num_sampling', type=int, default=256, help='sample Number [default: 256]')
     parser.add_argument('--num_testcase', type=int, default=-1, help='testcase Number [default: -1(All dataset)]')
     parser.add_argument('--gpu',type=int, default=1, help='GPU [default: 1]')
     parser.add_argument('--dataset', type=str, default='modelnet40', help='point cloud dataset [default: modelnet40],[option:modelnet40,KITTI]')
@@ -53,8 +52,12 @@ def main(args):
         sample_list = [32,64,128,256]
     elif args.dataset == 'KITTI':
         data_path = BASE_DIR + '/..' + '/data/kitti/'
-        test_dataset = KITTIDataLoader(root=data_path,  split='testing',item_size = args.num_testcase)
-        sample_list = [512, 1024 , 2048, 4096 ]
+        if args.num_testcase == -1:
+            item_size = 256
+        else:
+            item_size = args.num_testcase
+        test_dataset = KITTIDataLoader(root=data_path,  split='testing',item_size = item_size)
+        sample_list = [512, 1024, 2048, 4096]
     test_data_loader = torch.utils.data.DataLoader(test_dataset, batch_size=1, shuffle=False,
                                                     num_workers=4)
     device = torch.device("cuda")

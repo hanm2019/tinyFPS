@@ -17,13 +17,14 @@ def parse_args():
     parser = argparse.ArgumentParser('Farthest point sampling metrics')
     parser.add_argument('--num_sampling', type=str, default='256', help='sample Number [default: 256]')
     parser.add_argument('--num_testcase', type=int, default=-1, help='testcase Number [default: -1(All dataset)]')
-    parser.add_argument('--solution', type=int, default=1, help='solution [1:fps,default,2:random,3:mult, 4:mult_batch]')
+    parser.add_argument('--solution', type=int, default=1,
+                        help='solution [1:fps,default,2:random,3:mult, 4:mult_batch]')
     parser.add_argument('--radiu', type=float, default=0.05, help='point cover radiu [default: 0.05')
     parser.add_argument('--batch_size', type=int, default=2, help='batch_size [default: 2')
     parser.add_argument('--dataset', type=str, default='modelnet40',
                         help='point cloud dataset [default: modelnet40],[option:modelnet40,KITTI]')
     parser.add_argument('--metrics', type=str, default='cover',
-                        help='metrics list [default: cover], [option: cover,distance]')
+                        help='metrics list [default: cover], [option: cover,distance,minradiu]')
     return parser.parse_args()
 
 
@@ -55,7 +56,7 @@ def main(args):
 
     metric_str_list = args.metrics.split(',')
     metric_list = []
-    metric_base_list = ['cover', 'distance']
+    metric_base_list = ['cover', 'distance', 'minradiu']
     for metric_str in metric_str_list:
         if metric_str in metric_base_list:
             metric_list.append(metric_str)
@@ -64,11 +65,17 @@ def main(args):
         data_path = BASE_DIR + '/..' + '/data/modelnet40/modelnet40_normal_resampled/'
         test_dataset = ModelNetDataLoader(root=data_path, npoint=1024, split='test',
                                           normal_channel=True, item_size=args.num_testcase)
-        # sample_list = [32,64,128,256]
+        min_radiu = 0.1
+        max_radiu = 1.0
     elif args.dataset == 'KITTI':
         data_path = BASE_DIR + '/..' + '/data/kitti/'
-        test_dataset = KITTIDataLoader(root=data_path, split='testing', item_size=min(args.num_testcase, 256))
-        # sample_list = [2048, 4096, 8192, 16384]
+        if args.num_testcase == -1:
+            item_size = 256
+        else:
+            item_size = args.num_testcase
+        test_dataset = KITTIDataLoader(root=data_path, split='testing', item_size=item_size)
+        min_radiu = 0.5
+        max_radiu = 4.0
     test_data_loader = torch.utils.data.DataLoader(test_dataset, batch_size=args.batch_size, shuffle=False,
                                                    num_workers=4)
     device = torch.device("cuda")
@@ -77,6 +84,7 @@ def main(args):
         cover_total_rate = torch.zeros((args.batch_size, 1)).to('cuda')
         cover_total_sum_rate = torch.zeros((args.batch_size, 1)).to('cuda')
         distance_total_rate = torch.zeros((args.batch_size, 1)).to('cuda')
+        min_radiu_total = torch.zeros((args.batch_size, 1)).to('cuda')
 
         with torch.no_grad():
             for j, data in tqdm(enumerate(test_data_loader), total=len(test_data_loader)):
@@ -94,7 +102,7 @@ def main(args):
                 elif args.solution == 3:  # mult-kdtree random
                     sample_points = sampling.mult_farthest_point_sample(points, num_sampling)
                 elif args.solution == 4:  # mult-kdtree batch
-                    sample_points = sampling.mult_batch_farthest_point_sample(points, num_sampling, 2)
+                    sample_points = sampling.mult_batch_farthest_point_sample(points, num_sampling, 4)
                 if 'cover' in metric_list:
                     cover_rate, cover_sum_rate = fps_utils.point_cover_metrics(points, sample_points, args.radiu)
                     cover_total_rate = cover_total_rate + cover_rate
@@ -102,13 +110,20 @@ def main(args):
                 if 'distance' in metric_list:
                     distance_rate = fps_utils.point_distance_metric(points, sample_points)
                     distance_total_rate = distance_total_rate + distance_rate
-
-        rate, sum_rate, distance_rate = torch.mean(cover_total_rate), torch.mean(cover_total_sum_rate), torch.mean(
-            distance_total_rate)
-        log_string("[sample:%d, radiu:%f, solution:%d] cover:%f, sum_cover:%f,distance:%f" % (num_sampling, args.radiu, args.solution, (rate / len(test_data_loader)).item(),
-                                                      (sum_rate / len(test_data_loader)).item(),
-                                                      (distance_rate / len(test_data_loader)).item()))
+                if 'minradiu' in metric_list:
+                    min_radiu_metric = fps_utils.point_min_radiu_cover_metrics(points, sample_points, 0.95, min_radiu,
+                                                                               max_radiu)
+                    min_radiu_total = min_radiu_total + min_radiu_metric
+        rate, sum_rate, distance_rate, min_radiu_value = torch.mean(cover_total_rate), torch.mean(
+            cover_total_sum_rate), torch.mean(
+            distance_total_rate), torch.mean(min_radiu_total)
+        log_string("[sample:%d, radiu:%f, solution:%d] \ncover:%f\nsum_cover:%f\ndistance:%f\nmin_radiu:%f" % (
+            num_sampling, args.radiu, args.solution, (rate / len(test_data_loader)).item(),
+            (sum_rate / len(test_data_loader)).item(),
+            (distance_rate / len(test_data_loader)).item(),
+            (min_radiu_value / len(test_data_loader)).item()))
         log_string("finish")
+        torch.cuda.empty_cache()
 
 
 if __name__ == '__main__':

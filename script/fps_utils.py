@@ -123,6 +123,26 @@ def point_cover_metrics(xyz: torch.Tensor, sample_points: torch.Tensor, radiu: f
     return torch.true_divide(cover_num, N), torch.true_divide(cover_num_sum, N)
 
 
+def point_min_radiu_cover_metrics(xyz: torch.Tensor, sample_points: torch.Tensor, threshold: float, min_radiu: float, max_radiu: float):
+    B, N, _ = xyz.shape
+    # find the min radiu,where cover > threshold
+    result1 =torch.zeros((B, 1)).to("cuda")
+    for b in range(B):
+        left_radiu = min_radiu
+        right_radiu = max_radiu
+        while True:
+            radiu = (right_radiu + left_radiu) / 2
+            cover_num = torch.true_divide(point_cover(radiu, xyz[b].unsqueeze(0), sample_points[b].unsqueeze(0)), N).item()
+            if cover_num > threshold:
+                right_radiu = radiu
+            else:
+                left_radiu = radiu
+            if abs(right_radiu - left_radiu) < 0.01:
+                break
+        result1[b] = left_radiu
+    return result1
+
+
 def point_distance_metric(xyz, sample_points):
     return torch.true_divide(
         torch.sum(torch.sum(square_distance(sample_points, sample_points), dim=1), dim=1),
