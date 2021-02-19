@@ -8,7 +8,7 @@ import logging
 from tqdm import tqdm
 import sys
 import time
-from fps_utils import farthest_point_sample, cpu_farthest_point_sample
+from sampling import farthest_point_sample, cpu_farthest_point_sample
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -54,7 +54,7 @@ def main(args):
     elif args.dataset == 'KITTI':
         data_path = BASE_DIR + '/..' + '/data/kitti/'
         test_dataset = KITTIDataLoader(root=data_path,  split='testing',item_size = args.num_testcase)
-        sample_list = [2048, 4096, 8192, 16384]
+        sample_list = [512, 1024 , 2048, 4096 ]
     test_data_loader = torch.utils.data.DataLoader(test_dataset, batch_size=1, shuffle=False,
                                                     num_workers=4)
     device = torch.device("cuda")

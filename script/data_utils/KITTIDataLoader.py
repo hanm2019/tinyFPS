@@ -32,10 +32,10 @@ class KITTIDataLoader(Dataset):
             index_str = ("%06d.bin") % index
             fn = self.root + index_str
             point_set = np.fromfile(fn, dtype=np.float32).reshape(-1,4)
-            point_set= point_set[:,:3].reshape(-1)
+            point_set= point_set[:,:3]
             #mal the point_set
-            point_set = (point_set - point_set.min()) / (point_set.max() - point_set.min())
-            point_set = point_set.reshape(-1,3)
+            #point_set = (point_set - point_set.min()) / (point_set.max() - point_set.min())
+            #point_set = point_set.reshape(-1,3)
             cls = np.array([1,1,1,1]).astype(np.int32)
             if len(self.cache) < self.cache_size:
                 self.cache[index] = (point_set,cls)

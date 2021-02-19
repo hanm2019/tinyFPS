@@ -105,7 +105,7 @@ def main(args):
 
         rate, sum_rate, distance_rate = torch.mean(cover_total_rate), torch.mean(cover_total_sum_rate), torch.mean(
             distance_total_rate)
-        log_string("cover:%f, sum_cover:%f,distance:%f" % ((rate / len(test_data_loader)).item(),
+        log_string("[sample:%d, radiu:%f, solution:%d] cover:%f, sum_cover:%f,distance:%f" % (num_sampling, args.radiu, args.solution, (rate / len(test_data_loader)).item(),
                                                       (sum_rate / len(test_data_loader)).item(),
                                                       (distance_rate / len(test_data_loader)).item()))
         log_string("finish")
