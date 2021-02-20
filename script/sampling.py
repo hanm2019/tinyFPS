@@ -60,7 +60,7 @@ def cpu_farthest_point_sample(xyz: np.array, npoint: int):
     return centroids
 
 
-def mult_farthest_point_sample(xyz: torch.Tensor, npoint: int):
+def mult_kdt_random(xyz: torch.Tensor, npoint: int):
     B, _, D = xyz.shape
     approximate_tree = approximate_kdtree.approximate_kdtree(xyz, np.ceil(np.log2(npoint)))
     tree, cm, size = approximate_tree.make_approximate_kdtree()
@@ -75,7 +75,7 @@ def mult_farthest_point_sample(xyz: torch.Tensor, npoint: int):
     return sample_points
 
 
-def mult_batch_farthest_point_sample(xyz: torch.Tensor, npoint: int, batch: int):
+def mult_kdt_batch_fps(xyz: torch.Tensor, npoint: int, batch: int):
     B, _, D = xyz.shape
     approximate_tree = approximate_kdtree.approximate_kdtree(xyz, np.ceil(np.log2(npoint / batch)))
     tree, cm, size = approximate_tree.make_approximate_kdtree()
@@ -104,4 +104,20 @@ def mult_batch_farthest_point_sample(xyz: torch.Tensor, npoint: int, batch: int)
                     bucket_point_idx = fps_utils.farthest_square_distance_index(P, S[j, :, :])
                     sample_points[j, already_sample + i, :] = P[bucket_point_idx, :]
             already_sample = already_sample + frame_size
+    return sample_points
+
+
+def mult_kdt_fps_cm(xyz: torch.Tensor, npoint: int, batch: int):
+    B, _, D = xyz.shape
+    approximate_tree = approximate_kdtree.approximate_kdtree(xyz, np.ceil(np.log2(npoint * batch)))
+    tree, cm, size = approximate_tree.make_approximate_kdtree()
+    bucket_idxs = farthest_point_sample(cm, npoint)
+    sample_points = torch.zeros((B, npoint, D), dtype=torch.float).to("cuda")
+    for batch_idx in range(B):
+        for i, bucket_idx in enumerate(bucket_idxs[batch_idx]):
+            bucket_size = int(size[batch_idx][bucket_idx].item())
+            cm_point = cm[batch_idx][bucket_idx].reshape(1,1,D)
+            bucket_points = tree[batch_idx, bucket_idx, :bucket_size, :].reshape(1, -1, D)
+            bucket_cm_point_index = torch.min(fps_utils.square_distance(cm_point, bucket_points), -1)[1]
+            sample_points[batch_idx, i, :] = tree[batch_idx, bucket_idx, bucket_cm_point_index, :]
     return sample_points

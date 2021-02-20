@@ -67,6 +67,7 @@ def main(args):
                                           normal_channel=True, item_size=args.num_testcase)
         min_radiu = 0.1
         max_radiu = 1.0
+        mult_kdtree_batch = 4
     elif args.dataset == 'KITTI':
         data_path = BASE_DIR + '/..' + '/data/kitti/'
         if args.num_testcase == -1:
@@ -76,6 +77,7 @@ def main(args):
         test_dataset = KITTIDataLoader(root=data_path, split='testing', item_size=item_size)
         min_radiu = 0.5
         max_radiu = 4.0
+        mult_kdtree_batch = 16
     test_data_loader = torch.utils.data.DataLoader(test_dataset, batch_size=args.batch_size, shuffle=False,
                                                    num_workers=4)
     device = torch.device("cuda")
@@ -100,9 +102,11 @@ def main(args):
                     idx = sampling.rand_sample(points.shape, num_sampling)
                     sample_points = fps_utils.index_points(points, idx)
                 elif args.solution == 3:  # mult-kdtree random
-                    sample_points = sampling.mult_farthest_point_sample(points, num_sampling)
+                    sample_points = sampling.mult_kdt_random(points, num_sampling)
                 elif args.solution == 4:  # mult-kdtree batch
-                    sample_points = sampling.mult_batch_farthest_point_sample(points, num_sampling, 4)
+                    sample_points = sampling.mult_kdt_batch_fps(points, num_sampling, mult_kdtree_batch)
+                elif args.solution == 5:  # mult-kdtree fps_cm
+                    sample_points = sampling.mult_kdt_fps_cm(points, num_sampling, mult_kdtree_batch)
                 if 'cover' in metric_list:
                     cover_rate, cover_sum_rate = fps_utils.point_cover_metrics(points, sample_points, args.radiu)
                     cover_total_rate = cover_total_rate + cover_rate
