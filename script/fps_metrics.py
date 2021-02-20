@@ -18,7 +18,7 @@ def parse_args():
     parser.add_argument('--num_sampling', type=str, default='256', help='sample Number [default: 256]')
     parser.add_argument('--num_testcase', type=int, default=-1, help='testcase Number [default: -1(All dataset)]')
     parser.add_argument('--solution', type=int, default=1,
-                        help='solution [1:fps,default,2:random,3:mult, 4:mult_batch]')
+                        help='solution [1:fps,default,2:random,3:k_random, 4:k/m_batch, 5:k*m_fps_cm, 6: k_batch]')
     parser.add_argument('--radiu', type=float, default=0.05, help='point cover radiu [default: 0.05')
     parser.add_argument('--batch_size', type=int, default=2, help='batch_size [default: 2')
     parser.add_argument('--dataset', type=str, default='modelnet40',
@@ -103,12 +103,14 @@ def main(args):
                 elif args.solution == 2:  # random
                     idx = sampling.rand_sample(points.shape, num_sampling)
                     sample_points = fps_utils.index_points(points, idx)
-                elif args.solution == 3:  # mult-kdtree random
-                    sample_points = sampling.mult_kdt_random(points, num_sampling)
-                elif args.solution == 4:  # mult-kdtree batch
-                    sample_points = sampling.mult_kdt_batch_fps(points, num_sampling, mult_kdtree_batch)
-                elif args.solution == 5:  # mult-kdtree fps_cm
-                    sample_points = sampling.mult_kdt_fps_cm(points, num_sampling, mult_kdtree_batch2)
+                elif args.solution == 3:  # k random
+                    sample_points = sampling.kdt_random(points, num_sampling)
+                elif args.solution == 4:  # k/m batch
+                    sample_points = sampling.kdt_m_batch_fps(points, num_sampling, mult_kdtree_batch)
+                elif args.solution == 5:  # k*m fps_cm
+                    sample_points = sampling.m_kdt_fps_cm(points, num_sampling, mult_kdtree_batch2)
+                elif args.solution == 6:  # k batch
+                    sample_points = sampling.kdt_batch_fps(points, num_sampling)
                 if 'cover' in metric_list:
                     cover_rate, cover_sum_rate = fps_utils.point_cover_metrics(points, sample_points, args.radiu)
                     cover_total_rate = cover_total_rate + cover_rate

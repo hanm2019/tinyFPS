@@ -1,6 +1,8 @@
 import random
 import torch
 from time import time
+import numpy as np
+from numpy.core._multiarray_umath import ndarray
 
 
 def timeit(tag, t):
@@ -79,6 +81,28 @@ def farthest_square_distance_index(src, dst):
     s = torch.max(torch.min(dist, -1)[0], -1)[1]
     return s
 
+def farthest_square_distance_index_batch(src, dst):
+    """
+    Calculate Euclid distance between each two points.
+    src^T * dst = xn * xm + yn * ym + zn * zm；
+    sum(src^2, dim=-1) = xn*xn + yn*yn + zn*zn;
+    sum(dst^2, dim=-1) = xm*xm + ym*ym + zm*zm;
+    dist = (xn - xm)^2 + (yn - ym)^2 + (zn - zm)^2
+         = sum(src**2,dim=-1)+sum(dst**2,dim=-1)-2*src^T*dst
+    Input:
+        src: source points, [B, N, C]
+        dst: target points, [B, M, C]
+    Output:
+        dist: sum square distance, [B, 1]
+    """
+    B, N, _ = src.shape
+    _ , M, _ = dst.shape
+    dist = -2 * torch.matmul(src, dst.permute(0, 2, 1))
+    dist += torch.sum(src ** 2, -1).view(B, N, 1)
+    dist += torch.sum(dst ** 2, -1).view(B, 1, M)
+    s = torch.max(torch.min(dist, -1)[0], -1)[1]
+    return s
+
 
 def point_cover(radius, xyz, new_xyz):
     """
@@ -148,3 +172,31 @@ def point_distance_metric(xyz, sample_points):
         torch.sum(torch.sum(square_distance(sample_points, sample_points), dim=1), dim=1),
         torch.sum(torch.sum(square_distance(sample_points, xyz), dim=1), dim=1))
 
+def batch_travel_order(npoint):
+    order = np.zeros(npoint, dtype=np.int)
+    order[0] = 1
+    order[-1] = 2
+    batch_lists = []
+    for i in range(0, int(np.ceil(np.log2(npoint)) - 1)):
+        dt = pow(2, int(np.ceil(np.log2(npoint)) - 2 - i))
+        new_order: ndarray = np.copy(order)
+        for ptr in range(npoint):
+            if order[ptr] != 0:
+                if ptr + dt < npoint:
+                    new_order[ptr + dt] = i + 3
+                if ptr - dt > 0:
+                    new_order[ptr - dt] = i + 3
+        order = new_order
+    for i in range(int(np.ceil(np.log2(npoint))) + 1):
+        batch_list = []
+        for j, order_item in enumerate(order):
+            if order_item == i + 1:
+                batch_list.append(j)
+        batch_lists.append(batch_list)
+    return order, batch_lists
+
+
+if __name__=="__main__":
+    order, lists = batch_travel_order(32)
+    print("order:", order)
+    print("lists:", lists)

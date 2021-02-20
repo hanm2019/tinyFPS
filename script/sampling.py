@@ -60,7 +60,7 @@ def cpu_farthest_point_sample(xyz: np.array, npoint: int):
     return centroids
 
 
-def mult_kdt_random(xyz: torch.Tensor, npoint: int):
+def kdt_random(xyz: torch.Tensor, npoint: int):
     B, _, D = xyz.shape
     approximate_tree = approximate_kdtree.approximate_kdtree(xyz, np.ceil(np.log2(npoint)))
     tree, cm, size = approximate_tree.make_approximate_kdtree()
@@ -75,7 +75,7 @@ def mult_kdt_random(xyz: torch.Tensor, npoint: int):
     return sample_points
 
 
-def mult_kdt_batch_fps(xyz: torch.Tensor, npoint: int, batch: int):
+def kdt_m_batch_fps(xyz: torch.Tensor, npoint: int, batch: int):
     B, _, D = xyz.shape
     approximate_tree = approximate_kdtree.approximate_kdtree(xyz, np.ceil(np.log2(npoint / batch)))
     tree, cm, size = approximate_tree.make_approximate_kdtree()
@@ -107,7 +107,7 @@ def mult_kdt_batch_fps(xyz: torch.Tensor, npoint: int, batch: int):
     return sample_points
 
 
-def mult_kdt_fps_cm(xyz: torch.Tensor, npoint: int, batch: int):
+def m_kdt_fps_cm(xyz: torch.Tensor, npoint: int, batch: int):
     B, _, D = xyz.shape
     approximate_tree = approximate_kdtree.approximate_kdtree(xyz, np.ceil(np.log2(npoint * batch)))
     tree, cm, size = approximate_tree.make_approximate_kdtree()
@@ -120,4 +120,29 @@ def mult_kdt_fps_cm(xyz: torch.Tensor, npoint: int, batch: int):
             bucket_points = tree[batch_idx, bucket_idx, :bucket_size, :].reshape(1, -1, D)
             bucket_cm_point_index = torch.min(fps_utils.square_distance(cm_point, bucket_points), -1)[1]
             sample_points[batch_idx, i, :] = tree[batch_idx, bucket_idx, bucket_cm_point_index, :]
+    return sample_points
+
+
+def kdt_batch_fps(xyz: torch.Tensor, npoint: int):
+    B, _, D = xyz.shape
+    approximate_tree = approximate_kdtree.approximate_kdtree(xyz, np.ceil(np.log2(npoint)))
+    tree, cm, size = approximate_tree.make_approximate_kdtree()
+    sample_points = torch.zeros((B, npoint, D), dtype=torch.float).to("cuda")
+    order, batch_lists = fps_utils.batch_travel_order(pow(2, int(np.ceil(np.log2(npoint)))))
+    random_high = int(torch.min(size[:, npoint - 1], 0)[0])
+    sample_points[:, 0, :] = tree[:, npoint - 1, np.random.randint(0, random_high), :]
+    already_sample = 1
+    for i, batch_list in enumerate(batch_lists):
+        S = sample_points[:, :already_sample, :]
+        for batch_idx in batch_list:
+            bucket_size = int(torch.min(size, 0)[0][batch_idx])
+            P = tree[:, batch_idx, :bucket_size, :].reshape(B, -1, D)
+            bucket_point_idx = fps_utils.farthest_square_distance_index_batch(P, S).reshape(B,-1)
+            if i == 0:
+                sample_points[:, 0, :] = fps_utils.index_points(P, bucket_point_idx)[:, 0, :]
+            else:
+                sample_points[:, already_sample, :] = fps_utils.index_points(P, bucket_point_idx)[:, 0, :]
+                already_sample = already_sample + 1
+            if already_sample == npoint:
+                break
     return sample_points
