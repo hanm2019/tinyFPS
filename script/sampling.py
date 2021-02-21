@@ -154,8 +154,8 @@ def kdt_m_batch_log_fps(xyz: torch.Tensor, npoint: int, batch: int, dim=False):
     tree, cm, size = approximate_tree.make_approximate_kdtree()
     sample_points = torch.zeros((B, npoint, D), dtype=torch.float).to("cuda")
     order, batch_lists = fps_utils.batch_travel_order(pow(2, int(np.ceil(np.log2(npoint / batch)))))
-    random_high = int(torch.min(size[:, npoint - 1], 0)[0])
-    sample_points[:, 0, :] = tree[:, npoint - 1, np.random.randint(0, random_high), :]
+    random_high = int(torch.min(size[:, npoint / batch - 1], 0)[0])
+    sample_points[:, 0, :] = tree[:, npoint / batch - 1, np.random.randint(0, random_high), :]
     already_sample = 1
     for b in range(batch):
         for i, batch_list in enumerate(batch_lists):
