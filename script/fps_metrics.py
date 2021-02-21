@@ -111,6 +111,8 @@ def main(args):
                     sample_points = sampling.m_kdt_fps_cm(points, num_sampling, mult_kdtree_batch2)
                 elif args.solution == 6:  # k batch
                     sample_points = sampling.kdt_batch_fps(points, num_sampling)
+                elif args.solution == 7:  # k batch dim
+                    sample_points = sampling.kdt_batch_fps(points, num_sampling, dim=True)
                 if 'cover' in metric_list:
                     cover_rate, cover_sum_rate = fps_utils.point_cover_metrics(points, sample_points, args.radiu)
                     cover_total_rate = cover_total_rate + cover_rate

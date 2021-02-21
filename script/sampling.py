@@ -123,9 +123,9 @@ def m_kdt_fps_cm(xyz: torch.Tensor, npoint: int, batch: int):
     return sample_points
 
 
-def kdt_batch_fps(xyz: torch.Tensor, npoint: int):
+def kdt_batch_fps(xyz: torch.Tensor, npoint: int, dim=False):
     B, _, D = xyz.shape
-    approximate_tree = approximate_kdtree.approximate_kdtree(xyz, np.ceil(np.log2(npoint)))
+    approximate_tree = approximate_kdtree.approximate_kdtree(xyz, np.ceil(np.log2(npoint)), dim)
     tree, cm, size = approximate_tree.make_approximate_kdtree()
     sample_points = torch.zeros((B, npoint, D), dtype=torch.float).to("cuda")
     order, batch_lists = fps_utils.batch_travel_order(pow(2, int(np.ceil(np.log2(npoint)))))
