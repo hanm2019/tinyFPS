@@ -142,7 +142,7 @@ def main(args):
         if 'distance' in metric_list:
             log_string("\tdistance:%f" % ((torch.mean(distance_total_rate) / len(test_data_loader)).item()))
         if 'minradiu' in metric_list:
-            log_string("\tdistance:%f" % ((torch.mean(min_radiu_total) / len(test_data_loader)).item()))
+            log_string("\tminradiu:%f" % ((torch.mean(min_radiu_total) / len(test_data_loader)).item()))
         if args.solution == 10:
             log_string("\tbatch_count:%f" % ((batch_count_total / len(test_data_loader) / args.batch_size)))
         log_string("finish")
