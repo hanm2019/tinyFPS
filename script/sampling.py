@@ -174,7 +174,7 @@ def kdt_m_batch_log_fps(xyz: torch.Tensor, npoint: int, batch: int, dim=False):
     return sample_points
 
 
-def kdt_m_batch_mean_fps(xyz: torch.Tensor, npoint: int, batch: int, dim=False, random=False):
+def kdt_m_batch_mean_fps(xyz: torch.Tensor, npoint: int, batch: int, dim=False, random=False, random_divide = 1):
     B, _, D = xyz.shape
     approximate_kdtree_high = int(np.ceil(np.log2(npoint / batch)))
     bucket_size = int(pow(2, approximate_kdtree_high))
@@ -187,12 +187,13 @@ def kdt_m_batch_mean_fps(xyz: torch.Tensor, npoint: int, batch: int, dim=False, 
         b_idx = farthest_point_sample(xyz, bucket_size)
         sample_points[:, :bucket_size, :] = fps_utils.index_points(xyz, b_idx)
     else:
+        bucket_list = rand_sample((1, bucket_size, D), int(bucket_size / random_divide))
         for b in range(B):
-            for i in range(bucket_size):
+            for i in bucket_list[0]:
                 sample_points[b, i, :] = tree[b, i, int(np.random.randint(0, int(size[b, i].cpu()[0]))), :]
     batch_count = 0
     for b in range(B):
-        already_sample = bucket_size
+        already_sample = int(bucket_size / random_divide)
         while already_sample != npoint:
             S = sample_points[b, :already_sample, :].reshape(1, -1, D)
             for i in range(bucket_size):
