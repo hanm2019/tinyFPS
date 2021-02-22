@@ -174,7 +174,7 @@ def kdt_m_batch_log_fps(xyz: torch.Tensor, npoint: int, batch: int, dim=False):
     return sample_points
 
 
-def kdt_m_batch_min_fps(xyz: torch.Tensor, npoint: int, batch: int, dim=False):
+def kdt_m_batch_min_fps(xyz: torch.Tensor, npoint: int, batch: int, dim=False, random=False):
     B, _, D = xyz.shape
     approximate_kdtree_high = int(np.ceil(np.log2(npoint / batch)))
     bucket_size = int(pow(2, approximate_kdtree_high))
@@ -183,37 +183,34 @@ def kdt_m_batch_min_fps(xyz: torch.Tensor, npoint: int, batch: int, dim=False):
     sample_points = torch.zeros((B, npoint, D), dtype=torch.float).to("cuda")
     min_bucket_distance = np.ones((B, bucket_size))*1e10
     min_distance = np.min(min_bucket_distance, axis=1)
-    b_idx = farthest_point_sample(xyz, bucket_size)
-    sample_points[:, :bucket_size, :] = fps_utils.index_points(xyz, b_idx)
+    if not random:
+        b_idx = farthest_point_sample(xyz, bucket_size)
+        sample_points[:, :bucket_size, :] = fps_utils.index_points(xyz, b_idx)
+    else:
+        for b in range(B):
+            for i in range(bucket_size):
+                sample_points[b, i, :] = tree[b, i, int(np.random.randint(0, size[b, i])), :]
     batch_count = 0
     for b in range(B):
         already_sample = bucket_size
         while already_sample != npoint:
-            if already_sample == 0:  # random select bucket_size point
-                # for i in range(bucket_size):
-                #     sample_points[b, i, :] = tree[b, i, int(np.random.randint(0, size[b, i])), :]
-                #     P = tree[b, i, :size[b, i], :].reshape(1, -1 ,D)
-                #     min_bucket_distance[b][i] = torch.max(torch.min(fps_utils.square_distance(P, sample_points[b, i, :].reshape(1, 1, D)), -1)[0])[0]
-                #     already_sample = already_sample + 1
-                print("random")
-            else:
-                S = sample_points[b, :already_sample, :].reshape(1, -1, D)
-                for i in range(bucket_size):
-                    P = tree[b, i, :int(size[b, i]), :].reshape(1, -1, D)
-                    min_dist = torch.min(fps_utils.square_distance(P, S), -1)[0]
-                    max_min_dist, max_min_dist_idx = torch.max(min_dist, -1)
-                    max_min_dist = max_min_dist.reshape(1).cpu().numpy()
-                    max_min_dist_idx = max_min_dist_idx.reshape(1)
-                    if max_min_dist > min_distance[b]:
-                        point = P[0, max_min_dist_idx, :]
-                        sample_points[b, already_sample, :] = point
-                        already_sample = already_sample + 1
-                        if already_sample == npoint:
-                            break
-                        point_dist = fps_utils.square_distance(P, point.reshape(1,1,D)).reshape(1, -1)
-                        min_bucket_distance[b][i] = torch.max(torch.min(min_dist, point_dist), -1)[0]
-                    else:
-                        min_bucket_distance[b][i] = min(min_bucket_distance[b][i], max_min_dist)
+            S = sample_points[b, :already_sample, :].reshape(1, -1, D)
+            for i in range(bucket_size):
+                P = tree[b, i, :int(size[b, i]), :].reshape(1, -1, D)
+                min_dist = torch.min(fps_utils.square_distance(P, S), -1)[0]
+                max_min_dist, max_min_dist_idx = torch.max(min_dist, -1)
+                max_min_dist = max_min_dist.reshape(1).cpu().numpy()
+                max_min_dist_idx = max_min_dist_idx.reshape(1)
+                if max_min_dist > min_distance[b]:
+                    point = P[0, max_min_dist_idx, :]
+                    sample_points[b, already_sample, :] = point
+                    already_sample = already_sample + 1
+                    if already_sample == npoint:
+                        break
+                    point_dist = fps_utils.square_distance(P, point.reshape(1,1,D)).reshape(1, -1)
+                    min_bucket_distance[b][i] = torch.max(torch.min(min_dist, point_dist), -1)[0]
+                else:
+                    min_bucket_distance[b][i] = min(min_bucket_distance[b][i], max_min_dist)
             min_distance = np.mean(min_bucket_distance, axis=1)
             batch_count = batch_count + 1
     return sample_points, batch_count

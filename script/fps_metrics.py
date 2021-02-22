@@ -118,8 +118,11 @@ def main(args):
                     sample_points = sampling.kdt_m_batch_log_fps(points, num_sampling, mult_kdtree_batch)
                 elif args.solution == 9:  # k/m batch log dim
                     sample_points = sampling.kdt_m_batch_log_fps(points, num_sampling, mult_kdtree_batch, dim=True)
-                elif args.solution == 10:  # k/m batch min
+                elif args.solution == 10:  # fps_k/m batch mean
                     sample_points, batch_count = sampling.kdt_m_batch_min_fps(points, num_sampling, mult_kdtree_batch, dim=False)
+                    batch_count_total =  batch_count_total + batch_count
+                elif args.solution == 11:  # random k/m batch mean
+                    sample_points, batch_count = sampling.kdt_m_batch_min_fps(points, num_sampling, mult_kdtree_batch, dim=False, random=True)
                     batch_count_total =  batch_count_total + batch_count
                 if 'cover' in metric_list:
                     for i, radiu in enumerate(radiu_list):
@@ -143,7 +146,7 @@ def main(args):
             log_string("\tdistance:%f" % ((torch.mean(distance_total_rate) / len(test_data_loader)).item()))
         if 'minradiu' in metric_list:
             log_string("\tminradiu:%f" % ((torch.mean(min_radiu_total) / len(test_data_loader)).item()))
-        if args.solution == 10:
+        if args.solution in [10, 11]:
             log_string("\tbatch_count:%f" % ((batch_count_total / len(test_data_loader) / args.batch_size)))
         log_string("finish")
         torch.cuda.empty_cache()
