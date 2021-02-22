@@ -119,10 +119,10 @@ def main(args):
                 elif args.solution == 9:  # k/m batch log dim
                     sample_points = sampling.kdt_m_batch_log_fps(points, num_sampling, mult_kdtree_batch, dim=True)
                 elif args.solution == 10:  # fps_k/m batch mean
-                    sample_points, batch_count = sampling.kdt_m_batch_min_fps(points, num_sampling, mult_kdtree_batch, dim=False)
+                    sample_points, batch_count = sampling.kdt_m_batch_mean_fps(points, num_sampling, mult_kdtree_batch, dim=False)
                     batch_count_total =  batch_count_total + batch_count
                 elif args.solution == 11:  # random k/m batch mean
-                    sample_points, batch_count = sampling.kdt_m_batch_min_fps(points, num_sampling, mult_kdtree_batch, dim=False, random=True)
+                    sample_points, batch_count = sampling.kdt_m_batch_mean_fps(points, num_sampling, mult_kdtree_batch, dim=False, random=True)
                     batch_count_total =  batch_count_total + batch_count
                 if 'cover' in metric_list:
                     for i, radiu in enumerate(radiu_list):
