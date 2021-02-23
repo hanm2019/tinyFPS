@@ -209,7 +209,7 @@ def kdt_m_batch_mean_fps(xyz: torch.Tensor, npoint: int, batch: int, dim=False, 
                     if already_sample == npoint:
                         break
                     point_dist = fps_utils.square_distance(P, point.reshape(1,1,D)).reshape(1, -1)
-                    min_bucket_distance[b][i] = torch.max(torch.min(min_dist, point_dist), -1)[0]
+                    min_bucket_distance[b][i] = min(min_bucket_distance[b][i], torch.max(torch.min(min_dist, point_dist), -1)[0])
                 else:
                     min_bucket_distance[b][i] = min(min_bucket_distance[b][i], max_min_dist)
             min_distance = np.mean(min_bucket_distance, axis=1)
