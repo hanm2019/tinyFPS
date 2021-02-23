@@ -1,0 +1,1099 @@
+2021-02-19 11:49:01,283 - Model - INFO - PARAMETER ...
+2021-02-19 11:49:01,283 - Model - INFO - Namespace(batch_size=4, dataset='KITTI', metrics='cover', num_sampling='2048,4096,8192', num_testcase=-1, radiu=0.05, solution=1)
+2021-02-19 11:49:35,099 - Model - INFO - PARAMETER ...
+2021-02-19 11:49:35,099 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='2048,4096,8192', num_testcase=-1, radiu=0.05, solution=1)
+2021-02-19 11:54:28,968 - Model - INFO - cover:1.000000, sum_cover:106.578064,distance:0.000000
+2021-02-19 11:54:28,969 - Model - INFO - finish
+2021-02-19 13:44:40,312 - Model - INFO - PARAMETER ...
+2021-02-19 13:44:40,312 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='2048', num_testcase=-1, radiu=1.0, solution=1)
+2021-02-19 13:47:18,889 - Model - INFO - PARAMETER ...
+2021-02-19 13:47:18,889 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='2048', num_testcase=-1, radiu=1.0, solution=1)
+2021-02-19 13:49:04,610 - Model - INFO - PARAMETER ...
+2021-02-19 13:49:04,610 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='2048', num_testcase=-1, radiu=0.0067, solution=1)
+2021-02-19 13:50:53,089 - Model - INFO - PARAMETER ...
+2021-02-19 13:50:53,089 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='2048', num_testcase=-1, radiu=0.5, solution=1)
+2021-02-19 13:55:46,093 - Model - INFO - cover:0.498567, sum_cover:0.534662,distance:0.000000
+2021-02-19 13:55:46,093 - Model - INFO - finish
+2021-02-19 13:58:17,924 - Model - INFO - PARAMETER ...
+2021-02-19 13:58:17,924 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='4096', num_testcase=-1, radiu=0.5, solution=1)
+2021-02-19 13:59:02,373 - Model - INFO - PARAMETER ...
+2021-02-19 13:59:02,373 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='4096', num_testcase=128, radiu=0.5, solution=1)
+2021-02-19 14:02:55,403 - Model - INFO - PARAMETER ...
+2021-02-19 14:02:55,403 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024', num_testcase=-1, radiu=0.5, solution=1)
+2021-02-19 14:04:10,589 - Model - INFO - sample:512, radiu:0.500000, cover:0.092897, sum_cover:0.092897,distance:0.000000
+2021-02-19 14:04:10,590 - Model - INFO - finish
+2021-02-19 14:06:32,301 - Model - INFO - sample:1024, radiu:0.500000, cover:0.219537, sum_cover:0.219882,distance:0.000000
+2021-02-19 14:06:32,301 - Model - INFO - finish
+2021-02-19 14:11:31,297 - Model - INFO - PARAMETER ...
+2021-02-19 14:11:31,297 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=1.0, solution=1)
+2021-02-19 14:12:49,001 - Model - INFO - sample:512, radiu:1.000000, cover:0.332446, sum_cover:0.337483,distance:0.000000
+2021-02-19 14:12:49,001 - Model - INFO - finish
+2021-02-19 14:15:16,777 - Model - INFO - sample:1024, radiu:1.000000, cover:0.677045, sum_cover:0.828421,distance:0.000000
+2021-02-19 14:15:16,778 - Model - INFO - finish
+2021-02-19 14:20:04,783 - Model - INFO - sample:2048, radiu:1.000000, cover:0.956869, sum_cover:2.109563,distance:0.000000
+2021-02-19 14:20:04,783 - Model - INFO - finish
+2021-02-19 14:22:43,055 - Model - INFO - PARAMETER ...
+2021-02-19 14:22:43,055 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=1.0, solution=1)
+2021-02-19 14:24:00,022 - Model - INFO - [sample:512, radiu:1.000000, solution:1] cover:0.334207, sum_cover:0.339801,distance:0.000000
+2021-02-19 14:24:00,022 - Model - INFO - finish
+2021-02-19 14:24:51,440 - Model - INFO - PARAMETER ...
+2021-02-19 14:24:51,440 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=0.25, solution=1)
+2021-02-19 14:28:30,582 - Model - INFO - [sample:512, radiu:0.250000, solution:1] cover:0.028805, sum_cover:0.028805,distance:0.000000
+2021-02-19 14:28:30,582 - Model - INFO - finish
+2021-02-19 14:28:37,936 - Model - INFO - PARAMETER ...
+2021-02-19 14:28:37,936 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=2.0, solution=1)
+2021-02-19 14:29:05,328 - Model - INFO - [sample:1024, radiu:1.000000, solution:1] cover:0.676804, sum_cover:0.828089,distance:0.000000
+2021-02-19 14:29:05,328 - Model - INFO - finish
+2021-02-19 14:29:10,482 - Model - INFO - PARAMETER ...
+2021-02-19 14:29:10,483 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=2.0, solution=1)
+2021-02-19 14:32:07,707 - Model - INFO - [sample:512, radiu:2.000000, solution:1] cover:0.849629, sum_cover:1.340235,distance:0.000000
+2021-02-19 14:32:07,707 - Model - INFO - finish
+2021-02-19 14:32:48,310 - Model - INFO - [sample:512, radiu:2.000000, solution:1] cover:0.849816, sum_cover:1.340352,distance:0.000000
+2021-02-19 14:32:48,310 - Model - INFO - finish
+2021-02-19 14:39:16,882 - Model - INFO - [sample:1024, radiu:2.000000, solution:1] cover:0.994552, sum_cover:3.368379,distance:0.000000
+2021-02-19 14:39:16,882 - Model - INFO - finish
+2021-02-19 14:39:21,956 - Model - INFO - PARAMETER ...
+2021-02-19 14:39:21,957 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=0.5, solution=2)
+2021-02-19 14:39:48,165 - Model - INFO - [sample:512, radiu:0.500000, solution:2] cover:0.465014, sum_cover:1.155553,distance:0.000000
+2021-02-19 14:39:48,165 - Model - INFO - finish
+2021-02-19 14:40:01,453 - Model - INFO - [sample:1024, radiu:2.000000, solution:1] cover:0.994385, sum_cover:3.362698,distance:0.000000
+2021-02-19 14:40:01,454 - Model - INFO - finish
+2021-02-19 14:40:10,473 - Model - INFO - PARAMETER ...
+2021-02-19 14:40:10,474 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=4.0, solution=1)
+2021-02-19 14:40:27,333 - Model - INFO - [sample:1024, radiu:0.500000, solution:2] cover:0.607986, sum_cover:2.312343,distance:0.000000
+2021-02-19 14:40:27,333 - Model - INFO - finish
+2021-02-19 14:41:27,628 - Model - INFO - PARAMETER ...
+2021-02-19 14:41:27,628 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=1.0, solution=2)
+2021-02-19 14:41:53,581 - Model - INFO - [sample:512, radiu:1.000000, solution:2] cover:0.720744, sum_cover:4.037210,distance:0.000000
+2021-02-19 14:41:53,581 - Model - INFO - finish
+2021-02-19 14:42:33,828 - Model - INFO - [sample:1024, radiu:1.000000, solution:2] cover:0.815572, sum_cover:8.077657,distance:0.000000
+2021-02-19 14:42:33,829 - Model - INFO - finish
+2021-02-19 14:42:35,903 - Model - INFO - PARAMETER ...
+2021-02-19 14:42:35,903 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=2.0, solution=2)
+2021-02-19 14:43:02,378 - Model - INFO - [sample:512, radiu:2.000000, solution:2] cover:0.877814, sum_cover:12.846753,distance:0.000000
+2021-02-19 14:43:02,378 - Model - INFO - finish
+2021-02-19 14:43:43,239 - Model - INFO - [sample:1024, radiu:2.000000, solution:2] cover:0.926729, sum_cover:25.692579,distance:0.000000
+2021-02-19 14:43:43,239 - Model - INFO - finish
+2021-02-19 14:43:45,165 - Model - INFO - PARAMETER ...
+2021-02-19 14:43:45,166 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=4.0, solution=2)
+2021-02-19 14:44:10,995 - Model - INFO - [sample:512, radiu:4.000000, solution:2] cover:0.953498, sum_cover:37.277668,distance:0.000000
+2021-02-19 14:44:10,995 - Model - INFO - finish
+2021-02-19 14:44:50,725 - Model - INFO - [sample:1024, radiu:4.000000, solution:2] cover:0.975182, sum_cover:74.859909,distance:0.000000
+2021-02-19 14:44:50,726 - Model - INFO - finish
+2021-02-19 14:45:50,030 - Model - INFO - PARAMETER ...
+2021-02-19 14:45:50,030 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=0.5, solution=3)
+2021-02-19 14:45:52,858 - Model - INFO - [sample:512, radiu:4.000000, solution:1] cover:0.999964, sum_cover:5.405936,distance:0.000000
+2021-02-19 14:45:52,858 - Model - INFO - finish
+2021-02-19 14:49:31,226 - Model - INFO - [sample:512, radiu:0.500000, solution:3] cover:0.497661, sum_cover:1.149827,distance:0.000000
+2021-02-19 14:49:31,226 - Model - INFO - finish
+2021-02-19 14:49:33,326 - Model - INFO - [sample:1024, radiu:4.000000, solution:1] cover:1.000000, sum_cover:13.090406,distance:0.000000
+2021-02-19 14:49:33,326 - Model - INFO - finish
+2021-02-19 14:49:37,191 - Model - INFO - PARAMETER ...
+2021-02-19 14:49:37,191 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=0.5, solution=2)
+2021-02-19 14:50:02,501 - Model - INFO - [sample:512, radiu:0.500000, solution:2] cover:0.463793, sum_cover:1.160695,distance:0.000000
+2021-02-19 14:50:02,501 - Model - INFO - finish
+2021-02-19 14:50:42,228 - Model - INFO - [sample:1024, radiu:0.500000, solution:2] cover:0.607986, sum_cover:2.290883,distance:0.000000
+2021-02-19 14:50:42,228 - Model - INFO - finish
+2021-02-19 14:50:44,279 - Model - INFO - PARAMETER ...
+2021-02-19 14:50:44,279 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=1.0, solution=2)
+2021-02-19 14:50:49,390 - Model - INFO - PARAMETER ...
+2021-02-19 14:50:49,390 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=2.0, solution=2)
+2021-02-19 14:50:54,646 - Model - INFO - PARAMETER ...
+2021-02-19 14:50:54,646 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=4.0, solution=2)
+2021-02-19 14:50:59,770 - Model - INFO - PARAMETER ...
+2021-02-19 14:50:59,770 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=0.5, solution=3)
+2021-02-19 14:51:05,614 - Model - INFO - PARAMETER ...
+2021-02-19 14:51:05,615 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=1.0, solution=3)
+2021-02-19 14:51:11,372 - Model - INFO - PARAMETER ...
+2021-02-19 14:51:11,372 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=2.0, solution=3)
+2021-02-19 14:51:17,210 - Model - INFO - PARAMETER ...
+2021-02-19 14:51:17,210 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=4.0, solution=3)
+2021-02-19 14:53:46,904 - Model - INFO - [sample:1024, radiu:0.500000, solution:3] cover:0.643049, sum_cover:2.301260,distance:0.000000
+2021-02-19 14:53:46,904 - Model - INFO - finish
+2021-02-19 14:58:57,272 - Model - INFO - [sample:2048, radiu:0.500000, solution:3] cover:0.760058, sum_cover:4.603199,distance:0.000000
+2021-02-19 14:58:57,272 - Model - INFO - finish
+2021-02-19 14:58:59,575 - Model - INFO - PARAMETER ...
+2021-02-19 14:58:59,575 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=1.0, solution=3)
+2021-02-19 15:01:29,685 - Model - INFO - [sample:512, radiu:1.000000, solution:3] cover:0.747104, sum_cover:4.030018,distance:0.000000
+2021-02-19 15:01:29,685 - Model - INFO - finish
+2021-02-19 15:04:52,011 - Model - INFO - [sample:1024, radiu:1.000000, solution:3] cover:0.838352, sum_cover:8.057814,distance:0.000000
+2021-02-19 15:04:52,012 - Model - INFO - finish
+2021-02-19 15:09:59,047 - Model - INFO - [sample:2048, radiu:1.000000, solution:3] cover:0.902778, sum_cover:16.119951,distance:0.000000
+2021-02-19 15:09:59,047 - Model - INFO - finish
+2021-02-19 15:10:01,353 - Model - INFO - PARAMETER ...
+2021-02-19 15:10:01,354 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=2.0, solution=3)
+2021-02-19 15:12:31,769 - Model - INFO - [sample:512, radiu:2.000000, solution:3] cover:0.891748, sum_cover:12.825519,distance:0.000000
+2021-02-19 15:12:31,769 - Model - INFO - finish
+2021-02-19 15:15:52,000 - Model - INFO - [sample:1024, radiu:2.000000, solution:3] cover:0.937337, sum_cover:25.641565,distance:0.000000
+2021-02-19 15:15:52,000 - Model - INFO - finish
+2021-02-19 15:20:53,886 - Model - INFO - [sample:2048, radiu:2.000000, solution:3] cover:0.966343, sum_cover:51.305050,distance:0.000000
+2021-02-19 15:20:53,886 - Model - INFO - finish
+2021-02-19 15:20:56,190 - Model - INFO - PARAMETER ...
+2021-02-19 15:20:56,190 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=4.0, solution=3)
+2021-02-19 15:23:28,402 - Model - INFO - [sample:512, radiu:4.000000, solution:3] cover:0.959695, sum_cover:37.281578,distance:0.000000
+2021-02-19 15:23:28,403 - Model - INFO - finish
+2021-02-19 15:26:51,403 - Model - INFO - [sample:1024, radiu:4.000000, solution:3] cover:0.979636, sum_cover:74.568222,distance:0.000000
+2021-02-19 15:26:51,403 - Model - INFO - finish
+2021-02-19 15:32:00,550 - Model - INFO - [sample:2048, radiu:4.000000, solution:3] cover:0.990684, sum_cover:149.066818,distance:0.000000
+2021-02-19 15:32:00,550 - Model - INFO - finish
+2021-02-19 16:15:07,240 - Model - INFO - PARAMETER ...
+2021-02-19 16:15:07,240 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=0.5, solution=1)
+2021-02-19 16:16:27,372 - Model - INFO - [sample:512, radiu:0.500000, solution:1] cover:0.093382, sum_cover:0.093382,distance:0.000000
+2021-02-19 16:16:27,372 - Model - INFO - finish
+2021-02-19 16:18:55,268 - Model - INFO - [sample:1024, radiu:0.500000, solution:1] cover:0.218525, sum_cover:0.218936,distance:0.000000
+2021-02-19 16:18:55,268 - Model - INFO - finish
+2021-02-19 16:23:52,411 - Model - INFO - [sample:2048, radiu:0.500000, solution:1] cover:0.498217, sum_cover:0.532827,distance:0.000000
+2021-02-19 16:23:52,411 - Model - INFO - finish
+2021-02-19 16:23:54,765 - Model - INFO - PARAMETER ...
+2021-02-19 16:23:54,765 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=1.0, solution=1)
+2021-02-19 16:25:13,002 - Model - INFO - [sample:512, radiu:1.000000, solution:1] cover:0.332679, sum_cover:0.337502,distance:0.000000
+2021-02-19 16:25:13,003 - Model - INFO - finish
+2021-02-19 16:25:54,653 - Model - INFO - PARAMETER ...
+2021-02-19 16:25:54,653 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=2.0, solution=1)
+2021-02-19 16:27:28,020 - Model - INFO - PARAMETER ...
+2021-02-19 16:27:28,020 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=0.25, solution=1)
+2021-02-19 16:28:43,720 - Model - INFO - [sample:512, radiu:0.250000, solution:1] cover:0.028637, sum_cover:0.028637,distance:0.000000
+2021-02-19 16:28:43,720 - Model - INFO - finish
+2021-02-19 16:31:04,671 - Model - INFO - [sample:1024, radiu:0.250000, solution:1] cover:0.066295, sum_cover:0.066295,distance:0.000000
+2021-02-19 16:31:04,672 - Model - INFO - finish
+2021-02-19 16:39:15,620 - Model - INFO - PARAMETER ...
+2021-02-19 16:39:15,620 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=0.25, solution=1)
+2021-02-19 16:40:32,848 - Model - INFO - [sample:512, radiu:0.250000, solution:1] cover:0.028692, sum_cover:0.028692,distance:0.000000
+2021-02-19 16:40:32,849 - Model - INFO - finish
+2021-02-19 16:42:59,841 - Model - INFO - [sample:1024, radiu:0.250000, solution:1] cover:0.066084, sum_cover:0.066084,distance:0.000000
+2021-02-19 16:42:59,842 - Model - INFO - finish
+2021-02-19 16:47:49,107 - Model - INFO - [sample:2048, radiu:0.250000, solution:1] cover:0.154822, sum_cover:0.154830,distance:0.000000
+2021-02-19 16:47:49,107 - Model - INFO - finish
+2021-02-19 16:47:51,482 - Model - INFO - PARAMETER ...
+2021-02-19 16:47:51,482 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=0.25, solution=2)
+2021-02-19 16:48:12,528 - Model - INFO - [sample:512, radiu:0.250000, solution:2] cover:0.209445, sum_cover:0.310841,distance:0.000000
+2021-02-19 16:48:12,528 - Model - INFO - finish
+2021-02-19 16:48:43,246 - Model - INFO - [sample:1024, radiu:0.250000, solution:2] cover:0.331628, sum_cover:0.624437,distance:0.000000
+2021-02-19 16:48:43,246 - Model - INFO - finish
+2021-02-19 16:49:40,179 - Model - INFO - [sample:2048, radiu:0.250000, solution:2] cover:0.477900, sum_cover:1.244652,distance:0.000000
+2021-02-19 16:49:40,179 - Model - INFO - finish
+2021-02-19 16:49:42,509 - Model - INFO - PARAMETER ...
+2021-02-19 16:49:42,509 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=0.25, solution=3)
+2021-02-19 16:52:13,904 - Model - INFO - [sample:512, radiu:0.250000, solution:3] cover:0.224322, sum_cover:0.312685,distance:0.000000
+2021-02-19 16:52:13,904 - Model - INFO - finish
+2021-02-19 16:55:40,384 - Model - INFO - [sample:1024, radiu:0.250000, solution:3] cover:0.359651, sum_cover:0.625076,distance:0.000000
+2021-02-19 16:55:40,384 - Model - INFO - finish
+2021-02-19 17:00:49,827 - Model - INFO - [sample:2048, radiu:0.250000, solution:3] cover:0.513576, sum_cover:1.250107,distance:0.000000
+2021-02-19 17:00:49,827 - Model - INFO - finish
+2021-02-19 17:07:58,299 - Model - INFO - PARAMETER ...
+2021-02-19 17:07:58,300 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='2048', num_testcase=-1, radiu=0.5, solution=2)
+2021-02-19 17:08:58,406 - Model - INFO - [sample:2048, radiu:0.500000, solution:2] cover:0.730428, sum_cover:4.607460,distance:0.000000
+2021-02-19 17:08:58,406 - Model - INFO - finish
+2021-02-19 17:09:00,724 - Model - INFO - PARAMETER ...
+2021-02-19 17:09:00,724 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='2048', num_testcase=-1, radiu=2.0, solution=2)
+2021-02-19 17:10:05,520 - Model - INFO - [sample:2048, radiu:2.000000, solution:2] cover:0.959179, sum_cover:51.289696,distance:0.000000
+2021-02-19 17:10:05,520 - Model - INFO - finish
+2021-02-19 17:10:07,784 - Model - INFO - PARAMETER ...
+2021-02-19 17:10:07,784 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='2048', num_testcase=-1, radiu=1.0, solution=2)
+2021-02-19 17:11:07,717 - Model - INFO - [sample:2048, radiu:1.000000, solution:2] cover:0.886075, sum_cover:16.111221,distance:0.000000
+2021-02-19 17:11:07,717 - Model - INFO - finish
+2021-02-19 17:11:10,088 - Model - INFO - PARAMETER ...
+2021-02-19 17:11:10,088 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='2048', num_testcase=-1, radiu=2.0, solution=1)
+2021-02-19 17:16:01,684 - Model - INFO - [sample:2048, radiu:2.000000, solution:1] cover:1.000000, sum_cover:8.500021,distance:0.000000
+2021-02-19 17:16:01,684 - Model - INFO - finish
+2021-02-19 17:20:15,856 - Model - INFO - PARAMETER ...
+2021-02-19 17:20:15,856 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='distance', num_sampling='512,1024,2048', num_testcase=-1, radiu=0.05, solution=1)
+2021-02-19 17:21:21,085 - Model - INFO - [sample:512, radiu:0.050000, solution:1] cover:0.000000, sum_cover:0.000000,distance:0.007016
+2021-02-19 17:21:21,085 - Model - INFO - finish
+2021-02-19 17:23:21,022 - Model - INFO - [sample:1024, radiu:0.050000, solution:1] cover:0.000000, sum_cover:0.000000,distance:0.013829
+2021-02-19 17:23:21,022 - Model - INFO - finish
+2021-02-19 17:27:16,928 - Model - INFO - [sample:2048, radiu:0.050000, solution:1] cover:0.000000, sum_cover:0.000000,distance:0.027246
+2021-02-19 17:27:16,928 - Model - INFO - finish
+2021-02-19 17:27:18,951 - Model - INFO - PARAMETER ...
+2021-02-19 17:27:18,951 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='distance', num_sampling='512,1024,2048', num_testcase=-1, radiu=0.05, solution=2)
+2021-02-19 17:27:26,991 - Model - INFO - [sample:512, radiu:0.050000, solution:2] cover:0.000000, sum_cover:0.000000,distance:0.004264
+2021-02-19 17:27:26,991 - Model - INFO - finish
+2021-02-19 17:27:32,297 - Model - INFO - [sample:1024, radiu:0.050000, solution:2] cover:0.000000, sum_cover:0.000000,distance:0.008546
+2021-02-19 17:27:32,297 - Model - INFO - finish
+2021-02-19 17:27:39,031 - Model - INFO - [sample:2048, radiu:0.050000, solution:2] cover:0.000000, sum_cover:0.000000,distance:0.017054
+2021-02-19 17:27:39,032 - Model - INFO - finish
+2021-02-19 17:27:41,026 - Model - INFO - PARAMETER ...
+2021-02-19 17:27:41,026 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='distance', num_sampling='512,1024,2048', num_testcase=-1, radiu=0.05, solution=3)
+2021-02-19 17:29:59,389 - Model - INFO - [sample:512, radiu:0.050000, solution:3] cover:0.000000, sum_cover:0.000000,distance:0.004274
+2021-02-19 17:29:59,389 - Model - INFO - finish
+2021-02-19 17:32:59,416 - Model - INFO - [sample:1024, radiu:0.050000, solution:3] cover:0.000000, sum_cover:0.000000,distance:0.008560
+2021-02-19 17:32:59,416 - Model - INFO - finish
+2021-02-19 17:37:21,115 - Model - INFO - [sample:2048, radiu:0.050000, solution:3] cover:0.000000, sum_cover:0.000000,distance:0.017083
+2021-02-19 17:37:21,115 - Model - INFO - finish
+2021-02-19 17:37:23,138 - Model - INFO - PARAMETER ...
+2021-02-19 17:37:23,138 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='distance', num_sampling='512,1024,2048', num_testcase=-1, radiu=0.05, solution=4)
+2021-02-19 17:39:43,111 - Model - INFO - [sample:512, radiu:0.050000, solution:4] cover:0.000000, sum_cover:0.000000,distance:0.005733
+2021-02-19 17:39:43,112 - Model - INFO - finish
+2021-02-19 17:42:50,030 - Model - INFO - [sample:1024, radiu:0.050000, solution:4] cover:0.000000, sum_cover:0.000000,distance:0.010970
+2021-02-19 17:42:50,030 - Model - INFO - finish
+2021-02-19 17:47:42,438 - Model - INFO - [sample:2048, radiu:0.050000, solution:4] cover:0.000000, sum_cover:0.000000,distance:0.019882
+2021-02-19 17:47:42,438 - Model - INFO - finish
+2021-02-19 20:29:54,414 - Model - INFO - PARAMETER ...
+2021-02-19 20:29:54,414 - Model - INFO - Namespace(batch_size=2, dataset='KITTI', metrics='minradiu', num_sampling='512,1024,2048', num_testcase=-1, radiu=0.05, solution=1)
+2021-02-19 20:30:20,682 - Model - INFO - PARAMETER ...
+2021-02-19 20:30:20,682 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='minradiu', num_sampling='512,1024,2048', num_testcase=-1, radiu=0.05, solution=1)
+2021-02-19 20:32:25,007 - Model - INFO - [sample:512, radiu:0.050000, solution:1] 
+cover:0.000000
+sum_cover:0.000000
+distance:0.000000
+min_radiu:2.148769
+2021-02-19 20:32:25,007 - Model - INFO - finish
+2021-02-19 20:36:22,739 - Model - INFO - [sample:1024, radiu:0.050000, solution:1] 
+cover:0.000000
+sum_cover:0.000000
+distance:0.000000
+min_radiu:1.367443
+2021-02-19 20:36:22,740 - Model - INFO - finish
+2021-02-19 20:44:12,944 - Model - INFO - [sample:2048, radiu:0.050000, solution:1] 
+cover:0.000000
+sum_cover:0.000000
+distance:0.000000
+min_radiu:0.860809
+2021-02-19 20:44:12,944 - Model - INFO - finish
+2021-02-19 20:49:09,904 - Model - INFO - PARAMETER ...
+2021-02-19 20:49:09,904 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='minradiu', num_sampling='512,1024,2048', num_testcase=-1, radiu=0.05, solution=2)
+2021-02-19 20:50:18,241 - Model - INFO - [sample:512, radiu:0.050000, solution:2] 
+cover:0.000000
+sum_cover:0.000000
+distance:0.000000
+min_radiu:3.361855
+2021-02-19 20:50:18,242 - Model - INFO - finish
+2021-02-19 20:52:21,634 - Model - INFO - [sample:1024, radiu:0.050000, solution:2] 
+cover:0.000000
+sum_cover:0.000000
+distance:0.000000
+min_radiu:2.544666
+2021-02-19 20:52:21,634 - Model - INFO - finish
+2021-02-19 20:56:22,354 - Model - INFO - [sample:2048, radiu:0.050000, solution:2] 
+cover:0.000000
+sum_cover:0.000000
+distance:0.000000
+min_radiu:1.729134
+2021-02-19 20:56:22,355 - Model - INFO - finish
+2021-02-19 21:00:45,400 - Model - INFO - PARAMETER ...
+2021-02-19 21:00:45,401 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='minradiu', num_sampling='512,1024,2048', num_testcase=-1, radiu=0.05, solution=3)
+2021-02-19 21:04:04,758 - Model - INFO - [sample:512, radiu:0.050000, solution:3] 
+cover:0.000000
+sum_cover:0.000000
+distance:0.000000
+min_radiu:3.175575
+2021-02-19 21:04:04,759 - Model - INFO - finish
+2021-02-19 21:09:02,591 - Model - INFO - [sample:1024, radiu:0.050000, solution:3] 
+cover:0.000000
+sum_cover:0.000000
+distance:0.000000
+min_radiu:2.289627
+2021-02-19 21:09:02,592 - Model - INFO - finish
+2021-02-19 21:17:16,840 - Model - INFO - [sample:2048, radiu:0.050000, solution:3] 
+cover:0.000000
+sum_cover:0.000000
+distance:0.000000
+min_radiu:1.535965
+2021-02-19 21:17:16,841 - Model - INFO - finish
+2021-02-19 21:18:40,807 - Model - INFO - PARAMETER ...
+2021-02-19 21:18:40,807 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='minradiu', num_sampling='512,1024,2048', num_testcase=-1, radiu=0.05, solution=4)
+2021-02-19 21:22:01,966 - Model - INFO - [sample:512, radiu:0.050000, solution:4] 
+cover:0.000000
+sum_cover:0.000000
+distance:0.000000
+min_radiu:3.126495
+2021-02-19 21:22:01,966 - Model - INFO - finish
+2021-02-19 21:27:15,375 - Model - INFO - [sample:1024, radiu:0.050000, solution:4] 
+cover:0.000000
+sum_cover:0.000000
+distance:0.000000
+min_radiu:2.187302
+2021-02-19 21:27:15,375 - Model - INFO - finish
+2021-02-19 21:32:11,162 - Model - INFO - PARAMETER ...
+2021-02-19 21:32:11,162 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='minradiu', num_sampling='512,1024,2048', num_testcase=-1, radiu=0.05, solution=4)
+2021-02-19 21:35:20,294 - Model - INFO - [sample:512, radiu:0.050000, solution:4] 
+cover:0.000000
+sum_cover:0.000000
+distance:0.000000
+min_radiu:2.806595
+2021-02-19 21:35:20,295 - Model - INFO - finish
+2021-02-19 21:40:29,898 - Model - INFO - [sample:1024, radiu:0.050000, solution:4] 
+cover:0.000000
+sum_cover:0.000000
+distance:0.000000
+min_radiu:1.948391
+2021-02-19 21:40:29,899 - Model - INFO - finish
+2021-02-19 21:49:33,057 - Model - INFO - [sample:2048, radiu:0.050000, solution:4] 
+cover:0.000000
+sum_cover:0.000000
+distance:0.000000
+min_radiu:1.366322
+2021-02-19 21:49:33,058 - Model - INFO - finish
+2021-02-19 21:55:18,654 - Model - INFO - PARAMETER ...
+2021-02-19 21:55:18,655 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='distance', num_sampling='512,1024,2048', num_testcase=-1, radiu=0.05, solution=4)
+2021-02-19 21:57:26,636 - Model - INFO - [sample:512, radiu:0.050000, solution:4] 
+cover:0.000000
+sum_cover:0.000000
+distance:0.006643
+min_radiu:0.000000
+2021-02-19 21:57:26,636 - Model - INFO - finish
+2021-02-19 22:00:35,774 - Model - INFO - [sample:1024, radiu:0.050000, solution:4] 
+cover:0.000000
+sum_cover:0.000000
+distance:0.012777
+min_radiu:0.000000
+2021-02-19 22:00:35,775 - Model - INFO - finish
+2021-02-19 22:05:40,877 - Model - INFO - [sample:2048, radiu:0.050000, solution:4] 
+cover:0.000000
+sum_cover:0.000000
+distance:0.023058
+min_radiu:0.000000
+2021-02-19 22:05:40,877 - Model - INFO - finish
+2021-02-19 22:34:40,590 - Model - INFO - PARAMETER ...
+2021-02-19 22:34:40,590 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=0.25, solution=4)
+2021-02-19 22:37:01,065 - Model - INFO - [sample:512, radiu:0.250000, solution:4] 
+cover:0.139234
+sum_cover:0.156215
+distance:0.000000
+min_radiu:0.000000
+2021-02-19 22:37:01,066 - Model - INFO - finish
+2021-02-19 22:40:33,540 - Model - INFO - [sample:1024, radiu:0.250000, solution:4] 
+cover:0.266843
+sum_cover:0.353865
+distance:0.000000
+min_radiu:0.000000
+2021-02-19 22:40:33,540 - Model - INFO - finish
+2021-02-19 22:46:26,052 - Model - INFO - [sample:2048, radiu:0.250000, solution:4] 
+cover:0.473213
+sum_cover:0.857994
+distance:0.000000
+min_radiu:0.000000
+2021-02-19 22:46:26,052 - Model - INFO - finish
+2021-02-19 22:46:27,959 - Model - INFO - PARAMETER ...
+2021-02-19 22:46:27,959 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=0.5, solution=4)
+2021-02-19 22:48:45,881 - Model - INFO - [sample:512, radiu:0.500000, solution:4] 
+cover:0.383182
+sum_cover:0.597344
+distance:0.000000
+min_radiu:0.000000
+2021-02-19 22:48:45,881 - Model - INFO - finish
+2021-02-19 22:52:17,420 - Model - INFO - [sample:1024, radiu:0.500000, solution:4] 
+cover:0.551365
+sum_cover:1.366101
+distance:0.000000
+min_radiu:0.000000
+2021-02-19 22:52:17,420 - Model - INFO - finish
+2021-02-19 22:58:07,437 - Model - INFO - [sample:2048, radiu:0.500000, solution:4] 
+cover:0.734788
+sum_cover:3.339791
+distance:0.000000
+min_radiu:0.000000
+2021-02-19 22:58:07,437 - Model - INFO - finish
+2021-02-19 22:58:09,409 - Model - INFO - PARAMETER ...
+2021-02-19 22:58:09,409 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=1.0, solution=4)
+2021-02-19 23:00:28,383 - Model - INFO - [sample:512, radiu:1.000000, solution:4] 
+cover:0.646598
+sum_cover:2.257071
+distance:0.000000
+min_radiu:0.000000
+2021-02-19 23:00:28,383 - Model - INFO - finish
+2021-02-19 23:03:57,796 - Model - INFO - [sample:1024, radiu:1.000000, solution:4] 
+cover:0.795199
+sum_cover:5.119853
+distance:0.000000
+min_radiu:0.000000
+2021-02-19 23:03:57,797 - Model - INFO - finish
+2021-02-19 23:09:51,523 - Model - INFO - [sample:2048, radiu:1.000000, solution:4] 
+cover:0.901196
+sum_cover:12.412271
+distance:0.000000
+min_radiu:0.000000
+2021-02-19 23:09:51,523 - Model - INFO - finish
+2021-02-19 23:09:53,469 - Model - INFO - PARAMETER ...
+2021-02-19 23:09:53,469 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=2.0, solution=4)
+2021-02-19 23:12:12,267 - Model - INFO - [sample:512, radiu:2.000000, solution:4] 
+cover:0.872470
+sum_cover:7.795086
+distance:0.000000
+min_radiu:0.000000
+2021-02-19 23:12:12,267 - Model - INFO - finish
+2021-02-19 23:15:41,670 - Model - INFO - [sample:1024, radiu:2.000000, solution:4] 
+cover:0.950220
+sum_cover:17.420238
+distance:0.000000
+min_radiu:0.000000
+2021-02-19 23:15:41,671 - Model - INFO - finish
+2021-02-19 23:21:30,373 - Model - INFO - [sample:2048, radiu:2.000000, solution:4] 
+cover:0.981253
+sum_cover:41.695999
+distance:0.000000
+min_radiu:0.000000
+2021-02-19 23:21:30,373 - Model - INFO - finish
+2021-02-20 15:59:20,452 - Model - INFO - PARAMETER ...
+2021-02-20 15:59:20,452 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=0.25, solution=5)
+2021-02-20 16:09:23,771 - Model - INFO - [sample:512, radiu:0.250000, solution:5] 
+cover:0.046677
+sum_cover:0.047333
+distance:0.000000
+min_radiu:0.000000
+2021-02-20 16:09:23,771 - Model - INFO - finish
+2021-02-20 16:27:20,982 - Model - INFO - [sample:1024, radiu:0.250000, solution:5] 
+cover:0.090574
+sum_cover:0.093086
+distance:0.000000
+min_radiu:0.000000
+2021-02-20 16:27:20,982 - Model - INFO - finish
+2021-02-20 17:01:00,838 - Model - INFO - [sample:2048, radiu:0.250000, solution:5] 
+cover:0.179439
+sum_cover:0.188902
+distance:0.000000
+min_radiu:0.000000
+2021-02-20 17:01:00,838 - Model - INFO - finish
+2021-02-20 17:01:02,871 - Model - INFO - PARAMETER ...
+2021-02-20 17:01:02,871 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=0.5, solution=5)
+2021-02-20 17:10:45,627 - Model - INFO - [sample:512, radiu:0.500000, solution:5] 
+cover:0.151742
+sum_cover:0.158662
+distance:0.000000
+min_radiu:0.000000
+2021-02-20 17:10:45,627 - Model - INFO - finish
+2021-02-20 17:28:02,874 - Model - INFO - [sample:1024, radiu:0.500000, solution:5] 
+cover:0.285123
+sum_cover:0.311740
+distance:0.000000
+min_radiu:0.000000
+2021-02-20 17:28:02,874 - Model - INFO - finish
+2021-02-20 18:00:14,548 - Model - INFO - [sample:2048, radiu:0.500000, solution:5] 
+cover:0.522778
+sum_cover:0.646325
+distance:0.000000
+min_radiu:0.000000
+2021-02-20 18:00:14,548 - Model - INFO - finish
+2021-02-20 18:00:16,484 - Model - INFO - PARAMETER ...
+2021-02-20 18:00:16,484 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=1.0, solution=5)
+2021-02-20 18:09:56,598 - Model - INFO - [sample:512, radiu:1.000000, solution:5] 
+cover:0.478065
+sum_cover:0.564194
+distance:0.000000
+min_radiu:0.000000
+2021-02-20 18:09:56,599 - Model - INFO - finish
+2021-02-20 18:27:22,168 - Model - INFO - [sample:1024, radiu:1.000000, solution:5] 
+cover:0.744608
+sum_cover:1.155876
+distance:0.000000
+min_radiu:0.000000
+2021-02-20 18:27:22,168 - Model - INFO - finish
+2021-02-20 18:59:42,924 - Model - INFO - [sample:2048, radiu:1.000000, solution:5] 
+cover:0.939882
+sum_cover:2.449459
+distance:0.000000
+min_radiu:0.000000
+2021-02-20 18:59:42,924 - Model - INFO - finish
+2021-02-20 18:59:44,924 - Model - INFO - PARAMETER ...
+2021-02-20 18:59:44,924 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover,distance,minradiu', num_sampling='512,1024,2048', num_testcase=-1, radiu=2.0, solution=5)
+2021-02-20 19:10:32,483 - Model - INFO - [sample:512, radiu:2.000000, solution:5] 
+cover:0.919297
+sum_cover:2.133576
+distance:0.006625
+min_radiu:1.912476
+2021-02-20 19:10:32,483 - Model - INFO - finish
+2021-02-20 19:29:56,613 - Model - INFO - [sample:1024, radiu:2.000000, solution:5] 
+cover:0.990414
+sum_cover:4.432411
+distance:0.013270
+min_radiu:1.327148
+2021-02-20 19:29:56,613 - Model - INFO - finish
+2021-02-20 20:06:26,934 - Model - INFO - [sample:2048, radiu:2.000000, solution:5] 
+cover:0.998753
+sum_cover:9.463619
+distance:0.026596
+min_radiu:0.907005
+2021-02-20 20:06:26,934 - Model - INFO - finish
+2021-02-20 20:17:01,690 - Model - INFO - PARAMETER ...
+2021-02-20 20:17:01,690 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=0.25, solution=5)
+2021-02-20 20:22:40,908 - Model - INFO - [sample:512, radiu:0.250000, solution:5] 
+cover:0.079607
+sum_cover:0.080650
+distance:0.000000
+min_radiu:0.000000
+2021-02-20 20:22:40,908 - Model - INFO - finish
+2021-02-20 20:31:58,449 - Model - INFO - [sample:1024, radiu:0.250000, solution:5] 
+cover:0.159546
+sum_cover:0.165751
+distance:0.000000
+min_radiu:0.000000
+2021-02-20 20:31:58,449 - Model - INFO - finish
+2021-02-20 20:48:52,939 - Model - INFO - [sample:2048, radiu:0.250000, solution:5] 
+cover:0.294128
+sum_cover:0.318250
+distance:0.000000
+min_radiu:0.000000
+2021-02-20 20:48:52,940 - Model - INFO - finish
+2021-02-20 20:48:55,048 - Model - INFO - PARAMETER ...
+2021-02-20 20:48:55,048 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=0.5, solution=5)
+2021-02-20 20:54:37,136 - Model - INFO - [sample:512, radiu:0.500000, solution:5] 
+cover:0.269401
+sum_cover:0.286150
+distance:0.000000
+min_radiu:0.000000
+2021-02-20 20:54:37,136 - Model - INFO - finish
+2021-02-20 21:03:44,609 - Model - INFO - [sample:1024, radiu:0.500000, solution:5] 
+cover:0.486985
+sum_cover:0.593943
+distance:0.000000
+min_radiu:0.000000
+2021-02-20 21:03:44,610 - Model - INFO - finish
+2021-02-20 21:19:55,463 - Model - INFO - [sample:2048, radiu:0.500000, solution:5] 
+cover:0.731389
+sum_cover:1.155471
+distance:0.000000
+min_radiu:0.000000
+2021-02-20 21:19:55,463 - Model - INFO - finish
+2021-02-20 21:19:57,488 - Model - INFO - PARAMETER ...
+2021-02-20 21:19:57,488 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=1.0, solution=5)
+2021-02-20 21:25:29,234 - Model - INFO - [sample:512, radiu:1.000000, solution:5] 
+cover:0.707769
+sum_cover:1.060073
+distance:0.000000
+min_radiu:0.000000
+2021-02-20 21:25:29,234 - Model - INFO - finish
+2021-02-20 21:34:38,297 - Model - INFO - [sample:1024, radiu:1.000000, solution:5] 
+cover:0.888925
+sum_cover:2.263034
+distance:0.000000
+min_radiu:0.000000
+2021-02-20 21:34:38,297 - Model - INFO - finish
+2021-02-20 21:51:09,011 - Model - INFO - [sample:2048, radiu:1.000000, solution:5] 
+cover:0.966648
+sum_cover:4.456338
+distance:0.000000
+min_radiu:0.000000
+2021-02-20 21:51:09,011 - Model - INFO - finish
+2021-02-20 21:51:11,122 - Model - INFO - PARAMETER ...
+2021-02-20 21:51:11,123 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover,distance,minradiu', num_sampling='512,1024,2048', num_testcase=-1, radiu=2.0, solution=5)
+2021-02-20 21:57:47,715 - Model - INFO - [sample:512, radiu:2.000000, solution:5] 
+cover:0.955277
+sum_cover:4.001283
+distance:0.005922
+min_radiu:1.773834
+2021-02-20 21:57:47,715 - Model - INFO - finish
+2021-02-20 22:09:07,138 - Model - INFO - [sample:1024, radiu:2.000000, solution:5] 
+cover:0.978725
+sum_cover:8.490396
+distance:0.011832
+min_radiu:1.260632
+2021-02-20 22:09:07,138 - Model - INFO - finish
+2021-02-20 22:29:35,121 - Model - INFO - [sample:2048, radiu:2.000000, solution:5] 
+cover:0.992840
+sum_cover:16.665745
+distance:0.023982
+min_radiu:0.798458
+2021-02-20 22:29:35,121 - Model - INFO - finish
+2021-02-20 22:42:50,606 - Model - INFO - PARAMETER ...
+2021-02-20 22:42:50,606 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=0.25, solution=6)
+2021-02-20 22:46:24,041 - Model - INFO - [sample:512, radiu:0.250000, solution:6] 
+cover:0.180403
+sum_cover:0.234154
+distance:0.000000
+min_radiu:0.000000
+2021-02-20 22:46:24,042 - Model - INFO - finish
+2021-02-20 22:51:50,701 - Model - INFO - [sample:1024, radiu:0.250000, solution:6] 
+cover:0.309529
+sum_cover:0.512811
+distance:0.000000
+min_radiu:0.000000
+2021-02-20 22:51:50,701 - Model - INFO - finish
+2021-02-20 23:01:12,902 - Model - INFO - [sample:2048, radiu:0.250000, solution:6] 
+cover:0.493022
+sum_cover:1.094376
+distance:0.000000
+min_radiu:0.000000
+2021-02-20 23:01:12,902 - Model - INFO - finish
+2021-02-20 23:01:14,849 - Model - INFO - PARAMETER ...
+2021-02-20 23:01:14,849 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=0.5, solution=6)
+2021-02-20 23:04:48,585 - Model - INFO - [sample:512, radiu:0.500000, solution:6] 
+cover:0.456585
+sum_cover:0.883880
+distance:0.000000
+min_radiu:0.000000
+2021-02-20 23:04:48,585 - Model - INFO - finish
+2021-02-20 23:10:21,668 - Model - INFO - [sample:1024, radiu:0.500000, solution:6] 
+cover:0.613802
+sum_cover:1.943469
+distance:0.000000
+min_radiu:0.000000
+2021-02-20 23:10:21,668 - Model - INFO - finish
+2021-02-20 23:19:43,662 - Model - INFO - [sample:2048, radiu:0.500000, solution:6] 
+cover:0.750134
+sum_cover:4.151212
+distance:0.000000
+min_radiu:0.000000
+2021-02-20 23:19:43,662 - Model - INFO - finish
+2021-02-20 23:19:45,737 - Model - INFO - PARAMETER ...
+2021-02-20 23:19:45,737 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=1.0, solution=6)
+2021-02-20 23:23:19,276 - Model - INFO - [sample:512, radiu:1.000000, solution:6] 
+cover:0.726879
+sum_cover:3.225876
+distance:0.000000
+min_radiu:0.000000
+2021-02-20 23:23:19,277 - Model - INFO - finish
+2021-02-20 23:28:44,726 - Model - INFO - [sample:1024, radiu:1.000000, solution:6] 
+cover:0.828501
+sum_cover:7.057217
+distance:0.000000
+min_radiu:0.000000
+2021-02-20 23:28:44,727 - Model - INFO - finish
+2021-02-20 23:37:59,095 - Model - INFO - [sample:2048, radiu:1.000000, solution:6] 
+cover:0.901714
+sum_cover:14.945190
+distance:0.000000
+min_radiu:0.000000
+2021-02-20 23:37:59,096 - Model - INFO - finish
+2021-02-20 23:38:01,054 - Model - INFO - PARAMETER ...
+2021-02-20 23:38:01,054 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover,distance,minradiu', num_sampling='512,1024,2048', num_testcase=-1, radiu=2.0, solution=6)
+2021-02-20 23:42:37,222 - Model - INFO - [sample:512, radiu:2.000000, solution:6] 
+cover:0.889064
+sum_cover:10.756266
+distance:0.005773
+min_radiu:3.006306
+2021-02-20 23:42:37,222 - Model - INFO - finish
+2021-02-20 23:50:06,861 - Model - INFO - [sample:1024, radiu:2.000000, solution:6] 
+cover:0.939796
+sum_cover:23.271624
+distance:0.010311
+min_radiu:2.171200
+2021-02-20 23:50:06,861 - Model - INFO - finish
+2021-02-21 00:03:22,075 - Model - INFO - [sample:2048, radiu:2.000000, solution:6] 
+cover:0.970857
+sum_cover:48.612156
+distance:0.019746
+min_radiu:1.477673
+2021-02-21 00:03:22,075 - Model - INFO - finish
+2021-02-21 10:31:35,890 - Model - INFO - PARAMETER ...
+2021-02-21 10:31:35,890 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=0.25, solution=6)
+2021-02-21 10:32:04,236 - Model - INFO - PARAMETER ...
+2021-02-21 10:32:04,236 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=0.25, solution=7)
+2021-02-21 10:35:43,045 - Model - INFO - [sample:512, radiu:0.250000, solution:6] 
+cover:0.180381
+sum_cover:0.234109
+distance:0.000000
+min_radiu:0.000000
+2021-02-21 10:35:43,046 - Model - INFO - finish
+2021-02-21 10:40:09,109 - Model - INFO - [sample:512, radiu:0.250000, solution:7] 
+cover:0.195857
+sum_cover:0.250134
+distance:0.000000
+min_radiu:0.000000
+2021-02-21 10:40:09,110 - Model - INFO - finish
+2021-02-21 10:42:21,495 - Model - INFO - [sample:1024, radiu:0.250000, solution:6] 
+cover:0.309528
+sum_cover:0.512810
+distance:0.000000
+min_radiu:0.000000
+2021-02-21 10:42:21,495 - Model - INFO - finish
+2021-02-21 10:42:33,555 - Model - INFO - PARAMETER ...
+2021-02-21 10:42:33,555 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=0.5, solution=6)
+2021-02-21 10:46:53,173 - Model - INFO - [sample:512, radiu:0.500000, solution:6] 
+cover:0.456597
+sum_cover:0.883910
+distance:0.000000
+min_radiu:0.000000
+2021-02-21 10:46:53,173 - Model - INFO - finish
+2021-02-21 10:51:31,066 - Model - INFO - [sample:1024, radiu:0.250000, solution:7] 
+cover:0.344501
+sum_cover:0.532437
+distance:0.000000
+min_radiu:0.000000
+2021-02-21 10:51:31,067 - Model - INFO - finish
+2021-02-21 10:51:37,132 - Model - INFO - PARAMETER ...
+2021-02-21 10:51:37,132 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=0.5, solution=7)
+2021-02-21 10:53:39,473 - Model - INFO - [sample:1024, radiu:0.500000, solution:6] 
+cover:0.613791
+sum_cover:1.943483
+distance:0.000000
+min_radiu:0.000000
+2021-02-21 10:53:39,474 - Model - INFO - finish
+2021-02-21 10:54:58,997 - Model - INFO - PARAMETER ...
+2021-02-21 10:54:58,997 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=1.0, solution=6)
+2021-02-21 10:59:06,921 - Model - INFO - [sample:512, radiu:1.000000, solution:6] 
+cover:0.726894
+sum_cover:3.226026
+distance:0.000000
+min_radiu:0.000000
+2021-02-21 10:59:06,921 - Model - INFO - finish
+2021-02-21 10:59:37,484 - Model - INFO - [sample:512, radiu:0.500000, solution:7] 
+cover:0.487940
+sum_cover:0.959961
+distance:0.000000
+min_radiu:0.000000
+2021-02-21 10:59:37,485 - Model - INFO - finish
+2021-02-21 11:05:48,964 - Model - INFO - [sample:1024, radiu:1.000000, solution:6] 
+cover:0.828493
+sum_cover:7.057185
+distance:0.000000
+min_radiu:0.000000
+2021-02-21 11:05:48,964 - Model - INFO - finish
+2021-02-21 11:05:53,397 - Model - INFO - PARAMETER ...
+2021-02-21 11:05:53,397 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover,distance,minradiu', num_sampling='512,1024,2048', num_testcase=-1, radiu=2.0, solution=6)
+2021-02-21 11:11:31,518 - Model - INFO - [sample:512, radiu:2.000000, solution:6] 
+cover:0.889024
+sum_cover:10.756024
+distance:0.005773
+min_radiu:3.005985
+2021-02-21 11:11:31,518 - Model - INFO - finish
+2021-02-21 11:11:35,185 - Model - INFO - [sample:1024, radiu:0.500000, solution:7] 
+cover:0.642323
+sum_cover:2.043209
+distance:0.000000
+min_radiu:0.000000
+2021-02-21 11:11:35,186 - Model - INFO - finish
+2021-02-21 11:25:15,135 - Model - INFO - [sample:2048, radiu:0.500000, solution:7] 
+cover:0.763611
+sum_cover:4.275378
+distance:0.000000
+min_radiu:0.000000
+2021-02-21 11:25:15,135 - Model - INFO - finish
+2021-02-21 11:25:17,119 - Model - INFO - PARAMETER ...
+2021-02-21 11:25:17,119 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=1.0, solution=7)
+2021-02-21 11:32:06,383 - Model - INFO - [sample:512, radiu:1.000000, solution:7] 
+cover:0.747171
+sum_cover:3.559001
+distance:0.000000
+min_radiu:0.000000
+2021-02-21 11:32:06,384 - Model - INFO - finish
+2021-02-21 11:41:19,296 - Model - INFO - [sample:1024, radiu:1.000000, solution:7] 
+cover:0.839958
+sum_cover:7.481136
+distance:0.000000
+min_radiu:0.000000
+2021-02-21 11:41:19,296 - Model - INFO - finish
+2021-02-21 11:54:53,723 - Model - INFO - [sample:2048, radiu:1.000000, solution:7] 
+cover:0.906292
+sum_cover:15.450714
+distance:0.000000
+min_radiu:0.000000
+2021-02-21 11:54:53,723 - Model - INFO - finish
+2021-02-21 11:54:55,750 - Model - INFO - PARAMETER ...
+2021-02-21 11:54:55,750 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover,distance,minradiu', num_sampling='512,1024,2048', num_testcase=-1, radiu=2.0, solution=7)
+2021-02-21 12:02:45,164 - Model - INFO - [sample:512, radiu:2.000000, solution:7] 
+cover:0.896339
+sum_cover:11.962294
+distance:0.004619
+min_radiu:3.047188
+2021-02-21 12:02:45,164 - Model - INFO - finish
+2021-02-21 12:13:57,174 - Model - INFO - [sample:1024, radiu:2.000000, solution:7] 
+cover:0.940843
+sum_cover:24.669310
+distance:0.008895
+min_radiu:2.157768
+2021-02-21 12:13:57,174 - Model - INFO - finish
+2021-02-21 12:31:30,558 - Model - INFO - [sample:2048, radiu:2.000000, solution:7] 
+cover:0.970126
+sum_cover:50.254135
+distance:0.017425
+min_radiu:1.459248
+2021-02-21 12:31:30,558 - Model - INFO - finish
+2021-02-21 13:56:00,726 - Model - INFO - PARAMETER ...
+2021-02-21 13:56:00,726 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='2048', num_testcase=-1, radiu=0.25, solution=7)
+2021-02-21 14:09:29,794 - Model - INFO - [sample:2048, radiu:0.250000, solution:7] 
+cover:0.516561
+sum_cover:1.118975
+distance:0.000000
+min_radiu:0.000000
+2021-02-21 14:09:29,794 - Model - INFO - finish
+2021-02-21 16:03:09,066 - Model - INFO - PARAMETER ...
+2021-02-21 16:03:09,067 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=0.25, solution=8)
+2021-02-21 16:05:57,797 - Model - INFO - [sample:512, radiu:0.250000, solution:8] 
+cover:0.136490
+sum_cover:0.150283
+distance:0.000000
+min_radiu:0.000000
+2021-02-21 16:05:57,797 - Model - INFO - finish
+2021-02-21 16:10:25,929 - Model - INFO - [sample:1024, radiu:0.250000, solution:8] 
+cover:0.270716
+sum_cover:0.345689
+distance:0.000000
+min_radiu:0.000000
+2021-02-21 16:10:25,929 - Model - INFO - finish
+2021-02-21 16:18:07,344 - Model - INFO - [sample:2048, radiu:0.250000, solution:8] 
+cover:0.474365
+sum_cover:0.851468
+distance:0.000000
+min_radiu:0.000000
+2021-02-21 16:18:07,344 - Model - INFO - finish
+2021-02-21 16:18:09,438 - Model - INFO - PARAMETER ...
+2021-02-21 16:18:09,438 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=0.5, solution=8)
+2021-02-21 16:20:57,142 - Model - INFO - [sample:512, radiu:0.500000, solution:8] 
+cover:0.377285
+sum_cover:0.579990
+distance:0.000000
+min_radiu:0.000000
+2021-02-21 16:20:57,143 - Model - INFO - finish
+2021-02-21 16:25:24,226 - Model - INFO - [sample:1024, radiu:0.500000, solution:8] 
+cover:0.551952
+sum_cover:1.343101
+distance:0.000000
+min_radiu:0.000000
+2021-02-21 16:25:24,226 - Model - INFO - finish
+2021-02-21 16:33:04,437 - Model - INFO - [sample:2048, radiu:0.500000, solution:8] 
+cover:0.735918
+sum_cover:3.319993
+distance:0.000000
+min_radiu:0.000000
+2021-02-21 16:33:04,437 - Model - INFO - finish
+2021-02-21 16:33:06,383 - Model - INFO - PARAMETER ...
+2021-02-21 16:33:06,383 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=1.0, solution=8)
+2021-02-21 16:35:52,305 - Model - INFO - [sample:512, radiu:1.000000, solution:8] 
+cover:0.639938
+sum_cover:2.204662
+distance:0.000000
+min_radiu:0.000000
+2021-02-21 16:35:52,306 - Model - INFO - finish
+2021-02-21 16:40:14,963 - Model - INFO - [sample:1024, radiu:1.000000, solution:8] 
+cover:0.798489
+sum_cover:5.053592
+distance:0.000000
+min_radiu:0.000000
+2021-02-21 16:40:14,963 - Model - INFO - finish
+2021-02-21 16:47:49,319 - Model - INFO - [sample:2048, radiu:1.000000, solution:8] 
+cover:0.903546
+sum_cover:12.344003
+distance:0.000000
+min_radiu:0.000000
+2021-02-21 16:47:49,319 - Model - INFO - finish
+2021-02-21 16:47:51,294 - Model - INFO - PARAMETER ...
+2021-02-21 16:47:51,294 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover,distance,minradiu', num_sampling='512,1024,2048', num_testcase=-1, radiu=2.0, solution=8)
+2021-02-21 16:51:39,475 - Model - INFO - [sample:512, radiu:2.000000, solution:8] 
+cover:0.873079
+sum_cover:7.651815
+distance:0.006651
+min_radiu:2.786568
+2021-02-21 16:51:39,476 - Model - INFO - finish
+2021-02-21 16:58:03,844 - Model - INFO - [sample:1024, radiu:2.000000, solution:8] 
+cover:0.954016
+sum_cover:17.226154
+distance:0.012771
+min_radiu:1.884224
+2021-02-21 16:58:03,844 - Model - INFO - finish
+2021-02-21 17:09:38,088 - Model - INFO - [sample:2048, radiu:2.000000, solution:8] 
+cover:0.982850
+sum_cover:41.467167
+distance:0.023041
+min_radiu:1.337643
+2021-02-21 17:09:38,088 - Model - INFO - finish
+2021-02-21 17:09:40,346 - Model - INFO - PARAMETER ...
+2021-02-21 17:09:40,346 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=0.25, solution=9)
+2021-02-21 17:14:14,026 - Model - INFO - [sample:512, radiu:0.250000, solution:9] 
+cover:0.168949
+sum_cover:0.186126
+distance:0.000000
+min_radiu:0.000000
+2021-02-21 17:14:14,026 - Model - INFO - finish
+2021-02-21 17:20:47,037 - Model - INFO - [sample:1024, radiu:0.250000, solution:9] 
+cover:0.328161
+sum_cover:0.429766
+distance:0.000000
+min_radiu:0.000000
+2021-02-21 17:20:47,037 - Model - INFO - finish
+2021-02-21 17:30:54,982 - Model - INFO - [sample:2048, radiu:0.250000, solution:9] 
+cover:0.514839
+sum_cover:0.959091
+distance:0.000000
+min_radiu:0.000000
+2021-02-21 17:30:54,982 - Model - INFO - finish
+2021-02-21 17:30:56,985 - Model - INFO - PARAMETER ...
+2021-02-21 17:30:56,986 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=0.5, solution=9)
+2021-02-21 17:35:31,296 - Model - INFO - [sample:512, radiu:0.500000, solution:9] 
+cover:0.459590
+sum_cover:0.726046
+distance:0.000000
+min_radiu:0.000000
+2021-02-21 17:35:31,296 - Model - INFO - finish
+2021-02-21 17:42:09,377 - Model - INFO - [sample:1024, radiu:0.500000, solution:9] 
+cover:0.630936
+sum_cover:1.692587
+distance:0.000000
+min_radiu:0.000000
+2021-02-21 17:42:09,377 - Model - INFO - finish
+2021-02-21 17:52:25,509 - Model - INFO - [sample:2048, radiu:0.500000, solution:9] 
+cover:0.758706
+sum_cover:3.773229
+distance:0.000000
+min_radiu:0.000000
+2021-02-21 17:52:25,509 - Model - INFO - finish
+2021-02-21 17:52:27,520 - Model - INFO - PARAMETER ...
+2021-02-21 17:52:27,520 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover', num_sampling='512,1024,2048', num_testcase=-1, radiu=1.0, solution=9)
+2021-02-21 17:57:00,835 - Model - INFO - [sample:512, radiu:1.000000, solution:9] 
+cover:0.709558
+sum_cover:2.805938
+distance:0.000000
+min_radiu:0.000000
+2021-02-21 17:57:00,835 - Model - INFO - finish
+2021-02-21 18:03:35,993 - Model - INFO - [sample:1024, radiu:1.000000, solution:9] 
+cover:0.824100
+sum_cover:6.453537
+distance:0.000000
+min_radiu:0.000000
+2021-02-21 18:03:35,993 - Model - INFO - finish
+2021-02-21 18:13:47,178 - Model - INFO - [sample:2048, radiu:1.000000, solution:9] 
+cover:0.899974
+sum_cover:14.133123
+distance:0.000000
+min_radiu:0.000000
+2021-02-21 18:13:47,178 - Model - INFO - finish
+2021-02-21 18:13:49,204 - Model - INFO - PARAMETER ...
+2021-02-21 18:13:49,204 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover,distance,minradiu', num_sampling='512,1024,2048', num_testcase=-1, radiu=2.0, solution=9)
+2021-02-21 18:19:21,885 - Model - INFO - [sample:512, radiu:2.000000, solution:9] 
+cover:0.865071
+sum_cover:9.924641
+distance:0.005830
+min_radiu:3.279530
+2021-02-21 18:19:21,885 - Model - INFO - finish
+2021-02-21 18:27:50,098 - Model - INFO - [sample:1024, radiu:2.000000, solution:9] 
+cover:0.928632
+sum_cover:22.235144
+distance:0.010508
+min_radiu:2.291870
+2021-02-21 18:27:50,098 - Model - INFO - finish
+2021-02-21 18:41:49,387 - Model - INFO - [sample:2048, radiu:2.000000, solution:9] 
+cover:0.967187
+sum_cover:47.597481
+distance:0.019256
+min_radiu:1.522053
+2021-02-21 18:41:49,388 - Model - INFO - finish
+2021-02-22 00:06:35,592 - Model - INFO - PARAMETER ...
+2021-02-22 00:06:35,592 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover,distance,minradiu', num_sampling='512,1024,2048', num_testcase=-1, solution=8)
+2021-02-22 00:08:25,565 - Model - INFO - PARAMETER ...
+2021-02-22 00:08:25,566 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover,distance,minradiu', num_sampling='512,1024,2048', num_testcase=-1, solution=10)
+2021-02-22 00:12:47,611 - Model - INFO - [DataSet: KITTI, Sample:512, solution: 8]
+2021-02-22 00:12:47,612 - Model - INFO - 	|radiu		|cover_rate	|cover_sum	|
+2021-02-22 00:12:47,612 - Model - INFO - 	|0.250000	|0.136473	|0.150269	|
+2021-02-22 00:12:47,613 - Model - INFO - 	|0.500000	|0.377337	|0.579891	|
+2021-02-22 00:12:47,642 - Model - INFO - 	|1.000000	|0.640014	|2.204702	|
+2021-02-22 00:12:47,642 - Model - INFO - 	|2.000000	|0.873222	|7.652491	|
+2021-02-22 00:12:47,643 - Model - INFO - 	distance:0.006650
+2021-02-22 00:12:47,643 - Model - INFO - 	distance:2.783978
+2021-02-22 00:12:47,643 - Model - INFO - finish
+2021-02-22 00:19:51,956 - Model - INFO - PARAMETER ...
+2021-02-22 00:19:51,957 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover,distance,minradiu', num_sampling='512,1024,2048', num_testcase=-1, solution=10)
+2021-02-22 00:26:21,439 - Model - INFO - [DataSet: KITTI, Sample:512, solution: 10]
+2021-02-22 00:26:21,439 - Model - INFO - 	|radiu		|cover_rate	|cover_sum	|
+2021-02-22 00:26:21,440 - Model - INFO - 	|0.250000	|0.033853	|0.035837	|
+2021-02-22 00:26:21,440 - Model - INFO - 	|0.500000	|0.108719	|0.119730	|
+2021-02-22 00:26:21,440 - Model - INFO - 	|1.000000	|0.375413	|0.443499	|
+2021-02-22 00:26:21,440 - Model - INFO - 	|2.000000	|0.882876	|1.730459	|
+2021-02-22 00:26:21,441 - Model - INFO - 	distance:0.007071
+2021-02-22 00:26:21,441 - Model - INFO - 	minradiu:2.072132
+2021-02-22 00:26:21,441 - Model - INFO - 	batch_count:40.468750
+2021-02-22 00:26:21,441 - Model - INFO - finish
+2021-02-22 00:38:12,863 - Model - INFO - [DataSet: KITTI, Sample:1024, solution: 10]
+2021-02-22 00:38:12,863 - Model - INFO - 	|radiu		|cover_rate	|cover_sum	|
+2021-02-22 00:38:12,864 - Model - INFO - 	|0.250000	|0.078008	|0.086856	|
+2021-02-22 00:38:12,876 - Model - INFO - 	|0.500000	|0.250815	|0.299423	|
+2021-02-22 00:38:12,876 - Model - INFO - 	|1.000000	|0.720241	|1.128040	|
+2021-02-22 00:38:12,877 - Model - INFO - 	|2.000000	|0.993405	|4.446613	|
+2021-02-22 00:38:12,877 - Model - INFO - 	distance:0.013866
+2021-02-22 00:38:12,877 - Model - INFO - 	minradiu:1.332996
+2021-02-22 00:38:12,877 - Model - INFO - 	batch_count:42.214844
+2021-02-22 00:38:12,877 - Model - INFO - finish
+2021-02-22 01:02:12,620 - Model - INFO - [DataSet: KITTI, Sample:2048, solution: 10]
+2021-02-22 01:02:12,620 - Model - INFO - 	|radiu		|cover_rate	|cover_sum	|
+2021-02-22 01:02:12,620 - Model - INFO - 	|0.250000	|0.184630	|0.205334	|
+2021-02-22 01:02:12,620 - Model - INFO - 	|0.500000	|0.561858	|0.730831	|
+2021-02-22 01:02:12,621 - Model - INFO - 	|1.000000	|0.967409	|2.868374	|
+2021-02-22 01:02:12,621 - Model - INFO - 	|2.000000	|0.999810	|11.257149	|
+2021-02-22 01:02:12,621 - Model - INFO - 	distance:0.026899
+2021-02-22 01:02:12,621 - Model - INFO - 	minradiu:0.823425
+2021-02-22 01:02:12,621 - Model - INFO - 	batch_count:48.875000
+2021-02-22 01:02:12,621 - Model - INFO - finish
+2021-02-22 09:58:59,278 - Model - INFO - PARAMETER ...
+2021-02-22 09:58:59,278 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover,distance,minradiu', num_sampling='512,1024,2048', num_testcase=-1, solution=11)
+2021-02-22 10:05:37,358 - Model - INFO - [DataSet: KITTI, Sample:512, solution: 11]
+2021-02-22 10:05:37,358 - Model - INFO - 	|radiu		|cover_rate	|cover_sum	|
+2021-02-22 10:05:37,359 - Model - INFO - 	|0.250000	|0.040994	|0.041838	|
+2021-02-22 10:05:37,359 - Model - INFO - 	|0.500000	|0.131416	|0.138825	|
+2021-02-22 10:05:37,360 - Model - INFO - 	|1.000000	|0.423485	|0.489294	|
+2021-02-22 10:05:37,360 - Model - INFO - 	|2.000000	|0.900681	|1.765369	|
+2021-02-22 10:05:37,360 - Model - INFO - 	distance:0.007078
+2021-02-22 10:05:37,360 - Model - INFO - 	minradiu:2.041370
+2021-02-22 10:05:37,360 - Model - INFO - 	batch_count:42.062500
+2021-02-22 10:05:37,360 - Model - INFO - finish
+2021-02-22 10:17:49,761 - Model - INFO - [DataSet: KITTI, Sample:1024, solution: 11]
+2021-02-22 10:17:49,761 - Model - INFO - 	|radiu		|cover_rate	|cover_sum	|
+2021-02-22 10:17:49,761 - Model - INFO - 	|0.250000	|0.088152	|0.091936	|
+2021-02-22 10:17:49,762 - Model - INFO - 	|0.500000	|0.279571	|0.311659	|
+2021-02-22 10:17:49,762 - Model - INFO - 	|1.000000	|0.749507	|1.133722	|
+2021-02-22 10:17:49,762 - Model - INFO - 	|2.000000	|0.993560	|4.305068	|
+2021-02-22 10:17:49,762 - Model - INFO - 	distance:0.013882
+2021-02-22 10:17:49,762 - Model - INFO - 	minradiu:1.312061
+2021-02-22 10:17:49,762 - Model - INFO - 	batch_count:44.492188
+2021-02-22 10:17:49,762 - Model - INFO - finish
+2021-02-22 10:43:03,415 - Model - INFO - [DataSet: KITTI, Sample:2048, solution: 11]
+2021-02-22 10:43:03,415 - Model - INFO - 	|radiu		|cover_rate	|cover_sum	|
+2021-02-22 10:43:03,415 - Model - INFO - 	|0.250000	|0.200653	|0.212188	|
+2021-02-22 10:43:03,444 - Model - INFO - 	|0.500000	|0.590157	|0.740496	|
+2021-02-22 10:43:03,444 - Model - INFO - 	|1.000000	|0.970731	|2.842925	|
+2021-02-22 10:43:03,444 - Model - INFO - 	|2.000000	|0.999697	|11.029694	|
+2021-02-22 10:43:03,444 - Model - INFO - 	distance:0.026887
+2021-02-22 10:43:03,445 - Model - INFO - 	minradiu:0.811836
+2021-02-22 10:43:03,445 - Model - INFO - 	batch_count:53.109375
+2021-02-22 10:43:03,445 - Model - INFO - finish
+2021-02-22 11:00:15,108 - Model - INFO - PARAMETER ...
+2021-02-22 11:00:15,108 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover,distance,minradiu', num_sampling='512,1024,2048', num_testcase=-1, solution=12)
+2021-02-22 11:09:58,292 - Model - INFO - [DataSet: KITTI, Sample:512, solution: 12]
+2021-02-22 11:09:58,292 - Model - INFO - 	|radiu		|cover_rate	|cover_sum	|
+2021-02-22 11:09:58,292 - Model - INFO - 	|0.250000	|0.044454	|0.045099	|
+2021-02-22 11:09:58,292 - Model - INFO - 	|0.500000	|0.145566	|0.151463	|
+2021-02-22 11:09:58,293 - Model - INFO - 	|1.000000	|0.469336	|0.545888	|
+2021-02-22 11:09:58,293 - Model - INFO - 	|2.000000	|0.920104	|2.033476	|
+2021-02-22 11:09:58,293 - Model - INFO - 	distance:0.006956
+2021-02-22 11:09:58,293 - Model - INFO - 	minradiu:1.930607
+2021-02-22 11:09:58,293 - Model - INFO - 	batch_count:66.121094
+2021-02-22 11:09:58,293 - Model - INFO - finish
+2021-02-22 11:27:32,203 - Model - INFO - [DataSet: KITTI, Sample:1024, solution: 12]
+2021-02-22 11:27:32,204 - Model - INFO - 	|radiu		|cover_rate	|cover_sum	|
+2021-02-22 11:27:32,204 - Model - INFO - 	|0.250000	|0.097113	|0.099354	|
+2021-02-22 11:27:32,204 - Model - INFO - 	|0.500000	|0.313140	|0.337689	|
+2021-02-22 11:27:32,232 - Model - INFO - 	|1.000000	|0.795488	|1.252445	|
+2021-02-22 11:27:32,232 - Model - INFO - 	|2.000000	|0.992727	|4.871576	|
+2021-02-22 11:27:32,233 - Model - INFO - 	distance:0.013432
+2021-02-22 11:27:32,233 - Model - INFO - 	minradiu:1.229229
+2021-02-22 11:27:32,233 - Model - INFO - 	batch_count:71.535156
+2021-02-22 11:27:32,233 - Model - INFO - finish
+2021-02-22 11:59:33,078 - Model - INFO - [DataSet: KITTI, Sample:2048, solution: 12]
+2021-02-22 11:59:33,078 - Model - INFO - 	|radiu		|cover_rate	|cover_sum	|
+2021-02-22 11:59:33,079 - Model - INFO - 	|0.250000	|0.209807	|0.218864	|
+2021-02-22 11:59:33,079 - Model - INFO - 	|0.500000	|0.615012	|0.764319	|
+2021-02-22 11:59:33,079 - Model - INFO - 	|1.000000	|0.974153	|2.958908	|
+2021-02-22 11:59:33,080 - Model - INFO - 	|2.000000	|0.999461	|11.533087	|
+2021-02-22 11:59:33,080 - Model - INFO - 	distance:0.026016
+2021-02-22 11:59:33,080 - Model - INFO - 	minradiu:0.785641
+2021-02-22 11:59:33,080 - Model - INFO - 	batch_count:72.371094
+2021-02-22 11:59:33,080 - Model - INFO - finish
+2021-02-22 12:16:59,338 - Model - INFO - PARAMETER ...
+2021-02-22 12:16:59,338 - Model - INFO - Namespace(batch_size=1, dataset='KITTI', metrics='cover,distance,minradiu', num_sampling='512,1024,2048', num_testcase=-1, solution=13)
+2021-02-22 12:23:43,890 - Model - INFO - [DataSet: KITTI, Sample:512, solution: 13]
+2021-02-22 12:23:43,891 - Model - INFO - 	|radiu		|cover_rate	|cover_sum	|
+2021-02-22 12:23:43,891 - Model - INFO - 	|0.250000	|0.033068	|0.034720	|
+2021-02-22 12:23:43,892 - Model - INFO - 	|0.500000	|0.106381	|0.115609	|
+2021-02-22 12:23:43,892 - Model - INFO - 	|1.000000	|0.371030	|0.428681	|
+2021-02-22 12:23:43,893 - Model - INFO - 	|2.000000	|0.882439	|1.693429	|
+2021-02-22 12:23:43,893 - Model - INFO - 	distance:0.007066
+2021-02-22 12:23:43,893 - Model - INFO - 	minradiu:2.088020
+2021-02-22 12:23:43,893 - Model - INFO - 	batch_count:44.230469
+2021-02-22 12:23:43,893 - Model - INFO - finish
+2021-02-22 12:36:16,703 - Model - INFO - [DataSet: KITTI, Sample:1024, solution: 13]
+2021-02-22 12:36:16,704 - Model - INFO - 	|radiu		|cover_rate	|cover_sum	|
+2021-02-22 12:36:16,704 - Model - INFO - 	|0.250000	|0.076409	|0.084371	|
+2021-02-22 12:36:16,704 - Model - INFO - 	|0.500000	|0.245050	|0.290197	|
+2021-02-22 12:36:16,705 - Model - INFO - 	|1.000000	|0.709580	|1.097592	|
+2021-02-22 12:36:16,705 - Model - INFO - 	|2.000000	|0.992634	|4.364992	|
+2021-02-22 12:36:16,705 - Model - INFO - 	distance:0.013850
+2021-02-22 12:36:16,705 - Model - INFO - 	minradiu:1.351101
+2021-02-22 12:36:16,705 - Model - INFO - 	batch_count:46.457031
+2021-02-22 12:36:16,705 - Model - INFO - finish
+2021-02-22 13:02:01,559 - Model - INFO - [DataSet: KITTI, Sample:2048, solution: 13]
+2021-02-22 13:02:01,560 - Model - INFO - 	|radiu		|cover_rate	|cover_sum	|
+2021-02-22 13:02:01,560 - Model - INFO - 	|0.250000	|0.182274	|0.200860	|
+2021-02-22 13:02:01,560 - Model - INFO - 	|0.500000	|0.556016	|0.712239	|
+2021-02-22 13:02:01,561 - Model - INFO - 	|1.000000	|0.964904	|2.801920	|
+2021-02-22 13:02:01,561 - Model - INFO - 	|2.000000	|0.999705	|11.104575	|
+2021-02-22 13:02:01,561 - Model - INFO - 	distance:0.026833
+2021-02-22 13:02:01,561 - Model - INFO - 	minradiu:0.831196
+2021-02-22 13:02:01,561 - Model - INFO - 	batch_count:54.242188
+2021-02-22 13:02:01,561 - Model - INFO - finish

@@ -1,0 +1,14 @@
+2021-02-15 12:24:04,464 - Model - INFO - PARAMETER ...
+2021-02-15 12:24:04,464 - Model - INFO - Namespace(dataset='modelnet40', num_point=1024, num_sampling=256, num_testcase=-1)
+2021-02-15 12:24:04,464 - Model - INFO - Load dataset ...
+2021-02-15 12:24:14,338 - Model - INFO - sampling:32 avg_time:0.000130
+2021-02-15 12:24:20,653 - Model - INFO - sampling:64 avg_time:0.000197
+2021-02-15 12:24:27,080 - Model - INFO - sampling:128 avg_time:0.000327
+2021-02-15 12:24:33,703 - Model - INFO - sampling:256 avg_time:0.000589
+2021-02-19 18:05:13,563 - Model - INFO - PARAMETER ...
+2021-02-19 18:05:13,563 - Model - INFO - Namespace(dataset='modelnet40', gpu=1, num_point=1024, num_sampling=256, num_testcase=-1)
+2021-02-19 18:05:13,563 - Model - INFO - Load dataset ...
+2021-02-19 18:05:26,580 - Model - INFO - sampling:32 avg_time:0.016808
+2021-02-19 18:05:35,491 - Model - INFO - sampling:64 avg_time:0.030969
+2021-02-19 18:05:50,771 - Model - INFO - sampling:128 avg_time:0.056263
+2021-02-19 18:06:20,589 - Model - INFO - sampling:256 avg_time:0.113019
