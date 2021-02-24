@@ -1,7 +1,9 @@
 #ifndef FPS_H_
 #define FPS_H_
-#include <ap_cint.h>
+//#include <ap_cint.h>
 #include <math.h>
+#include <stdbool.h>
+
 #ifdef BIT_ACCURATE
 #include "autopilot_tech.h"
 
@@ -9,12 +11,12 @@ typedef uint18  point_distance_t;
 typedef uint1 point_mask_t;
 
 #else // Use native C types
+#include "stdlib.h"
 
-
-typedef unsigned short point_distance_t;
+typedef unsigned int point_distance_t;
 typedef bool point_mask_t;
 #endif
-#define MAX_DISTANCE point_distance_t(1 << 15)
+#define MAX_DISTANCE (point_distance_t)(1 << 17)
 #include "point_aux.h"
 
 #define CLIP(x) (((x)>255) ? 255 : (((x)<0) ? 0 : (x)))

@@ -9,7 +9,7 @@ int main () {
    pointcloud_t *sample_points = (pointcloud_t *)malloc(sizeof(pointcloud_t));
 
    // Read input pointclouds
-   pointcloud_read(origin_points);
+   pointcloud_read(origin_points, 0);
    sample_points->length = 32;
    sample_points->width = 3;
 
@@ -22,10 +22,10 @@ int main () {
    int ret = system("diff --brief -w data/output.txt data/output.golden.txt");
 
    if (ret != 0) {
-      printf("Test failed!!!\n", ret);
+      printf("Test failed!!!\n");
       return 1;
    } else {
-      printf("Test passed!\n", ret);
+      printf("Test passed!\n");
       return 0;
    }
 }

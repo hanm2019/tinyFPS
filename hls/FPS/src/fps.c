@@ -65,8 +65,12 @@ void distance(pointcloud_t* in, point_dim_t idx, point_distance_array_t* array){
 			xi = in->points[i].data[0];
 			yi = in->points[i].data[1];
 			zi = in->points[i].data[2];
-			p2p_distance = pow(x - xi, 2) + pow(y - yi, 2) + pow(z - zi, 2);
-			array->distance_array[i] = min(array->distance_array[i], p2p_distance);
+#ifndef __SYNTHESIS__
+			p2p_distance = (x - xi)*(x - xi) + (y - yi) * (y - yi) + (z - zi) * (z - zi);
+#else
+            p2p_distance = pow(x - xi, 2) + pow(y - yi, 2) + pow(z - zi, 2);
+#endif
+			array->distance_array[i] = array->distance_array[i] >  p2p_distance ? p2p_distance : array->distance_array[i];
 		}
 	}
 }
