@@ -1,0 +1,8 @@
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vivado/2020.1/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'hanmeng' on host 'G1045' (Linux_x86_64 version 5.4.0-65-generic) on Fri Feb 26 14:20:49 CST 2021
+INFO: [HLS 200-10] On os Ubuntu 18.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/hanmeng/Documents/tinyFPS/hls/FPS/opt/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_hanmeng/27021614320450018723
+INFO: [APCC 202-1] APCC is done.

@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/hanmeng/Documents/tinyFPS/hls/FPS/basic/./sim/autowrap/testbench/fps.c_pre.c.tb.c

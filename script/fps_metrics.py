@@ -99,7 +99,8 @@ def main(args):
                 points = points[:, :3, :]
                 points = points.permute(0, 2, 1).contiguous()
                 if args.solution == 1:  # fps
-                    idx = sampling.farthest_point_sample(points, num_sampling)
+                    idx = sampling.farthest_point_sample(points, num_sampling, cuda=True)
+                    print(idx)
                     sample_points = fps_utils.index_points(points, idx)
                 elif args.solution == 2:  # random
                     idx = sampling.rand_sample(points.shape, num_sampling)

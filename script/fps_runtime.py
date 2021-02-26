@@ -74,7 +74,7 @@ def main(args):
                     points = points[:, :3, :]
                     points = points.permute(0, 2, 1).contiguous()
                     start_time = time.time()
-                    farthest_point_sample(points, num_sampling)
+                    idx = farthest_point_sample(points, num_sampling)
                     torch.cuda.synchronize()
                     end_time = time.time()
                     total_time = total_time + (end_time - start_time)

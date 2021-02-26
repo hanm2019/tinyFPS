@@ -1,0 +1,51 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling(apcc) ../../../../fps_test.c in debug mode
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vivado/2020.1/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'hanmeng' on host 'G1045' (Linux_x86_64 version 5.4.0-65-generic) on Fri Feb 26 10:53:59 CST 2021
+INFO: [HLS 200-10] On os Ubuntu 18.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/hanmeng/Documents/tinyFPS/hls/FPS/opt/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_hanmeng/111661614308039236251
+INFO: [APCC 202-1] APCC is done.
+   Compiling(apcc) ../../../../fps.c in debug mode
+INFO: [HLS 200-10] Running '/opt/Xilinx/Vivado/2020.1/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'hanmeng' on host 'G1045' (Linux_x86_64 version 5.4.0-65-generic) on Fri Feb 26 10:54:07 CST 2021
+INFO: [HLS 200-10] On os Ubuntu 18.04.5 LTS
+INFO: [HLS 200-10] In directory '/home/hanmeng/Documents/tinyFPS/hls/FPS/opt/csim/build'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_hanmeng/113681614308048022711
+INFO: [APCC 202-1] APCC is done.
+   Generating csim.exe
+select point: [128, 175, 246]
+select point: [17, 129, 160]
+select point: [238, 129, 160]
+select point: [128, 115, 153]
+select point: [174, 113, 89]
+select point: [81, 115, 95]
+select point: [131, 127, 212]
+select point: [185, 124, 142]
+select point: [129, 141, 104]
+select point: [90, 139, 243]
+select point: [67, 125, 144]
+select point: [166, 139, 243]
+select point: [130, 114, 71]
+select point: [148, 109, 118]
+select point: [102, 122, 126]
+select point: [128, 126, 2]
+select point: [49, 118, 114]
+select point: [130, 140, 178]
+select point: [206, 117, 115]
+select point: [127, 160, 217]
+select point: [130, 108, 29]
+select point: [127, 139, 241]
+select point: [132, 140, 135]
+select point: [111, 118, 94]
+select point: [126, 143, 66]
+select point: [215, 127, 141]
+select point: [172, 126, 116]
+select point: [149, 125, 91]
+select point: [106, 136, 219]
+select point: [38, 127, 143]
+select point: [139, 124, 48]
+Test passed!
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

@@ -1,0 +1,497 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "farthest_point_sampling",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "farthest_point_sampling"
+              }]
+          }
+        },
+        {
+          "functionName": "farthest_point_sampling",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ARRAY_PARTITION",
+            "option": [
+              {
+                "name": "variable",
+                "value": "in->points"
+              },
+              {
+                "name": "cyclic",
+                "value": ""
+              },
+              {
+                "name": "factor",
+                "value": "64"
+              },
+              {
+                "name": "dim",
+                "value": "1"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "farthest_point_sampling",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ARRAY_PARTITION",
+            "option": [
+              {
+                "name": "variable",
+                "value": "out->points"
+              },
+              {
+                "name": "cyclic",
+                "value": ""
+              },
+              {
+                "name": "factor",
+                "value": "64"
+              },
+              {
+                "name": "dim",
+                "value": "1"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "init_distance",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "distance",
+          "label": "distance_label1",
+          "functionLabel": "",
+          "pragma": {"name": "DATAFLOW"}
+        },
+        {
+          "functionName": "distance_max_idx",
+          "label": "distance_max_idx_label3",
+          "functionLabel": "",
+          "pragma": {
+            "name": "UNROLL",
+            "option": [{
+                "name": "factor",
+                "value": "4"
+              }]
+          }
+        },
+        {
+          "functionName": "distance_max_idx",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ARRAY_PARTITION",
+            "option": [
+              {
+                "name": "variable",
+                "value": "in->points"
+              },
+              {
+                "name": "cyclic",
+                "value": ""
+              },
+              {
+                "name": "factor",
+                "value": "16"
+              },
+              {
+                "name": "dim",
+                "value": "1"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "distance_max_idx",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ARRAY_PARTITION",
+            "option": [
+              {
+                "name": "variable",
+                "value": "out->points"
+              },
+              {
+                "name": "cyclic",
+                "value": ""
+              },
+              {
+                "name": "factor",
+                "value": "16"
+              },
+              {
+                "name": "dim",
+                "value": "1"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "distance_max_idx",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ARRAY_PARTITION",
+            "option": [
+              {
+                "name": "variable",
+                "value": "array->distance_array"
+              },
+              {
+                "name": "cyclic",
+                "value": ""
+              },
+              {
+                "name": "factor",
+                "value": "16"
+              },
+              {
+                "name": "dim",
+                "value": "1"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "distance_max_idx",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ARRAY_PARTITION",
+            "option": [
+              {
+                "name": "variable",
+                "value": "array->distance_mask"
+              },
+              {
+                "name": "cyclic",
+                "value": ""
+              },
+              {
+                "name": "factor",
+                "value": "16"
+              },
+              {
+                "name": "dim",
+                "value": "1"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "farthest_point_sampling",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ARRAY_PARTITION",
+            "option": [
+              {
+                "name": "variable",
+                "value": "_min_distance.distance_mask"
+              },
+              {
+                "name": "cyclic",
+                "value": ""
+              },
+              {
+                "name": "factor",
+                "value": "64"
+              },
+              {
+                "name": "dim",
+                "value": "1"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "farthest_point_sampling",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ARRAY_PARTITION",
+            "option": [
+              {
+                "name": "variable",
+                "value": "_min_distance.distance_array"
+              },
+              {
+                "name": "cyclic",
+                "value": ""
+              },
+              {
+                "name": "factor",
+                "value": "64"
+              },
+              {
+                "name": "dim",
+                "value": "1"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "init_distance",
+          "label": "init_distance_label4",
+          "functionLabel": "",
+          "pragma": {
+            "name": "UNROLL",
+            "option": [{
+                "name": "factor",
+                "value": "64"
+              }]
+          }
+        },
+        {
+          "functionName": "init_distance",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ARRAY_PARTITION",
+            "option": [
+              {
+                "name": "variable",
+                "value": "array->distance_array"
+              },
+              {
+                "name": "cyclic",
+                "value": ""
+              },
+              {
+                "name": "factor",
+                "value": "64"
+              },
+              {
+                "name": "dim",
+                "value": "1"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "init_distance",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ARRAY_PARTITION",
+            "option": [
+              {
+                "name": "variable",
+                "value": "array->distance_mask"
+              },
+              {
+                "name": "cyclic",
+                "value": ""
+              },
+              {
+                "name": "factor",
+                "value": "64"
+              },
+              {
+                "name": "dim",
+                "value": "1"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "farthest_point_sampling",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ARRAY_PARTITION",
+            "option": [
+              {
+                "name": "variable",
+                "value": "_farthest_point"
+              },
+              {
+                "name": "complete",
+                "value": ""
+              },
+              {
+                "name": "dim",
+                "value": "1"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "farthest_point_sampling",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ARRAY_PARTITION",
+            "option": [
+              {
+                "name": "variable",
+                "value": "in->points"
+              },
+              {
+                "name": "block",
+                "value": ""
+              },
+              {
+                "name": "factor",
+                "value": "3"
+              },
+              {
+                "name": "dim",
+                "value": "1"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "farthest_point_sampling",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ARRAY_PARTITION",
+            "option": [
+              {
+                "name": "variable",
+                "value": "out->points"
+              },
+              {
+                "name": "block",
+                "value": ""
+              },
+              {
+                "name": "factor",
+                "value": "3"
+              },
+              {
+                "name": "dim",
+                "value": "1"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "farthest_point_sampling",
+          "label": "random_select_0",
+          "functionLabel": "",
+          "pragma": {"name": "UNROLL"}
+        },
+        {
+          "functionName": "distance_max_point",
+          "label": "calculate_distance",
+          "functionLabel": "",
+          "pragma": {
+            "name": "PIPELINE",
+            "option": [{
+                "name": "II",
+                "value": "2"
+              }]
+          }
+        },
+        {
+          "functionName": "farthest_point_sampling",
+          "label": "set_farthest_point",
+          "functionLabel": "",
+          "pragma": {"name": "UNROLL"}
+        },
+        {
+          "functionName": "distance_max_point",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ARRAY_PARTITION",
+            "option": [
+              {
+                "name": "variable",
+                "value": "origin_point_pix"
+              },
+              {
+                "name": "complete",
+                "value": ""
+              },
+              {
+                "name": "dim",
+                "value": "1"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "distance_max_point",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "ARRAY_PARTITION",
+            "option": [
+              {
+                "name": "variable",
+                "value": "distance_array"
+              },
+              {
+                "name": "complete",
+                "value": ""
+              },
+              {
+                "name": "dim",
+                "value": "1"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "distance_max_point",
+          "label": "get_origin_point",
+          "functionLabel": "",
+          "pragma": {"name": "UNROLL"}
+        },
+        {
+          "functionName": "distance_max_point",
+          "label": "calculate_one_dim",
+          "functionLabel": "",
+          "pragma": {"name": "UNROLL"}
+        },
+        {
+          "functionName": "distance_max_point",
+          "label": "calculate_one_dim",
+          "functionLabel": "",
+          "pragma": {"name": "PIPELINE"}
+        },
+        {
+          "functionName": "farthest_point_sampling",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "farthest_point_sampling"
+              }]
+          }
+        },
+        {
+          "functionName": "farthest_point_sampling",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "farthest_point_sampling"
+              }]
+          }
+        }
+      ]
+    }]}

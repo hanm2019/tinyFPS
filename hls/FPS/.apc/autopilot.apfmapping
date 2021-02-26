@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
   <source>
-    <originFiles name="point_aux.h" path="/home/hanmeng/Documents/tinyFPS/hls/FPS/src/point_aux.h"/>
-    <originFiles name="point_aux.c" path="/home/hanmeng/Documents/tinyFPS/hls/FPS/src/point_aux.c"/>
-    <originFiles name="fps.h" path="/home/hanmeng/Documents/tinyFPS/hls/FPS/src/fps.h"/>
-    <originFiles name="fps.c" path="/home/hanmeng/Documents/tinyFPS/hls/FPS/src/fps.c"/>
+    <originFiles name="fps.c" path="/home/hanmeng/Documents/tinyFPS/hls/fps.c"/>
+    <originFiles name="fps.h" path="/home/hanmeng/Documents/tinyFPS/hls/fps.h"/>
+    <originFiles name="point_aux.c" path="/home/hanmeng/Documents/tinyFPS/hls/point_aux.c"/>
+    <originFiles name="point_aux.h" path="/home/hanmeng/Documents/tinyFPS/hls/point_aux.h"/>
   </source>
   <testbench>
-    <originFiles name="fps_test.c" path="/home/hanmeng/Documents/tinyFPS/hls/FPS/test/fps_test.c"/>
-    <originFiles name="data" path="/home/hanmeng/Documents/tinyFPS/hls/FPS/data"/>
+    <originFiles name="fps_test.c" path="/home/hanmeng/Documents/tinyFPS/hls/fps_test.c"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

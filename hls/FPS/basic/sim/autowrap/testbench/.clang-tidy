@@ -1,0 +1,1 @@
+ {CheckOptions: [ {key: xilinx-tb-process.TopFunctionName, value: 'farthest_point_sampling'}, {key: xilinx-tb-process.KeepTopName, value: 1} ] } 

@@ -42,34 +42,34 @@
 			<location>/home/hanmeng/Documents/tinyFPS/hls/FPS/basic/.tcls</location>
 		</link>
 		<link>
+			<name>opt/constraints</name>
+			<type>2</type>
+			<location>/home/hanmeng/Documents/tinyFPS/hls/FPS/opt/.tcls</location>
+		</link>
+		<link>
 			<name>source/fps.c</name>
 			<type>1</type>
-			<location>/home/hanmeng/Documents/tinyFPS/hls/FPS/src/fps.c</location>
+			<location>/home/hanmeng/Documents/tinyFPS/hls/fps.c</location>
 		</link>
 		<link>
 			<name>source/fps.h</name>
 			<type>1</type>
-			<location>/home/hanmeng/Documents/tinyFPS/hls/FPS/src/fps.h</location>
+			<location>/home/hanmeng/Documents/tinyFPS/hls/fps.h</location>
 		</link>
 		<link>
 			<name>source/point_aux.c</name>
 			<type>1</type>
-			<location>/home/hanmeng/Documents/tinyFPS/hls/FPS/src/point_aux.c</location>
+			<location>/home/hanmeng/Documents/tinyFPS/hls/point_aux.c</location>
 		</link>
 		<link>
 			<name>source/point_aux.h</name>
 			<type>1</type>
-			<location>/home/hanmeng/Documents/tinyFPS/hls/FPS/src/point_aux.h</location>
-		</link>
-		<link>
-			<name>testbench/data</name>
-			<type>2</type>
-			<location>/home/hanmeng/Documents/tinyFPS/hls/FPS/data</location>
+			<location>/home/hanmeng/Documents/tinyFPS/hls/point_aux.h</location>
 		</link>
 		<link>
 			<name>testbench/fps_test.c</name>
 			<type>1</type>
-			<location>/home/hanmeng/Documents/tinyFPS/hls/FPS/test/fps_test.c</location>
+			<location>/home/hanmeng/Documents/tinyFPS/hls/fps_test.c</location>
 		</link>
 		<link>
 			<name>basic/constraints/.xml.directive</name>
@@ -85,6 +85,21 @@
 			<name>basic/constraints/script.tcl</name>
 			<type>1</type>
 			<location>/home/hanmeng/Documents/tinyFPS/hls/FPS/basic/script.tcl</location>
+		</link>
+		<link>
+			<name>opt/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>/home/hanmeng/Documents/tinyFPS/hls/FPS/opt/opt.directive</location>
+		</link>
+		<link>
+			<name>opt/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>/home/hanmeng/Documents/tinyFPS/hls/FPS/opt/directives.tcl</location>
+		</link>
+		<link>
+			<name>opt/constraints/script.tcl</name>
+			<type>1</type>
+			<location>/home/hanmeng/Documents/tinyFPS/hls/FPS/opt/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>

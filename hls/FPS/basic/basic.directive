@@ -1,3 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="farthest_point_sampling" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="farthest_point_sampling"/>
+            </pragma>
+        </directive>
+        <directive functionName="farthest_point_sampling" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="farthest_point_sampling"/>
+            </pragma>
+        </directive>
+    </sourceFile>
 </AutoPilot:ProjectResources>
+

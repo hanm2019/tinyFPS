@@ -1,0 +1,163 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="farthest_point_sampling" label="" functionLabel="">
+            <pragma name="TOP">
+                <option name="name" value="farthest_point_sampling"/>
+            </pragma>
+        </directive>
+        <directive functionName="farthest_point_sampling" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="variable" value="in-&gt;points" positionalBoolean="4"/>
+                <option name="cyclic" value="" positionalBoolean="type"/>
+                <option name="factor" value="64"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="farthest_point_sampling" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="variable" value="out-&gt;points" positionalBoolean="4"/>
+                <option name="cyclic" value="" positionalBoolean="type"/>
+                <option name="factor" value="64"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="init_distance" label="" functionLabel="">
+            <pragma name="INLINE"/>
+        </directive>
+        <directive functionName="distance" label="distance_label1" functionLabel="">
+            <pragma name="DATAFLOW"/>
+        </directive>
+        <directive functionName="distance_max_idx" label="distance_max_idx_label3" functionLabel="">
+            <pragma name="UNROLL">
+                <option name="factor" value="4"/>
+            </pragma>
+        </directive>
+        <directive functionName="distance_max_idx" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="variable" value="in-&gt;points" positionalBoolean="4"/>
+                <option name="cyclic" value="" positionalBoolean="type"/>
+                <option name="factor" value="16"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="distance_max_idx" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="variable" value="out-&gt;points" positionalBoolean="4"/>
+                <option name="cyclic" value="" positionalBoolean="type"/>
+                <option name="factor" value="16"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="distance_max_idx" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="variable" value="array-&gt;distance_array" positionalBoolean="4"/>
+                <option name="cyclic" value="" positionalBoolean="type"/>
+                <option name="factor" value="16"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="distance_max_idx" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="variable" value="array-&gt;distance_mask" positionalBoolean="4"/>
+                <option name="cyclic" value="" positionalBoolean="type"/>
+                <option name="factor" value="16"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="farthest_point_sampling" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="variable" value="_min_distance.distance_mask" positionalBoolean="4"/>
+                <option name="cyclic" value="" positionalBoolean="type"/>
+                <option name="factor" value="64"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="farthest_point_sampling" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="variable" value="_min_distance.distance_array" positionalBoolean="4"/>
+                <option name="cyclic" value="" positionalBoolean="type"/>
+                <option name="factor" value="64"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="init_distance" label="init_distance_label4" functionLabel="">
+            <pragma name="UNROLL">
+                <option name="factor" value="64"/>
+            </pragma>
+        </directive>
+        <directive functionName="init_distance" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="variable" value="array-&gt;distance_array" positionalBoolean="4"/>
+                <option name="cyclic" value="" positionalBoolean="type"/>
+                <option name="factor" value="64"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="init_distance" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="variable" value="array-&gt;distance_mask" positionalBoolean="4"/>
+                <option name="cyclic" value="" positionalBoolean="type"/>
+                <option name="factor" value="64"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="farthest_point_sampling" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="variable" value="_farthest_point" positionalBoolean="4"/>
+                <option name="complete" value="" positionalBoolean="type"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="farthest_point_sampling" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="variable" value="in-&gt;points" positionalBoolean="4"/>
+                <option name="block" value="" positionalBoolean="type"/>
+                <option name="factor" value="3"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="farthest_point_sampling" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="variable" value="out-&gt;points" positionalBoolean="4"/>
+                <option name="block" value="" positionalBoolean="type"/>
+                <option name="factor" value="3"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="farthest_point_sampling" label="random_select_0" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="distance_max_point" label="calculate_distance" functionLabel="">
+            <pragma name="PIPELINE">
+                <option name="II" value="2"/>
+            </pragma>
+        </directive>
+        <directive functionName="farthest_point_sampling" label="set_farthest_point" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="distance_max_point" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="variable" value="origin_point_pix" positionalBoolean="4"/>
+                <option name="complete" value="" positionalBoolean="type"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="distance_max_point" label="" functionLabel="">
+            <pragma name="ARRAY_PARTITION">
+                <option name="variable" value="distance_array" positionalBoolean="4"/>
+                <option name="complete" value="" positionalBoolean="type"/>
+                <option name="dim" value="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="distance_max_point" label="get_origin_point" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="distance_max_point" label="calculate_one_dim" functionLabel="">
+            <pragma name="UNROLL"/>
+        </directive>
+        <directive functionName="distance_max_point" label="calculate_one_dim" functionLabel="">
+            <pragma name="PIPELINE"/>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

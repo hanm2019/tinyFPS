@@ -1,0 +1,757 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_interface -default_slave_interface=s_axilite
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-10] Analyzing design file 'point_aux.c' ... 
+WARNING: [HLS 207-5324] unused parameter 'idx': point_aux.c:41:16
+INFO: [HLS 200-10] Analyzing design file 'fps.c' ... 
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' target.
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isinf<double>(double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isinf.h:16:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isnan<double>(double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h:16:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::data() const (.113.123.133.143)' into 'fp_struct<double>::to_double() const (.110.120.130.140)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:517:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_double() const (.110.120.130.140)' into 'fp_struct<double>::to_ieee() const' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:532:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 4, 4, 71, 73>(ap_ufixed<71, -(4), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<73, -(((4) + (4)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:215:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 7, 6, 73, 83>(ap_ufixed<73, -(7), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<83, -(((7) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:215:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 12, 6, 83, 92>(ap_ufixed<83, -(12), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<92, -(((12) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:215:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 17, 6, 92, 87>(ap_ufixed<92, -(17), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<87, -(((17) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:215:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 22, 6, 87, 82>(ap_ufixed<87, -(22), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<82, -(((22) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:215:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 27, 6, 82, 77>(ap_ufixed<82, -(27), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<77, -(((27) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:215:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 32, 6, 77, 72>(ap_ufixed<77, -(32), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<72, -(((32) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:215:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:321:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:321:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:321:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:321:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isinf<double>(double)' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:321:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isnan<double>(double)' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:321:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isnan<double>(double)' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:321:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isinf<double>(double)' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:321:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'unsigned int generic_cast_IEEE754<unsigned int, (ap_q_mode)6, double>(double, bool, hls::enable_if<!(std::numeric_limits<unsigned int>::is_signed), bool>::type)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:65:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::mantissa() const' into 'unsigned int generic_cast_IEEE754<unsigned int, (ap_q_mode)6, double>(double, bool, hls::enable_if<!(std::numeric_limits<unsigned int>::is_signed), bool>::type)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:65:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'unsigned int generic_cast_IEEE754<unsigned int, (ap_q_mode)6, double>(double, bool, hls::enable_if<!(std::numeric_limits<unsigned int>::is_signed), bool>::type)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:65:0)
+INFO: [HLS 214-178] Inlining function 'unsigned int generic_cast_IEEE754<unsigned int, double>(double, bool)' into '__hls_fptoui_double_i32' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:69:0)
+INFO: [HLS 214-178] Inlining function 'pow' into 'distance' (fps.c:56:0)
+INFO: [HLS 214-178] Inlining function 'pow' into 'distance' (fps.c:56:0)
+INFO: [HLS 214-178] Inlining function 'pow' into 'distance' (fps.c:56:0)
+INFO: [HLS 214-178] Inlining function '__hls_fptoui_double_i32' into 'distance' (fps.c:56:0)
+INFO: [HLS 214-178] Inlining function 'init_distance' into 'farthest_point_sampling' (fps.c:8:0)
+INFO: [HLS 214-178] Inlining function 'distance' into 'farthest_point_sampling' (fps.c:8:0)
+INFO: [HLS 214-178] Inlining function 'max_idx' into 'farthest_point_sampling' (fps.c:8:0)
+INFO: [HLS 214-115] Burst read of variable length and bit width 32 has been inferred on port 'gmem' (fps.c:62:6)
+INFO: [HLS 214-115] Burst read of variable length and bit width 32 has been inferred on port 'gmem' (fps.c:68:9)
+INFO: [HLS 214-115] Burst read of variable length and bit width 32 has been inferred on port 'gmem' (fps.c:37:32)
+INFO: [HLS 214-115] Burst write of variable length and bit width 32 has been inferred on port 'gmem' (fps.c:43:3)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1667.703 ; gain = 1229.770 ; free physical = 33057 ; free virtual = 41344
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1667.703 ; gain = 1229.770 ; free physical = 33057 ; free virtual = 41344
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1667.703 ; gain = 1229.770 ; free physical = 32901 ; free virtual = 41229
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'pow_reduce::pow_generic<double>' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:412) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::pow_traits<double>::log_range_reduction<71>' into 'pow_reduce::pow_generic<double>' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:548) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::pow_traits<double>::exp_Z1P_m_1' into 'pow_reduce::pow_generic<double>' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:641) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<unsigned int, (ap_q_mode)6, double>' into 'farthest_point_sampling' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1667.703 ; gain = 1229.770 ; free physical = 32708 ; free virtual = 41050
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_50_1' (fps.c:49) in function 'farthest_point_sampling' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_66_1' (fps.c:60) in function 'farthest_point_sampling' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_84_1' (fps.c:81) in function 'farthest_point_sampling' automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'pow_reduce::pow_generic<double>' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:412) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::pow_traits<double>::log_range_reduction<71>' into 'pow_reduce::pow_generic<double>' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:548) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<unsigned int, (ap_q_mode)6, double>' into 'farthest_point_sampling' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:690:3) in function 'pow_reduce::pow_generic<double>'... converting 9 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (fps.c:81:17) in function 'farthest_point_sampling'... converting 3 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'pow_reduce::pow_generic<double>' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:18:3)...7 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1667.703 ; gain = 1229.770 ; free physical = 32485 ; free virtual = 40854
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_34_1' (fps.c:18:14) in function 'farthest_point_sampling' more than one sub loop.
+WARNING: [XFORM 203-631] Renaming function 'pow_reduce::pow_generic<double>' to 'pow_generic<double>' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:18:3)
+INFO: [HLS 200-472] Inferring partial write operation for '_min_distance.distance_array' (fps.c:51:28)
+INFO: [HLS 200-472] Inferring partial write operation for '_min_distance.distance_mask' (fps.c:52:27)
+INFO: [HLS 200-472] Inferring partial write operation for '_min_distance.distance_mask' (fps.c:32:33)
+INFO: [HLS 200-472] Inferring partial write operation for '_min_distance.distance_array' (fps.c:74:39)
+INFO: [HLS 200-472] Inferring partial write operation for '_min_distance.distance_mask' (fps.c:43:46)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1667.703 ; gain = 1229.770 ; free physical = 32433 ; free virtual = 40809
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'farthest_point_sampling' ...
+WARNING: [SYN 201-103] Legalizing function name 'pow_generic<double>' to 'pow_generic_double_s'.
+WARNING: [SYN 201-107] Renaming port name 'farthest_point_sampling/in' to 'farthest_point_sampling/in_r' to avoid the conflict with HDL keywords or other object names.
+WARNING: [SYN 201-107] Renaming port name 'farthest_point_sampling/out' to 'farthest_point_sampling/out_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pow_generic_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_15) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining function 'pow_generic<double>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 18.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 20.67 seconds; current allocated memory: 636.477 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.14 seconds; current allocated memory: 637.826 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'farthest_point_sampling' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_50_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_66_1'.
+WARNING: [HLS 200-880] The II Violation in module 'farthest_point_sampling' (Loop: VITIS_LOOP_66_1): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between bus read on port 'gmem' (fps.c:68) and bus read on port 'gmem' (fps.c:68).
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 100.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_84_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.5 seconds; current allocated memory: 639.515 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.91 seconds; current allocated memory: 643.279 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pow_generic_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_inverse_lut_table_powbkb' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_log0_lut_table_ap_fixed_121_12_ap_q_mode_5_ap_o_mode_3_0_double_0_5_64_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_log0_lut_table_ap_fixed_1cud' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_121_12_ap_q_mode_5_ap_o_mode_3_0_4_4_16_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12dEe' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_121_12_ap_q_mode_5_ap_o_mode_3_0_7_6_64_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12eOg' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_121_12_ap_q_mode_5_ap_o_mode_3_0_12_6_64_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12fYi' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_121_12_ap_q_mode_5_ap_o_mode_3_0_17_6_64_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12g8j' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_121_12_ap_q_mode_5_ap_o_mode_3_0_22_6_64_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12hbi' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_121_12_ap_q_mode_5_ap_o_mode_3_0_27_6_64_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12ibs' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_121_12_ap_q_mode_5_ap_o_mode_3_0_32_6_64_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12jbC' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_58kbM' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_59_0lbW' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_59_0mb6' due to the length limit 80
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16ns_19s_31_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_12s_80ns_90_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_13s_71s_71_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_36ns_43ns_79_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_40ns_40ns_80_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_44ns_49ns_93_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_4ns_71ns_75_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_50ns_50ns_100_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_54s_54_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_73ns_79_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_77ns_83_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_82ns_88_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_83ns_89_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_87ns_93_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_92ns_98_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pow_generic_double_s'.
+INFO: [HLS 200-111]  Elapsed time: 0.6 seconds; current allocated memory: 646.126 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'farthest_point_sampling' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'farthest_point_sampling/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'farthest_point_sampling/in_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'farthest_point_sampling/out_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'farthest_point_sampling' to 's_axilite & ap_ctrl_chain'.
+INFO: [RTGEN 206-100] Bundling port 'in_r', 'out_r' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'dadd_64ns_64ns_64_3_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitodp_32s_64_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'farthest_point_sampling'.
+INFO: [HLS 200-111]  Elapsed time: 0.86 seconds; current allocated memory: 657.616 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'farthest_point_sampling_mul_6ns_54s_54_1_1_Multiplier_0'
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_interface -default_slave_interface=s_axilite
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-10] Analyzing design file 'point_aux.c' ... 
+WARNING: [HLS 207-5324] unused parameter 'idx': point_aux.c:41:16
+INFO: [HLS 200-10] Analyzing design file 'fps.c' ... 
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' target.
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isinf<double>(double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isinf.h:16:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isnan<double>(double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h:16:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::data() const (.113.123.133.143)' into 'fp_struct<double>::to_double() const (.110.120.130.140)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:517:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_double() const (.110.120.130.140)' into 'fp_struct<double>::to_ieee() const' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:532:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 4, 4, 71, 73>(ap_ufixed<71, -(4), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<73, -(((4) + (4)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:215:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 7, 6, 73, 83>(ap_ufixed<73, -(7), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<83, -(((7) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:215:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 12, 6, 83, 92>(ap_ufixed<83, -(12), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<92, -(((12) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:215:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 17, 6, 92, 87>(ap_ufixed<92, -(17), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<87, -(((17) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:215:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 22, 6, 87, 82>(ap_ufixed<87, -(22), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<82, -(((22) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:215:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 27, 6, 82, 77>(ap_ufixed<82, -(27), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<77, -(((27) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:215:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 32, 6, 77, 72>(ap_ufixed<77, -(32), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<72, -(((32) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:215:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:321:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:321:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:321:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:321:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isinf<double>(double)' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:321:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isnan<double>(double)' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:321:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isnan<double>(double)' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:321:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isinf<double>(double)' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:321:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'unsigned int generic_cast_IEEE754<unsigned int, (ap_q_mode)6, double>(double, bool, hls::enable_if<!(std::numeric_limits<unsigned int>::is_signed), bool>::type)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:65:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::mantissa() const' into 'unsigned int generic_cast_IEEE754<unsigned int, (ap_q_mode)6, double>(double, bool, hls::enable_if<!(std::numeric_limits<unsigned int>::is_signed), bool>::type)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:65:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'unsigned int generic_cast_IEEE754<unsigned int, (ap_q_mode)6, double>(double, bool, hls::enable_if<!(std::numeric_limits<unsigned int>::is_signed), bool>::type)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:65:0)
+INFO: [HLS 214-178] Inlining function 'unsigned int generic_cast_IEEE754<unsigned int, double>(double, bool)' into '__hls_fptoui_double_i32' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:69:0)
+INFO: [HLS 214-178] Inlining function 'pow' into 'distance' (fps.c:56:0)
+INFO: [HLS 214-178] Inlining function 'pow' into 'distance' (fps.c:56:0)
+INFO: [HLS 214-178] Inlining function 'pow' into 'distance' (fps.c:56:0)
+INFO: [HLS 214-178] Inlining function '__hls_fptoui_double_i32' into 'distance' (fps.c:56:0)
+INFO: [HLS 214-178] Inlining function 'init_distance' into 'farthest_point_sampling' (fps.c:8:0)
+INFO: [HLS 214-178] Inlining function 'distance' into 'farthest_point_sampling' (fps.c:8:0)
+INFO: [HLS 214-178] Inlining function 'max_idx' into 'farthest_point_sampling' (fps.c:8:0)
+INFO: [HLS 214-115] Burst read of variable length and bit width 32 has been inferred on port 'gmem' (fps.c:62:6)
+INFO: [HLS 214-115] Burst read of variable length and bit width 32 has been inferred on port 'gmem' (fps.c:68:9)
+INFO: [HLS 214-115] Burst read of variable length and bit width 32 has been inferred on port 'gmem' (fps.c:37:32)
+INFO: [HLS 214-115] Burst write of variable length and bit width 32 has been inferred on port 'gmem' (fps.c:43:3)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1603.703 ; gain = 1165.770 ; free physical = 30498 ; free virtual = 40248
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1603.703 ; gain = 1165.770 ; free physical = 30498 ; free virtual = 40248
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1603.703 ; gain = 1165.770 ; free physical = 30349 ; free virtual = 40132
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'pow_reduce::pow_generic<double>' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:412) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::pow_traits<double>::log_range_reduction<71>' into 'pow_reduce::pow_generic<double>' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:548) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::pow_traits<double>::exp_Z1P_m_1' into 'pow_reduce::pow_generic<double>' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:641) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<unsigned int, (ap_q_mode)6, double>' into 'farthest_point_sampling' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1603.703 ; gain = 1165.770 ; free physical = 30157 ; free virtual = 39957
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_50_1' (fps.c:49) in function 'farthest_point_sampling' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_66_1' (fps.c:60) in function 'farthest_point_sampling' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_84_1' (fps.c:81) in function 'farthest_point_sampling' automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'pow_reduce::pow_generic<double>' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:412) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::pow_traits<double>::log_range_reduction<71>' into 'pow_reduce::pow_generic<double>' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:548) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<unsigned int, (ap_q_mode)6, double>' into 'farthest_point_sampling' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:690:3) in function 'pow_reduce::pow_generic<double>'... converting 9 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (fps.c:81:17) in function 'farthest_point_sampling'... converting 3 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'pow_reduce::pow_generic<double>' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:18:3)...7 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1603.703 ; gain = 1165.770 ; free physical = 29937 ; free virtual = 39763
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_34_1' (fps.c:18:14) in function 'farthest_point_sampling' more than one sub loop.
+WARNING: [XFORM 203-631] Renaming function 'pow_reduce::pow_generic<double>' to 'pow_generic<double>' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:18:3)
+INFO: [HLS 200-472] Inferring partial write operation for '_min_distance.distance_array' (fps.c:51:28)
+INFO: [HLS 200-472] Inferring partial write operation for '_min_distance.distance_mask' (fps.c:52:27)
+INFO: [HLS 200-472] Inferring partial write operation for '_min_distance.distance_mask' (fps.c:32:33)
+INFO: [HLS 200-472] Inferring partial write operation for '_min_distance.distance_array' (fps.c:74:39)
+INFO: [HLS 200-472] Inferring partial write operation for '_min_distance.distance_mask' (fps.c:43:46)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1603.703 ; gain = 1165.770 ; free physical = 29885 ; free virtual = 39718
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'farthest_point_sampling' ...
+WARNING: [SYN 201-103] Legalizing function name 'pow_generic<double>' to 'pow_generic_double_s'.
+WARNING: [SYN 201-107] Renaming port name 'farthest_point_sampling/in' to 'farthest_point_sampling/in_r' to avoid the conflict with HDL keywords or other object names.
+WARNING: [SYN 201-107] Renaming port name 'farthest_point_sampling/out' to 'farthest_point_sampling/out_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pow_generic_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_15) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining function 'pow_generic<double>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 18.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 19.96 seconds; current allocated memory: 636.526 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 637.904 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'farthest_point_sampling' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_50_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_66_1'.
+WARNING: [HLS 200-880] The II Violation in module 'farthest_point_sampling' (Loop: VITIS_LOOP_66_1): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between bus read on port 'gmem' (fps.c:68) and bus read on port 'gmem' (fps.c:68).
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 100.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_84_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.5 seconds; current allocated memory: 639.591 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.91 seconds; current allocated memory: 643.364 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pow_generic_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_inverse_lut_table_powbkb' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_log0_lut_table_ap_fixed_121_12_ap_q_mode_5_ap_o_mode_3_0_double_0_5_64_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_log0_lut_table_ap_fixed_1cud' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_121_12_ap_q_mode_5_ap_o_mode_3_0_4_4_16_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12dEe' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_121_12_ap_q_mode_5_ap_o_mode_3_0_7_6_64_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12eOg' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_121_12_ap_q_mode_5_ap_o_mode_3_0_12_6_64_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12fYi' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_121_12_ap_q_mode_5_ap_o_mode_3_0_17_6_64_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12g8j' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_121_12_ap_q_mode_5_ap_o_mode_3_0_22_6_64_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12hbi' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_121_12_ap_q_mode_5_ap_o_mode_3_0_27_6_64_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12ibs' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_121_12_ap_q_mode_5_ap_o_mode_3_0_32_6_64_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12jbC' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_58kbM' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_59_0lbW' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_59_0mb6' due to the length limit 80
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16ns_19s_31_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_12s_80ns_90_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_13s_71s_71_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_36ns_43ns_79_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_40ns_40ns_80_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_44ns_49ns_93_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_4ns_71ns_75_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_50ns_50ns_100_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_54s_54_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_73ns_79_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_77ns_83_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_82ns_88_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_83ns_89_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_87ns_93_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_92ns_98_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pow_generic_double_s'.
+INFO: [HLS 200-111]  Elapsed time: 0.67 seconds; current allocated memory: 646.208 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'farthest_point_sampling' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'farthest_point_sampling/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'farthest_point_sampling/in_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'farthest_point_sampling/out_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'farthest_point_sampling' to 's_axilite & ap_ctrl_chain'.
+INFO: [RTGEN 206-100] Bundling port 'in_r', 'out_r' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'dadd_64ns_64ns_64_3_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitodp_32s_64_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'farthest_point_sampling'.
+INFO: [HLS 200-111]  Elapsed time: 0.86 seconds; current allocated memory: 657.703 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'farthest_point_sampling_mul_6ns_54s_54_1_1_Multiplier_0'
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_interface -default_slave_interface=s_axilite
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-10] Analyzing design file 'point_aux.c' ... 
+WARNING: [HLS 207-5324] unused parameter 'idx': point_aux.c:41:16
+INFO: [HLS 200-10] Analyzing design file 'fps.c' ... 
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' target.
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isinf<double>(double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isinf.h:16:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isnan<double>(double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h:16:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::data() const (.113.123.133.143)' into 'fp_struct<double>::to_double() const (.110.120.130.140)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:517:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_double() const (.110.120.130.140)' into 'fp_struct<double>::to_ieee() const' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:532:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 4, 4, 71, 73>(ap_ufixed<71, -(4), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<73, -(((4) + (4)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:215:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 7, 6, 73, 83>(ap_ufixed<73, -(7), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<83, -(((7) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:215:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 12, 6, 83, 92>(ap_ufixed<83, -(12), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<92, -(((12) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:215:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 17, 6, 92, 87>(ap_ufixed<92, -(17), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<87, -(((17) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:215:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 22, 6, 87, 82>(ap_ufixed<87, -(22), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<82, -(((22) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:215:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 27, 6, 82, 77>(ap_ufixed<82, -(27), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<77, -(((27) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:215:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 32, 6, 77, 72>(ap_ufixed<77, -(32), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<72, -(((32) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:215:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:321:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:321:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:321:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:321:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isinf<double>(double)' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:321:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isnan<double>(double)' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:321:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isnan<double>(double)' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:321:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isinf<double>(double)' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:321:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'unsigned int generic_cast_IEEE754<unsigned int, (ap_q_mode)6, double>(double, bool, hls::enable_if<!(std::numeric_limits<unsigned int>::is_signed), bool>::type)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:65:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::mantissa() const' into 'unsigned int generic_cast_IEEE754<unsigned int, (ap_q_mode)6, double>(double, bool, hls::enable_if<!(std::numeric_limits<unsigned int>::is_signed), bool>::type)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:65:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'unsigned int generic_cast_IEEE754<unsigned int, (ap_q_mode)6, double>(double, bool, hls::enable_if<!(std::numeric_limits<unsigned int>::is_signed), bool>::type)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:65:0)
+INFO: [HLS 214-178] Inlining function 'unsigned int generic_cast_IEEE754<unsigned int, double>(double, bool)' into '__hls_fptoui_double_i32' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:69:0)
+INFO: [HLS 214-178] Inlining function 'pow' into 'distance_max_idx' (fps.c:56:0)
+INFO: [HLS 214-178] Inlining function 'pow' into 'distance_max_idx' (fps.c:56:0)
+INFO: [HLS 214-178] Inlining function 'pow' into 'distance_max_idx' (fps.c:56:0)
+INFO: [HLS 214-178] Inlining function '__hls_fptoui_double_i32' into 'distance_max_idx' (fps.c:56:0)
+INFO: [HLS 214-178] Inlining function 'init_distance' into 'farthest_point_sampling' (fps.c:8:0)
+INFO: [HLS 214-178] Inlining function 'distance_max_idx' into 'farthest_point_sampling' (fps.c:8:0)
+INFO: [HLS 214-115] Burst read of variable length and bit width 32 has been inferred on port 'gmem' (fps.c:65:6)
+INFO: [HLS 214-115] Burst read of variable length and bit width 32 has been inferred on port 'gmem' (fps.c:72:9)
+INFO: [HLS 214-115] Burst read of variable length and bit width 32 has been inferred on port 'gmem' (fps.c:37:32)
+INFO: [HLS 214-115] Burst write of variable length and bit width 32 has been inferred on port 'gmem' (fps.c:43:3)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1667.703 ; gain = 1229.770 ; free physical = 28289 ; free virtual = 38832
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 1667.703 ; gain = 1229.770 ; free physical = 28289 ; free virtual = 38832
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1667.703 ; gain = 1229.770 ; free physical = 28140 ; free virtual = 38715
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'pow_reduce::pow_generic<double>' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:412) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::pow_traits<double>::log_range_reduction<71>' into 'pow_reduce::pow_generic<double>' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:548) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::pow_traits<double>::exp_Z1P_m_1' into 'pow_reduce::pow_generic<double>' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:641) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<unsigned int, (ap_q_mode)6, double>' into 'farthest_point_sampling' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 1667.703 ; gain = 1229.770 ; free physical = 27947 ; free virtual = 38539
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_50_1' (fps.c:49) in function 'farthest_point_sampling' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_70_1' (fps.c:60) in function 'farthest_point_sampling' automatically.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'pow_reduce::pow_generic<double>' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:412) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::pow_traits<double>::log_range_reduction<71>' into 'pow_reduce::pow_generic<double>' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:548) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<unsigned int, (ap_q_mode)6, double>' into 'farthest_point_sampling' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:690:3) in function 'pow_reduce::pow_generic<double>'... converting 9 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'pow_reduce::pow_generic<double>' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:18:3)...7 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1667.703 ; gain = 1229.770 ; free physical = 27725 ; free virtual = 38343
+WARNING: [HLS 200-960] Cannot flatten loop 'VITIS_LOOP_34_1' (fps.c:18:14) in function 'farthest_point_sampling' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+WARNING: [XFORM 203-631] Renaming function 'pow_reduce::pow_generic<double>' to 'pow_generic<double>' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:18:3)
+INFO: [HLS 200-472] Inferring partial write operation for '_min_distance.distance_array' (fps.c:51:28)
+INFO: [HLS 200-472] Inferring partial write operation for '_min_distance.distance_mask' (fps.c:52:27)
+INFO: [HLS 200-472] Inferring partial write operation for '_min_distance.distance_mask' (fps.c:32:33)
+INFO: [HLS 200-472] Inferring partial write operation for '_min_distance.distance_array' (fps.c:78:38)
+INFO: [HLS 200-472] Inferring partial write operation for '_min_distance.distance_mask' (fps.c:43:46)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1667.703 ; gain = 1229.770 ; free physical = 27673 ; free virtual = 38299
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'farthest_point_sampling' ...
+WARNING: [SYN 201-103] Legalizing function name 'pow_generic<double>' to 'pow_generic_double_s'.
+WARNING: [SYN 201-107] Renaming port name 'farthest_point_sampling/in' to 'farthest_point_sampling/in_r' to avoid the conflict with HDL keywords or other object names.
+WARNING: [SYN 201-107] Renaming port name 'farthest_point_sampling/out' to 'farthest_point_sampling/out_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pow_generic_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_15) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining function 'pow_generic<double>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 18.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 19.99 seconds; current allocated memory: 636.247 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 637.599 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'farthest_point_sampling' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_50_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_70_1'.
+WARNING: [HLS 200-880] The II Violation in module 'farthest_point_sampling' (Loop: VITIS_LOOP_70_1): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between bus read on port 'gmem' (fps.c:72) and bus read on port 'gmem' (fps.c:72).
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 100.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.52 seconds; current allocated memory: 639.281 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.93 seconds; current allocated memory: 642.994 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pow_generic_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_inverse_lut_table_powbkb' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_log0_lut_table_ap_fixed_121_12_ap_q_mode_5_ap_o_mode_3_0_double_0_5_64_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_log0_lut_table_ap_fixed_1cud' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_121_12_ap_q_mode_5_ap_o_mode_3_0_4_4_16_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12dEe' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_121_12_ap_q_mode_5_ap_o_mode_3_0_7_6_64_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12eOg' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_121_12_ap_q_mode_5_ap_o_mode_3_0_12_6_64_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12fYi' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_121_12_ap_q_mode_5_ap_o_mode_3_0_17_6_64_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12g8j' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_121_12_ap_q_mode_5_ap_o_mode_3_0_22_6_64_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12hbi' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_121_12_ap_q_mode_5_ap_o_mode_3_0_27_6_64_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12ibs' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_121_12_ap_q_mode_5_ap_o_mode_3_0_32_6_64_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12jbC' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_58kbM' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_59_0lbW' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_59_0mb6' due to the length limit 80
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16ns_19s_31_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_12s_80ns_90_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_13s_71s_71_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_36ns_43ns_79_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_40ns_40ns_80_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_44ns_49ns_93_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_4ns_71ns_75_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_50ns_50ns_100_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_54s_54_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_73ns_79_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_77ns_83_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_82ns_88_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_83ns_89_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_87ns_93_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_92ns_98_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pow_generic_double_s'.
+INFO: [HLS 200-111]  Elapsed time: 0.63 seconds; current allocated memory: 645.869 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'farthest_point_sampling' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'farthest_point_sampling/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'farthest_point_sampling/in_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'farthest_point_sampling/out_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'farthest_point_sampling' to 's_axilite & ap_ctrl_chain'.
+INFO: [RTGEN 206-100] Bundling port 'in_r', 'out_r' to AXI-Lite port control.
+INFO: [RTGEN 206-100] Generating core module 'dadd_64ns_64ns_64_3_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'sitodp_32s_64_2_no_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'farthest_point_sampling'.
+INFO: [HLS 200-111]  Elapsed time: 0.89 seconds; current allocated memory: 657.727 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'farthest_point_sampling_mul_6ns_54s_54_1_1_Multiplier_0'
+INFO: [RTMG 210-282] Generating pipelined core: 'farthest_point_sampling_mul_4ns_71ns_75_1_1_Multiplier_1'
+INFO: [RTMG 210-282] Generating pipelined core: 'farthest_point_sampling_mul_6ns_73ns_79_1_1_Multiplier_2'
+INFO: [RTMG 210-282] Generating pipelined core: 'farthest_point_sampling_mul_6ns_83ns_89_1_1_Multiplier_3'
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcu200-fsgd2104-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vitis'
+INFO: [HLS 200-1464] Running solution command: config_interface -default_interface=kernel
+INFO: [HLS 200-1464] Running solution command: config_interface -default_slave_interface=s_axilite
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_alignment_byte_size=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_latency=64
+INFO: [HLS 200-1464] Running solution command: config_interface -m_axi_max_widen_bitwidth=512
+INFO: [HLS 200-1464] Running solution command: config_rtl -register_reset_num=3
+INFO: [HLS 200-10] Analyzing design file 'point_aux.c' ... 
+WARNING: [HLS 207-5324] unused parameter 'idx': point_aux.c:41:16
+INFO: [HLS 200-10] Analyzing design file 'fps.c' ... 
+INFO: [HLS 200-777] Using interface defaults for 'Vitis' target.
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isinf<double>(double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isinf.h:16:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'int generic_isnan<double>(double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_isnan.h:16:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::data() const (.113.123.133.143)' into 'fp_struct<double>::to_double() const (.110.120.130.140)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:517:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::to_double() const (.110.120.130.140)' into 'fp_struct<double>::to_ieee() const' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/src/hls/utils/x_hls_utils.h:532:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 4, 4, 71, 73>(ap_ufixed<71, -(4), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<73, -(((4) + (4)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:215:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 7, 6, 73, 83>(ap_ufixed<73, -(7), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<83, -(((7) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:215:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 12, 6, 83, 92>(ap_ufixed<83, -(12), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<92, -(((12) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:215:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 17, 6, 92, 87>(ap_ufixed<92, -(17), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<87, -(((17) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:215:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 22, 6, 87, 82>(ap_ufixed<87, -(22), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<82, -(((22) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:215:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 27, 6, 82, 77>(ap_ufixed<82, -(27), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<77, -(((27) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:215:0)
+INFO: [HLS 214-178] Inlining function 'void pow_reduce::log_range_reduce<ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>, 32, 6, 77, 72>(ap_ufixed<77, -(32), (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&, ap_ufixed<72, -(((32) + (6)) - (1)), (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'ap_ufixed<72, -37, (ap_q_mode)5, (ap_o_mode)3, 0> pow_reduce::pow_traits<double>::log_range_reduction<71>(ap_ufixed<71, -4, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_fixed<121, 12, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:215:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:321:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:321:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:321:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:321:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isinf<double>(double)' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:321:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isnan<double>(double)' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:321:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isnan<double>(double)' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:321:0)
+INFO: [HLS 214-178] Inlining function 'int generic_isinf<double>(double)' into 'double pow_reduce::pow_generic<double>(double, double)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:321:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::fp_struct(double)' into 'unsigned int generic_cast_IEEE754<unsigned int, (ap_q_mode)6, double>(double, bool, hls::enable_if<!(std::numeric_limits<unsigned int>::is_signed), bool>::type)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:65:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::mantissa() const' into 'unsigned int generic_cast_IEEE754<unsigned int, (ap_q_mode)6, double>(double, bool, hls::enable_if<!(std::numeric_limits<unsigned int>::is_signed), bool>::type)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:65:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<double>::expv() const' into 'unsigned int generic_cast_IEEE754<unsigned int, (ap_q_mode)6, double>(double, bool, hls::enable_if<!(std::numeric_limits<unsigned int>::is_signed), bool>::type)' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:65:0)
+INFO: [HLS 214-178] Inlining function 'unsigned int generic_cast_IEEE754<unsigned int, double>(double, bool)' into '__hls_fptoui_double_i32' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp:69:0)
+INFO: [HLS 214-178] Inlining function 'pow' into 'distance_max_point' (fps.c:57:0)
+INFO: [HLS 214-178] Inlining function 'pow' into 'distance_max_point' (fps.c:57:0)
+INFO: [HLS 214-178] Inlining function 'pow' into 'distance_max_point' (fps.c:57:0)
+INFO: [HLS 214-178] Inlining function '__hls_fptoui_double_i32' into 'distance_max_point' (fps.c:57:0)
+INFO: [HLS 214-178] Inlining function 'init_distance' into 'farthest_point_sampling' (fps.c:8:0)
+INFO: [HLS 214-178] Inlining function 'distance_max_point' into 'farthest_point_sampling' (fps.c:8:0)
+INFO: [HLS 214-115] Burst read of variable length and bit width 32 has been inferred on port 'gmem' (fps.c:74:9)
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1667.703 ; gain = 1229.770 ; free physical = 21675 ; free virtual = 33141
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1667.703 ; gain = 1229.770 ; free physical = 21675 ; free virtual = 33141
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1667.703 ; gain = 1229.770 ; free physical = 21527 ; free virtual = 33026
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'pow_reduce::pow_generic<double>' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:412) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::pow_traits<double>::log_range_reduction<71>' into 'pow_reduce::pow_generic<double>' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:548) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::pow_traits<double>::exp_Z1P_m_1' into 'pow_reduce::pow_generic<double>' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:641) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<unsigned int, (ap_q_mode)6, double>' into 'farthest_point_sampling' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1667.703 ; gain = 1229.770 ; free physical = 21333 ; free virtual = 32848
+INFO: [XFORM 203-510] Pipelining loop 'init_distance_label4' (fps.c:50) in function 'farthest_point_sampling' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'random_select_0' (fps.c:22) in function 'farthest_point_sampling' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'calculate_distance' (fps.c:62) in function 'farthest_point_sampling' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'set_farthest_point' (fps.c:22) in function 'farthest_point_sampling' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'get_origin_point' (fps.c:62) in function 'farthest_point_sampling' automatically.
+INFO: [XFORM 203-102] Automatically partitioning small array 'origin_point_pix' (fps.c:60) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array '_farthest_point.data' (fps.c:17) completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'origin_point_pix' (fps.c:60) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array '_farthest_point.data' (fps.c:17) in dimension 1 completely.
+INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'pow_reduce::pow_generic<double>' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:412) automatically.
+INFO: [XFORM 203-602] Inlining function 'pow_reduce::pow_traits<double>::log_range_reduction<71>' into 'pow_reduce::pow_generic<double>' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:548) automatically.
+INFO: [XFORM 203-602] Inlining function 'generic_cast_IEEE754<unsigned int, (ap_q_mode)6, double>' into 'farthest_point_sampling' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h:117) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:690:3) in function 'pow_reduce::pow_generic<double>'... converting 9 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'pow_reduce::pow_generic<double>' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:18:3)...7 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1667.703 ; gain = 1229.770 ; free physical = 21112 ; free virtual = 32653
+WARNING: [HLS 200-960] Cannot flatten loop 'iteration' (fps.c:22:14) in function 'farthest_point_sampling' more than one sub loop.
+WARNING: [XFORM 203-631] Renaming function 'pow_reduce::pow_generic<double>' to 'pow_generic<double>' (/wrk/2020.1/continuous/2020_05_27_2902540/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_pow.h:18:3)
+INFO: [HLS 200-472] Inferring partial write operation for '_min_distance.distance_array' (fps.c:52:28)
+INFO: [HLS 200-472] Inferring partial write operation for '_min_distance.distance_mask' (fps.c:53:27)
+INFO: [HLS 200-472] Inferring partial write operation for '_min_distance.distance_mask' (fps.c:36:33)
+INFO: [HLS 200-472] Inferring partial write operation for '_min_distance.distance_array' (fps.c:82:38)
+INFO: [HLS 200-472] Inferring partial write operation for '_min_distance.distance_mask' (fps.c:92:34)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1667.703 ; gain = 1229.770 ; free physical = 21060 ; free virtual = 32609
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'farthest_point_sampling' ...
+WARNING: [SYN 201-103] Legalizing function name 'pow_generic<double>' to 'pow_generic_double_s'.
+WARNING: [SYN 201-107] Renaming port name 'farthest_point_sampling/in' to 'farthest_point_sampling/in_r' to avoid the conflict with HDL keywords or other object names.
+WARNING: [SYN 201-107] Renaming port name 'farthest_point_sampling/out' to 'farthest_point_sampling/out_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pow_generic_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=r_V_15) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining function 'pow_generic<double>'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 18.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 20.9 seconds; current allocated memory: 637.241 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 638.590 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'farthest_point_sampling' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'init_distance_label4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-61] Pipelining loop 'random_select_0'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 142.
+INFO: [SCHED 204-61] Pipelining loop 'get_origin_point'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-61] Pipelining loop 'calculate_distance'.
+WARNING: [HLS 200-880] The II Violation in module 'farthest_point_sampling' (Loop: calculate_distance): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1) between bus read on port 'gmem' (fps.c:74) and bus read on port 'gmem' (fps.c:74).
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 2, Depth = 100.
+INFO: [SCHED 204-61] Pipelining loop 'set_farthest_point'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 71.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.52 seconds; current allocated memory: 640.011 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.79 seconds; current allocated memory: 642.577 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pow_generic_double_s' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_inverse_lut_table_pow_0_5_64_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_inverse_lut_table_powbkb' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_log0_lut_table_ap_fixed_121_12_ap_q_mode_5_ap_o_mode_3_0_double_0_5_64_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_log0_lut_table_ap_fixed_1cud' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_121_12_ap_q_mode_5_ap_o_mode_3_0_4_4_16_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12dEe' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_121_12_ap_q_mode_5_ap_o_mode_3_0_7_6_64_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12eOg' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_121_12_ap_q_mode_5_ap_o_mode_3_0_12_6_64_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12fYi' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_121_12_ap_q_mode_5_ap_o_mode_3_0_17_6_64_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12g8j' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_121_12_ap_q_mode_5_ap_o_mode_3_0_22_6_64_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12hbi' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_121_12_ap_q_mode_5_ap_o_mode_3_0_27_6_64_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12ibs' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_121_12_ap_q_mode_5_ap_o_mode_3_0_32_6_64_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_log_lut_table_ap_fixed_12jbC' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_58_1_ap_q_mode_5_ap_o_mode_3_0_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_table_exp_Z1_ap_ufixed_58kbM' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z3_ap_ufixed_59_0lbW' due to the length limit 80
+INFO: [SYN 201-210] Renamed object name 'pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_59_0_ap_q_mode_5_ap_o_mode_3_0_array_V' to 'pow_generic_double_s_pow_reduce_anonymous_namespace_table_f_Z2_ap_ufixed_59_0mb6' due to the length limit 80
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_16s_16ns_19s_31_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_12s_80ns_90_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_13s_71s_71_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_36ns_43ns_79_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_40ns_40ns_80_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_44ns_49ns_93_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_4ns_71ns_75_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_50ns_50ns_100_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_54s_54_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_73ns_79_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_77ns_83_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_82ns_88_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_83ns_89_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_87ns_93_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_6ns_92ns_98_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pow_generic_double_s'.
+INFO: [HLS 200-111]  Elapsed time: 0.63 seconds; current allocated memory: 645.450 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'farthest_point_sampling' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'farthest_point_sampling/gmem' to 'm_axi'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'farthest_point_sampling/in_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'farthest_point_sampling/out_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'farthest_point_sampling' to 's_axilite & ap_ctrl_chain'.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================

@@ -1,0 +1,7 @@
+Running: xsim.dir/farthest_point_sampling/xsimk -simmode gui -wdb farthest_point_sampling.wdb -simrunnum 0 -socket 43917
+Design successfully loaded
+Design Loading Memory Usage: 49144 KB (Peak: 49144 KB)
+Design Loading CPU Usage: 30 ms
+Simulation completed
+Simulation Memory Usage: 148416 KB (Peak: 188412 KB)
+Simulation CPU Usage: 74040 ms

@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Feb 26 14:12:07 2021
+# Process ID: 29237
+# Current directory: /home/hanmeng/Documents/tinyFPS/hls/FPS/basic/sim/verilog
+# Command line: wbtcv -mode batch -source /home/hanmeng/Documents/tinyFPS/hls/FPS/basic/sim/verilog/xsim.dir/farthest_point_sampling/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/hanmeng/Documents/tinyFPS/hls/FPS/basic/sim/verilog/webtalk.log
+# Journal file: /home/hanmeng/Documents/tinyFPS/hls/FPS/basic/sim/verilog/webtalk.jou
+#-----------------------------------------------------------
+source /home/hanmeng/Documents/tinyFPS/hls/FPS/basic/sim/verilog/xsim.dir/farthest_point_sampling/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Feb 26 14:12:07 2021...

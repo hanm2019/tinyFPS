@@ -3,7 +3,7 @@ import numpy as np
 import approximate_kdtree
 import math
 import fps_utils
-
+import cuda.fps_stack_cuda as origin_fps
 
 def rand_sample(size, npoint):
     B, N, _ = size
@@ -13,7 +13,28 @@ def rand_sample(size, npoint):
     return arr
 
 
-def farthest_point_sample(xyz: torch.Tensor, npoint: int):
+
+
+def farthest_point_sample_cuda(xyz: torch.Tensor, npoint: int):
+    """
+    Input:
+        xyz: pointcloud data, [B, N, 3]
+        npoint: number of samples
+    Return:
+        centroids: sampled pointcloud index, [B, npoint]
+    """
+    assert xyz.is_contiguous()
+
+    B, N, _ = xyz.size()
+    output = torch.cuda.IntTensor(B, npoint)
+    temp = torch.cuda.FloatTensor(B, N).fill_(1e10)
+    origin_fps.furthest_point_sampling_wrapper(B, N, npoint, xyz, temp, output)
+    return output
+
+
+
+
+def farthest_point_sample_pytorch(xyz: torch.Tensor, npoint: int, first=-1):
     """
     Input:
         xyz: pointcloud data, [B, N, 3]
@@ -35,6 +56,14 @@ def farthest_point_sample(xyz: torch.Tensor, npoint: int):
         distance[mask] = dist[mask]
         farthest = torch.max(distance, -1)[1]
     return centroids
+
+
+def farthest_point_sample(xyz: torch.Tensor, npoint: int, first=-1, cuda=True):
+    if cuda == False:
+        return farthest_point_sample_pytorch(xyz, npoint, first)
+    else:
+        return farthest_point_sample_cuda(xyz, npoint).long()
+
 
 
 def cpu_farthest_point_sample(xyz: np.array, npoint: int):

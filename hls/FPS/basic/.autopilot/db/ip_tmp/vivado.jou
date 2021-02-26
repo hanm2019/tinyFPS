@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Feb 26 14:11:27 2021
+# Process ID: 28776
+# Current directory: /home/hanmeng/Documents/tinyFPS/hls/FPS/basic/.autopilot/db/ip_tmp
+# Command line: vivado  -notrace -log vivado.log -mode batch -source run_vivado_gen_ip.tcl
+# Log file: /home/hanmeng/Documents/tinyFPS/hls/FPS/basic/.autopilot/db/ip_tmp/vivado.log
+# Journal file: /home/hanmeng/Documents/tinyFPS/hls/FPS/basic/.autopilot/db/ip_tmp/vivado.jou
+#-----------------------------------------------------------
+source run_vivado_gen_ip.tcl -notrace

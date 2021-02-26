@@ -1,0 +1,29 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "farthest_point_sampling",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "farthest_point_sampling"
+              }]
+          }
+        },
+        {
+          "functionName": "farthest_point_sampling",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "farthest_point_sampling"
+              }]
+          }
+        }
+      ]
+    }]}

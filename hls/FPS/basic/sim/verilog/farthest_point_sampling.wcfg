@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="farthest_point_sampling.wdb" id="1">
+         <top_modules>
+            <top_module name="apatb_farthest_point_sampling_top" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+   </zoom_setting>
+   <column_width_setting>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="group1">
+      <obj_property name="label">Design Top Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="group2">
+         <obj_property name="label">C InOuts</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="group3">
+            <obj_property name="label">in__out(axi_master)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="group4">
+               <obj_property name="label">Read Channel</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_RRESP">
+                  <obj_property name="ElementShortName">m_axi_gmem_RRESP[1:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_RRESP[1:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_RUSER">
+                  <obj_property name="ElementShortName">m_axi_gmem_RUSER[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_RUSER[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_RID">
+                  <obj_property name="ElementShortName">m_axi_gmem_RID[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_RID[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_RDATA">
+                  <obj_property name="ElementShortName">m_axi_gmem_RDATA[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_RDATA[31:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_ARUSER">
+                  <obj_property name="ElementShortName">m_axi_gmem_ARUSER[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_ARUSER[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_ARREGION">
+                  <obj_property name="ElementShortName">m_axi_gmem_ARREGION[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_ARREGION[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_ARQOS">
+                  <obj_property name="ElementShortName">m_axi_gmem_ARQOS[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_ARQOS[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_ARPROT">
+                  <obj_property name="ElementShortName">m_axi_gmem_ARPROT[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_ARPROT[2:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_ARCACHE">
+                  <obj_property name="ElementShortName">m_axi_gmem_ARCACHE[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_ARCACHE[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_ARLOCK">
+                  <obj_property name="ElementShortName">m_axi_gmem_ARLOCK[1:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_ARLOCK[1:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_ARBURST">
+                  <obj_property name="ElementShortName">m_axi_gmem_ARBURST[1:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_ARBURST[1:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_ARSIZE">
+                  <obj_property name="ElementShortName">m_axi_gmem_ARSIZE[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_ARSIZE[2:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_ARLEN">
+                  <obj_property name="ElementShortName">m_axi_gmem_ARLEN[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_ARLEN[7:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_ARID">
+                  <obj_property name="ElementShortName">m_axi_gmem_ARID[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_ARID[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_ARADDR">
+                  <obj_property name="ElementShortName">m_axi_gmem_ARADDR[63:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_ARADDR[63:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="group5">
+               <obj_property name="label">Write Channel</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_BUSER">
+                  <obj_property name="ElementShortName">m_axi_gmem_BUSER[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_BUSER[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_BID">
+                  <obj_property name="ElementShortName">m_axi_gmem_BID[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_BID[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_BRESP">
+                  <obj_property name="ElementShortName">m_axi_gmem_BRESP[1:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_BRESP[1:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_WUSER">
+                  <obj_property name="ElementShortName">m_axi_gmem_WUSER[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_WUSER[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_WID">
+                  <obj_property name="ElementShortName">m_axi_gmem_WID[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_WID[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_WSTRB">
+                  <obj_property name="ElementShortName">m_axi_gmem_WSTRB[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_WSTRB[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_WDATA">
+                  <obj_property name="ElementShortName">m_axi_gmem_WDATA[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_WDATA[31:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_AWUSER">
+                  <obj_property name="ElementShortName">m_axi_gmem_AWUSER[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_AWUSER[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_AWREGION">
+                  <obj_property name="ElementShortName">m_axi_gmem_AWREGION[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_AWREGION[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_AWQOS">
+                  <obj_property name="ElementShortName">m_axi_gmem_AWQOS[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_AWQOS[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_AWPROT">
+                  <obj_property name="ElementShortName">m_axi_gmem_AWPROT[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_AWPROT[2:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_AWCACHE">
+                  <obj_property name="ElementShortName">m_axi_gmem_AWCACHE[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_AWCACHE[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_AWLOCK">
+                  <obj_property name="ElementShortName">m_axi_gmem_AWLOCK[1:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_AWLOCK[1:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_AWBURST">
+                  <obj_property name="ElementShortName">m_axi_gmem_AWBURST[1:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_AWBURST[1:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_AWSIZE">
+                  <obj_property name="ElementShortName">m_axi_gmem_AWSIZE[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_AWSIZE[2:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_AWLEN">
+                  <obj_property name="ElementShortName">m_axi_gmem_AWLEN[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_AWLEN[7:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_AWID">
+                  <obj_property name="ElementShortName">m_axi_gmem_AWID[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_AWID[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_AWADDR">
+                  <obj_property name="ElementShortName">m_axi_gmem_AWADDR[63:0]</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_AWADDR[63:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="group6">
+               <obj_property name="label">Handshakes</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_BREADY">
+                  <obj_property name="ElementShortName">m_axi_gmem_BREADY</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_BREADY</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_BVALID">
+                  <obj_property name="ElementShortName">m_axi_gmem_BVALID</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_BVALID</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_RLAST">
+                  <obj_property name="ElementShortName">m_axi_gmem_RLAST</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_RLAST</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_RREADY">
+                  <obj_property name="ElementShortName">m_axi_gmem_RREADY</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_RREADY</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_RVALID">
+                  <obj_property name="ElementShortName">m_axi_gmem_RVALID</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_RVALID</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_ARREADY">
+                  <obj_property name="ElementShortName">m_axi_gmem_ARREADY</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_ARREADY</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_ARVALID">
+                  <obj_property name="ElementShortName">m_axi_gmem_ARVALID</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_ARVALID</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_WLAST">
+                  <obj_property name="ElementShortName">m_axi_gmem_WLAST</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_WLAST</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_WREADY">
+                  <obj_property name="ElementShortName">m_axi_gmem_WREADY</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_WREADY</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_WVALID">
+                  <obj_property name="ElementShortName">m_axi_gmem_WVALID</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_WVALID</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_AWREADY">
+                  <obj_property name="ElementShortName">m_axi_gmem_AWREADY</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_AWREADY</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/m_axi_gmem_AWVALID">
+                  <obj_property name="ElementShortName">m_axi_gmem_AWVALID</obj_property>
+                  <obj_property name="ObjectShortName">m_axi_gmem_AWVALID</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group52">
+            <obj_property name="label">in_r__out_r__return(axi_slave)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/interrupt">
+               <obj_property name="ElementShortName">interrupt</obj_property>
+               <obj_property name="ObjectShortName">interrupt</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/s_axi_control_BRESP">
+               <obj_property name="ElementShortName">s_axi_control_BRESP[1:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_BRESP[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/s_axi_control_BREADY">
+               <obj_property name="ElementShortName">s_axi_control_BREADY</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_BREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/s_axi_control_BVALID">
+               <obj_property name="ElementShortName">s_axi_control_BVALID</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_BVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/s_axi_control_RRESP">
+               <obj_property name="ElementShortName">s_axi_control_RRESP[1:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_RRESP[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/s_axi_control_RDATA">
+               <obj_property name="ElementShortName">s_axi_control_RDATA[31:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_RDATA[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/s_axi_control_RREADY">
+               <obj_property name="ElementShortName">s_axi_control_RREADY</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_RREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/s_axi_control_RVALID">
+               <obj_property name="ElementShortName">s_axi_control_RVALID</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_RVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/s_axi_control_ARREADY">
+               <obj_property name="ElementShortName">s_axi_control_ARREADY</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_ARREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/s_axi_control_ARVALID">
+               <obj_property name="ElementShortName">s_axi_control_ARVALID</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_ARVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/s_axi_control_ARADDR">
+               <obj_property name="ElementShortName">s_axi_control_ARADDR[5:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_ARADDR[5:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/s_axi_control_WSTRB">
+               <obj_property name="ElementShortName">s_axi_control_WSTRB[3:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_WSTRB[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/s_axi_control_WDATA">
+               <obj_property name="ElementShortName">s_axi_control_WDATA[31:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_WDATA[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/s_axi_control_WREADY">
+               <obj_property name="ElementShortName">s_axi_control_WREADY</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_WREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/s_axi_control_WVALID">
+               <obj_property name="ElementShortName">s_axi_control_WVALID</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_WVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/s_axi_control_AWREADY">
+               <obj_property name="ElementShortName">s_axi_control_AWREADY</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_AWREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/s_axi_control_AWVALID">
+               <obj_property name="ElementShortName">s_axi_control_AWVALID</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_AWVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/s_axi_control_AWADDR">
+               <obj_property name="ElementShortName">s_axi_control_AWADDR[5:0]</obj_property>
+               <obj_property name="ObjectShortName">s_axi_control_AWADDR[5:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group71">
+         <obj_property name="label">Reset</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/ap_rst_n">
+            <obj_property name="ElementShortName">ap_rst_n</obj_property>
+            <obj_property name="ObjectShortName">ap_rst_n</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group73">
+         <obj_property name="label">Clock</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/AESL_inst_farthest_point_sampling/ap_clk">
+            <obj_property name="ElementShortName">ap_clk</obj_property>
+            <obj_property name="ObjectShortName">ap_clk</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group75">
+      <obj_property name="label">Test Bench Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="group76">
+         <obj_property name="label">Internal Signals</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="group77">
+            <obj_property name="label">Simulation Status</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/AUTOTB_TRANSACTION_NUM">
+               <obj_property name="ElementShortName">AUTOTB_TRANSACTION_NUM[31:0]</obj_property>
+               <obj_property name="ObjectShortName">AUTOTB_TRANSACTION_NUM[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/ready_cnt">
+               <obj_property name="ElementShortName">ready_cnt[31:0]</obj_property>
+               <obj_property name="ObjectShortName">ready_cnt[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/done_cnt">
+               <obj_property name="ElementShortName">done_cnt[31:0]</obj_property>
+               <obj_property name="ObjectShortName">done_cnt[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group78">
+            <obj_property name="label">Port Depth</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/LENGTH_gmem">
+               <obj_property name="ElementShortName">LENGTH_gmem[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_gmem[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/LENGTH_in_r">
+               <obj_property name="ElementShortName">LENGTH_in_r[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_in_r[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/LENGTH_out_r">
+               <obj_property name="ElementShortName">LENGTH_out_r[31:0]</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_out_r[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group85">
+         <obj_property name="label">C InOuts</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="group86">
+            <obj_property name="label">in__out(axi_master)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="group87">
+               <obj_property name="label">Read Channel</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/gmem_RRESP">
+                  <obj_property name="ElementShortName">gmem_RRESP[1:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_RRESP[1:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/gmem_RUSER">
+                  <obj_property name="ElementShortName">gmem_RUSER[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_RUSER[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/gmem_RID">
+                  <obj_property name="ElementShortName">gmem_RID[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_RID[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/gmem_RDATA">
+                  <obj_property name="ElementShortName">gmem_RDATA[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_RDATA[31:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/gmem_ARUSER">
+                  <obj_property name="ElementShortName">gmem_ARUSER[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_ARUSER[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/gmem_ARREGION">
+                  <obj_property name="ElementShortName">gmem_ARREGION[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_ARREGION[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/gmem_ARQOS">
+                  <obj_property name="ElementShortName">gmem_ARQOS[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_ARQOS[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/gmem_ARPROT">
+                  <obj_property name="ElementShortName">gmem_ARPROT[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_ARPROT[2:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/gmem_ARCACHE">
+                  <obj_property name="ElementShortName">gmem_ARCACHE[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_ARCACHE[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/gmem_ARLOCK">
+                  <obj_property name="ElementShortName">gmem_ARLOCK[1:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_ARLOCK[1:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/gmem_ARBURST">
+                  <obj_property name="ElementShortName">gmem_ARBURST[1:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_ARBURST[1:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/gmem_ARSIZE">
+                  <obj_property name="ElementShortName">gmem_ARSIZE[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_ARSIZE[2:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/gmem_ARLEN">
+                  <obj_property name="ElementShortName">gmem_ARLEN[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_ARLEN[7:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/gmem_ARID">
+                  <obj_property name="ElementShortName">gmem_ARID[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_ARID[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/gmem_ARADDR">
+                  <obj_property name="ElementShortName">gmem_ARADDR[63:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_ARADDR[63:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="group88">
+               <obj_property name="label">Write Channel</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/gmem_BUSER">
+                  <obj_property name="ElementShortName">gmem_BUSER[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_BUSER[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/gmem_BID">
+                  <obj_property name="ElementShortName">gmem_BID[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_BID[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/gmem_BRESP">
+                  <obj_property name="ElementShortName">gmem_BRESP[1:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_BRESP[1:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/gmem_WUSER">
+                  <obj_property name="ElementShortName">gmem_WUSER[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_WUSER[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/gmem_WID">
+                  <obj_property name="ElementShortName">gmem_WID[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_WID[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/gmem_WSTRB">
+                  <obj_property name="ElementShortName">gmem_WSTRB[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_WSTRB[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/gmem_WDATA">
+                  <obj_property name="ElementShortName">gmem_WDATA[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_WDATA[31:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/gmem_AWUSER">
+                  <obj_property name="ElementShortName">gmem_AWUSER[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_AWUSER[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/gmem_AWREGION">
+                  <obj_property name="ElementShortName">gmem_AWREGION[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_AWREGION[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/gmem_AWQOS">
+                  <obj_property name="ElementShortName">gmem_AWQOS[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_AWQOS[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/gmem_AWPROT">
+                  <obj_property name="ElementShortName">gmem_AWPROT[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_AWPROT[2:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/gmem_AWCACHE">
+                  <obj_property name="ElementShortName">gmem_AWCACHE[3:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_AWCACHE[3:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/gmem_AWLOCK">
+                  <obj_property name="ElementShortName">gmem_AWLOCK[1:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_AWLOCK[1:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/gmem_AWBURST">
+                  <obj_property name="ElementShortName">gmem_AWBURST[1:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_AWBURST[1:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/gmem_AWSIZE">
+                  <obj_property name="ElementShortName">gmem_AWSIZE[2:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_AWSIZE[2:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/gmem_AWLEN">
+                  <obj_property name="ElementShortName">gmem_AWLEN[7:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_AWLEN[7:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/gmem_AWID">
+                  <obj_property name="ElementShortName">gmem_AWID[0:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_AWID[0:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+               <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/gmem_AWADDR">
+                  <obj_property name="ElementShortName">gmem_AWADDR[63:0]</obj_property>
+                  <obj_property name="ObjectShortName">gmem_AWADDR[63:0]</obj_property>
+                  <obj_property name="Radix">HEXRADIX</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="group89">
+               <obj_property name="label">Handshakes</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/gmem_BREADY">
+                  <obj_property name="ElementShortName">gmem_BREADY</obj_property>
+                  <obj_property name="ObjectShortName">gmem_BREADY</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/gmem_BVALID">
+                  <obj_property name="ElementShortName">gmem_BVALID</obj_property>
+                  <obj_property name="ObjectShortName">gmem_BVALID</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/gmem_RLAST">
+                  <obj_property name="ElementShortName">gmem_RLAST</obj_property>
+                  <obj_property name="ObjectShortName">gmem_RLAST</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/gmem_RREADY">
+                  <obj_property name="ElementShortName">gmem_RREADY</obj_property>
+                  <obj_property name="ObjectShortName">gmem_RREADY</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/gmem_RVALID">
+                  <obj_property name="ElementShortName">gmem_RVALID</obj_property>
+                  <obj_property name="ObjectShortName">gmem_RVALID</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/gmem_ARREADY">
+                  <obj_property name="ElementShortName">gmem_ARREADY</obj_property>
+                  <obj_property name="ObjectShortName">gmem_ARREADY</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/gmem_ARVALID">
+                  <obj_property name="ElementShortName">gmem_ARVALID</obj_property>
+                  <obj_property name="ObjectShortName">gmem_ARVALID</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/gmem_WLAST">
+                  <obj_property name="ElementShortName">gmem_WLAST</obj_property>
+                  <obj_property name="ObjectShortName">gmem_WLAST</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/gmem_WREADY">
+                  <obj_property name="ElementShortName">gmem_WREADY</obj_property>
+                  <obj_property name="ObjectShortName">gmem_WREADY</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/gmem_WVALID">
+                  <obj_property name="ElementShortName">gmem_WVALID</obj_property>
+                  <obj_property name="ObjectShortName">gmem_WVALID</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/gmem_AWREADY">
+                  <obj_property name="ElementShortName">gmem_AWREADY</obj_property>
+                  <obj_property name="ObjectShortName">gmem_AWREADY</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/gmem_AWVALID">
+                  <obj_property name="ElementShortName">gmem_AWVALID</obj_property>
+                  <obj_property name="ObjectShortName">gmem_AWVALID</obj_property>
+                  <obj_property name="CustomSignalColor">#ffff00</obj_property>
+                  <obj_property name="UseCustomSignalColor">true</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="group135">
+            <obj_property name="label">in_r__out_r__return(axi_slave)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/control_INTERRUPT">
+               <obj_property name="ElementShortName">control_INTERRUPT</obj_property>
+               <obj_property name="ObjectShortName">control_INTERRUPT</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/control_BRESP">
+               <obj_property name="ElementShortName">control_BRESP[1:0]</obj_property>
+               <obj_property name="ObjectShortName">control_BRESP[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/control_BREADY">
+               <obj_property name="ElementShortName">control_BREADY</obj_property>
+               <obj_property name="ObjectShortName">control_BREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/control_BVALID">
+               <obj_property name="ElementShortName">control_BVALID</obj_property>
+               <obj_property name="ObjectShortName">control_BVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/control_RRESP">
+               <obj_property name="ElementShortName">control_RRESP[1:0]</obj_property>
+               <obj_property name="ObjectShortName">control_RRESP[1:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/control_RDATA">
+               <obj_property name="ElementShortName">control_RDATA[31:0]</obj_property>
+               <obj_property name="ObjectShortName">control_RDATA[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/control_RREADY">
+               <obj_property name="ElementShortName">control_RREADY</obj_property>
+               <obj_property name="ObjectShortName">control_RREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/control_RVALID">
+               <obj_property name="ElementShortName">control_RVALID</obj_property>
+               <obj_property name="ObjectShortName">control_RVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/control_ARREADY">
+               <obj_property name="ElementShortName">control_ARREADY</obj_property>
+               <obj_property name="ObjectShortName">control_ARREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/control_ARVALID">
+               <obj_property name="ElementShortName">control_ARVALID</obj_property>
+               <obj_property name="ObjectShortName">control_ARVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/control_ARADDR">
+               <obj_property name="ElementShortName">control_ARADDR[5:0]</obj_property>
+               <obj_property name="ObjectShortName">control_ARADDR[5:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/control_WSTRB">
+               <obj_property name="ElementShortName">control_WSTRB[3:0]</obj_property>
+               <obj_property name="ObjectShortName">control_WSTRB[3:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/control_WDATA">
+               <obj_property name="ElementShortName">control_WDATA[31:0]</obj_property>
+               <obj_property name="ObjectShortName">control_WDATA[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/control_WREADY">
+               <obj_property name="ElementShortName">control_WREADY</obj_property>
+               <obj_property name="ObjectShortName">control_WREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/control_WVALID">
+               <obj_property name="ElementShortName">control_WVALID</obj_property>
+               <obj_property name="ObjectShortName">control_WVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/control_AWREADY">
+               <obj_property name="ElementShortName">control_AWREADY</obj_property>
+               <obj_property name="ObjectShortName">control_AWREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_farthest_point_sampling_top/control_AWVALID">
+               <obj_property name="ElementShortName">control_AWVALID</obj_property>
+               <obj_property name="ObjectShortName">control_AWVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/apatb_farthest_point_sampling_top/control_AWADDR">
+               <obj_property name="ElementShortName">control_AWADDR[5:0]</obj_property>
+               <obj_property name="ObjectShortName">control_AWADDR[5:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>
