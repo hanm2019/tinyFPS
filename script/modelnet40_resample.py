@@ -51,7 +51,7 @@ def main(args):
     for j, data in tqdm(enumerate(data_loader), total=len(data_loader)):
         points, _ = data
         points = points.transpose(2, 1)
-        points = (points[0, :3, :] + 1) * 128
+        points = points[0, :3, :] * 128
         points = points.permute(1, 0).numpy()
         origin_points = np.ceil(points) - 1
         origin_points.astype(np.int)

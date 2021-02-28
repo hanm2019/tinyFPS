@@ -40,7 +40,7 @@ class approximate_kdtree:
             xyz.sort(key=lambda x: x[dim])
             half = len(xyz) >> 1
             self.sub_make_approximate_dim_kdtree(xyz[:half], batch_idx,  level - 1, index * 2)
-            self.sub_make_approximate_dim_kdtree(xyz[half:], batch_idx,  level - 1, index * 2 + 1),
+            self.sub_make_approximate_dim_kdtree(xyz[half:], batch_idx,  level - 1, index * 2 + 1)
         else:
             xyz = torch.Tensor(xyz)
             self.kdtree[batch_idx][index][:][:xyz.shape[0]] = xyz
