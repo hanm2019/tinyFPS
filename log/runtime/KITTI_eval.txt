@@ -15,3 +15,13 @@
 2021-02-19 18:13:52,248 - Model - INFO - sampling:512 avg_time:0.229881
 2021-02-19 18:15:49,905 - Model - INFO - sampling:1024 avg_time:0.456322
 2021-02-19 18:23:25,136 - Model - INFO - sampling:4096 avg_time:1.774928
+2021-02-25 20:12:46,946 - Model - INFO - PARAMETER ...
+2021-02-25 20:12:46,946 - Model - INFO - Namespace(dataset='KITTI', gpu=1, num_point=1024, num_testcase=-1)
+2021-02-25 20:12:46,946 - Model - INFO - Load dataset ...
+2021-02-25 20:12:55,498 - Model - INFO - sampling:512 avg_time:0.015409
+2021-02-25 20:13:03,822 - Model - INFO - sampling:1024 avg_time:0.030313
+2021-02-25 20:13:19,932 - Model - INFO - sampling:2048 avg_time:0.060645
+2021-02-25 20:13:51,562 - Model - INFO - sampling:4096 avg_time:0.121095
+2021-02-25 22:14:06,997 - Model - INFO - PARAMETER ...
+2021-02-25 22:14:06,997 - Model - INFO - Namespace(dataset='KITTI', gpu=1, num_point=1024, num_testcase=-1)
+2021-02-25 22:14:06,997 - Model - INFO - Load dataset ...

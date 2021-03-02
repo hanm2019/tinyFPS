@@ -12,3 +12,14 @@
 2021-02-19 18:05:35,491 - Model - INFO - sampling:64 avg_time:0.030969
 2021-02-19 18:05:50,771 - Model - INFO - sampling:128 avg_time:0.056263
 2021-02-19 18:06:20,589 - Model - INFO - sampling:256 avg_time:0.113019
+2021-02-25 20:11:24,585 - Model - INFO - PARAMETER ...
+2021-02-25 20:11:24,585 - Model - INFO - Namespace(dataset='modelnet40', gpu=1, num_point=1024, num_testcase=-1)
+2021-02-25 20:11:24,586 - Model - INFO - Load dataset ...
+2021-02-25 20:11:31,406 - Model - INFO - sampling:32 avg_time:0.000178
+2021-02-25 20:11:36,983 - Model - INFO - sampling:64 avg_time:0.000227
+2021-02-25 20:11:42,296 - Model - INFO - sampling:128 avg_time:0.000422
+2021-02-25 20:11:47,889 - Model - INFO - sampling:256 avg_time:0.000719
+2021-03-02 16:20:03,430 - Model - INFO - PARAMETER ...
+2021-03-02 16:20:03,430 - Model - INFO - Namespace(dataset='modelnet40', gpu=1, num_point=1024, num_testcase=-1)
+2021-03-02 16:20:03,430 - Model - INFO - Load dataset ...
+2021-03-02 16:20:10,106 - Model - INFO - sampling:32 avg_time:0.000154
